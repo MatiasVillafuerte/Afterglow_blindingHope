@@ -15,9 +15,15 @@ public sealed class N6PlayChecks : M01RouteRunner
     IEnumerator Battle(float seconds)
     {
         var arena = FindAnyObjectByType<M01BossArena>(); var drill = arena.drill; float end = Now + seconds;
-        bool sawStuck = false, sawDelivery = false; int startPhase = arena.Phase;
+        bool sawStuck = false, sawDelivery = false; int startPhase = arena.Phase; string prevState = ""; int prevHp = Player.Health; int logged = 0; Vector3 dodge = Vector3.zero;
         while (!arena.Won && !Player.Dead && Now < end && SceneId == "N06S02")
         {
+            if ((drill.State != prevState || Player.Health != prevHp) && logged++ < 60)
+            {
+                var rel = Player.transform.position - drill.transform.position; rel.y = 0;
+                Note($"  · {Now:F1} s {drill.State} vida {Player.Health} · jugador {Player.transform.position:F1} · taladro {drill.transform.position:F1} · delante {Vector3.Dot(rel, drill.transform.forward):F1} · lateral {Vector3.Dot(rel, drill.transform.right):F1} · bloqueo {Player.GetComponent<M01PlayerRules>().BlocksControl}");
+                prevState = drill.State; prevHp = Player.Health;
+            }
             if (Dialogue.IsOpen) { Keys(); yield return Speak(); continue; }
             var p = Player.transform.position;
             if (drill.State == "Atascado")
@@ -36,11 +42,14 @@ public sealed class N6PlayChecks : M01RouteRunner
             // Esquivar la embestida: salir lateralmente de la trayectoria del taladro, hacia el centro.
             var toPlayer = p - drill.transform.position; toPlayer.y = 0; var fwd = drill.transform.forward;
             float along = Vector3.Dot(toPlayer, fwd); float lateral = Vector3.Dot(toPlayer, drill.transform.right);
-            if ((drill.State == "Aviso" || drill.State == "Embistiendo") && along > -1 && Mathf.Abs(lateral) < 2.6f)
+            bool threat = drill.State == "Aviso" || drill.State == "Embistiendo";
+            if (!threat) dodge = Vector3.zero;
+            if (threat && (dodge != Vector3.zero || (along > -1 && Mathf.Abs(lateral) < 2.6f)))
             {
-                var side = drill.transform.right * (lateral >= 0 ? 1 : -1); var dest = p + side * 2.5f;
-                if ((dest - arena.center).magnitude > arena.radius - 1.5f) dest = p - side * 2.5f;
-                MoveTowards(dest); yield return null; continue;
+                // Una sola dirección por embestida: perpendicular al taladro y hacia el centro de la arena.
+                if (dodge == Vector3.zero) { var perp = drill.transform.right; var toCenter = arena.center - p; toCenter.y = 0; dodge = Vector3.Dot(perp, toCenter) >= 0 ? perp : -perp; }
+                if (Mathf.Abs(lateral) < 3.2f) { MoveTowards(p + dodge * 2f); yield return null; continue; }
+                Keys(); yield return null; continue;
             }
             // Recoger ofrendas de arena cercanas.
             var offering = FindObjectsByType<M01ArenaOffering>(FindObjectsSortMode.None).OrderBy(o => Vector3.Distance(o.transform.position, p)).FirstOrDefault();
@@ -65,7 +74,7 @@ public sealed class N6PlayChecks : M01RouteRunner
         yield return Capture("01_Corredor");
         yield return Walk(10.6f, -1.2f, false, 16);
         Check("Voces de los atrapados como subtítulos sin detener al jugador", !Dialogue.IsOpen);
-        yield return Tap(Key.E); yield return Speak();
+        yield return Tap(Key.E); yield return SpeakUntil("N06S02");
         yield return Arrival("N06S02"); if (SceneId != "N06S02") yield break;
         yield return Speak();
         Check("Presentación y explicaciones N6A.13–15", !Dialogue.IsOpen && FindAnyObjectByType<M01BossArena>().Phase == 1);

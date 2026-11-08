@@ -1,5 +1,7 @@
 # Estado de trabajo — 2026-11-06
 
+Última sesión: ver «2026-11-08 · Segunda sesión Claude» al final.
+
 Raíz activa: este proyecto Unity; documentación vigente en Docs e INDICE_DOCUMENTACION.md. N2–N6 pendientes de producción. Avance previo C00–C60 y PM00–PM20 conservado.
 
 ## Implementado y comprobado
@@ -82,3 +84,69 @@ Teclado real: pulsaciones del sistema operativo (keybd_event) enviadas a la vent
 ### Siguiente tarea concreta
 
 Prioridad 2 del encargo en N01S02: marcar en el plano el perímetro protegido y las caídas intencionales, añadir barreras invisibles en los bordes exteriores transitables y volver a probar con teclado real el recorrido diagonal y los saltos de las terrazas. Después, volver a ejecutar N1PlayChecks y N1SafetyChecks.
+
+## 2026-11-08 · Segunda sesión Claude · N2–N6 jugables y recorridos sin fallos
+
+Encargo: terminar Mundo 1 desde Nueva partida hasta la victoria contra PerforAudora y «Continuará». Unity 6000.5.5f1, URP 17.5.0, cámara de exploración y esquema de guardado sin cambios. Commits locales `1801636`, `136ad23`, `27795d7` y el de cierre de esta sección. Sin push.
+
+### Qué se puede jugar desde el menú
+
+Nueva partida → prólogo → N1 → selector → N2 → … → N6 → PerforAudora → pieza dorada → Platicio en el equipo → vagoneta → «Continuará» → menú. Cada nivel se entra desde su nodo del selector y se abre el siguiente por sus condiciones reales: investigación más cuota en el altar compartido (3, 5, 7, 9 y 12).
+
+### Pruebas ejecutadas (teclado simulado por el Input System, la misma ruta que el teclado real)
+
+| Prueba | Alcance | Resultado | Informe |
+| --- | --- | --- | --- |
+| N1PlayChecks | Nueva partida → N1 completo → N2 abierto | 92 PASS · 0 fallos | Nivel1/Pruebas.md |
+| N1SafetyChecks | Caída, muerte, puertas, carga y migración | 35 PASS · 0 fallos | Nivel1/Pruebas_Seguridad.md |
+| N2PlayChecks | Selector → Q03/Q04, carros, reja, Hangzzer, puente → investigación → altar 5 → N3 enfocado | 108 PASS · 0 fallos | Niveles/N2_Evidencias/ |
+| N3PlayChecks | Puertas con error y regreso, Q05 escolta, Q06, Gasplode, Drilly → altar 7 → N4 | 110 PASS · 0 fallos | Niveles/N3_Evidencias/ |
+| N4PlayChecks | Oscuridad, lámpara, Lighmet, Q09 carro de luz, Q10 → altar 9 → N5 | 80 PASS · 0 fallos | Niveles/N4_Evidencias/ |
+| N5PlayChecks | Q07, Q08, rechazo, caída y reinicio, umbral 18 y premio único → altar 12 → N6 | 41 PASS · 0 fallos | Niveles/N5_Evidencias/ |
+| N6PlayChecks | Corredor, rescate, jefe en tres fases, victoria, pieza, capitán, cambio de personaje, vagoneta, «Continuará», menú | 0 fallos (197,6 s) | Niveles/N6_Evidencias/ |
+| Compilación | `unity recompile` tras cada cambio | 0 errores · 0 advertencias | — |
+
+Las pruebas N2–N6 parten de un fixture declarado (niveles anteriores completados por sus propias pruebas). No se ha jugado aún el recorrido completo de una sola vez (C56).
+
+### Correcciones de juego de esta sesión
+
+- **Golpe del pico.** La dirección pulsada en el mismo fotograma que X orienta el golpe (antes salía hacia la orientación previa: 8 fallos seguidos en diagonal en N02S04). `AfterglowPlayer.cs`.
+- **Selector.** La flecha elige el vecino mejor alineado: desde N4 no había forma de llegar a N5. El aviso de escena pendiente usa `HasScene`. `M01RouteMap.cs`.
+- **Lighmet.** Aviso de 0,45 s con el sprite de lanzamiento; un golpe durante el aviso cancela el disparo. `M01Lighmet.cs`. El de N04S04 flotaba a 1,35 m (plano corregido).
+- **Guion.** Faltaban N4D.01, N4M.01 y N4M.02: la investigación de N4 lanzaba una excepción y no se registraba. Redactadas en `Guion_M01.json` y `Mundo_1_Guion.md` (tono pendiente de revisión).
+- **Cierre de N6.** La vagoneta estaba fuera del anillo de paredes de la arena y sin suelo; ahora está dentro (plano N6).
+- **Escenarios.** Luz principal en N2–N6 y barandas del puente de N02S05 (`M01CounterweightBridge.rails`). N2–N6 reconstruidos desde sus planos.
+
+### Ayudas de prueba (no forman parte del juego)
+
+- Recorridos `Tools/PM/N?PlayChecks.cs` y `M01RouteRunner.cs`, copiados a `Assets/Afterglow/PruebasTemporales/` para ejecutarlos.
+- Reloj de juego para los plazos y `Time.maximumDeltaTime = 1/30` mientras corre una prueba, restaurado al terminar. El editor sin foco baja de fotogramas y los plazos en tiempo real fallaban al azar.
+- Los recorridos luchan contra un Resisworm que corta el paso, recogen botín cercano y usan un consumible con 4 de vida o menos.
+- El fixture da un Núcleo por nivel completado, como compra prevista en la tienda del pueblo.
+- `M01Expedition.Travel` y `testControl` solo se usaron en diagnósticos aislados (`Docs/Implementacion/Niveles/Diagnostico/`), no en los recorridos que cuentan.
+- Nuevo `Tools/Documentacion/Validar_Lineas.py`: comprueba que todas las líneas de planos y código existan en el guion.
+
+### Archivos
+
+- **Runtime:** `AfterglowPlayer.cs`, `M01RouteMap.cs`, `M01Lighmet.cs` y `M01CounterweightBridge.cs`.
+- **Editor:** `M01LevelBuilder.cs` (luz principal y barandas).
+- **Datos:** `Guion_M01.json`, `N4_Plano.json` y `N6_Plano.json`.
+- **Escenas:** N02S01–N06S02 reconstruidas.
+- **Pruebas:** N1PlayChecks (reloj de juego), N2–N6PlayChecks y M01RouteRunner.
+- **Documentos:** `Docs/Historial/Decisiones_2026_11_08_Niveles_N2_N6.md`, `Mundo_1_Guion.md`, `Checklist_Mundo_1.md` y este archivo.
+
+### Sin verificar o pendiente de decisión
+
+- C56: recorrido completo de una sola vez desde Nueva partida hasta «Continuará».
+- C44: el altar de la arena (entrega de 5 ofrendas de arena) no se ejercitó; el jefe se venció sin mejoras del Tío.
+- Insuficiencia de minerales en N5: el recorrido superó el umbral en el primer viaje completo.
+- Guardado y carga en mitad de N2–N6, árbol de habilidades y regalos de Platicio en N6: no probados en esta sesión.
+- Decisiones del diseñador:
+  - exigencia de N4 sin consumibles (llega con 1 de vida);
+  - umbral de 18 minerales;
+  - tono de N4D.01, N4M.01 y N4M.02;
+  - nombre «Curativo».
+
+### Siguiente tarea concreta
+
+Escribir un recorrido encadenado que juegue de una sola vez desde Nueva partida hasta «Continuará» sin fixture, reutilizando las rutas N1–N6. Registrar vida, dinero, ofrendas y tiempo por nivel. Después, probar el altar de la arena y guardar y cargar en cada nivel.

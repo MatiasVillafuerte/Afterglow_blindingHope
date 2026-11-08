@@ -10,7 +10,7 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Paso N04S01 (-8, 0,4) a altura 0,04
 - PASS Paso N04S01 (-8, 2) a altura 0,69
 - PASS Paso N04S01 (-8, 3,5) a altura 0,69
-- PASS Paso N04S01 (-8, 0,5) a altura 0,52
+- PASS Paso N04S01 (-8, 0,5) a altura 0,50
 - PASS Paso N04S01 (9, -6) a altura 0,04
 - PASS Ofrendas del andén oscuro
 - PASS Paso N04S01 (6, 0) a altura 0,04
@@ -24,7 +24,7 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Enemigo derrotado con el pico: S02.LIGHMET.N4 (vida del jugador 10/10)
 - PASS Paso N04S02 (5, -3) a altura 0,69
 - PASS Paso N04S02 (9, -2) a altura 0,04
-- PASS Enemigo derrotado con el pico: S02.RESISTANCE.N4 (vida del jugador 8/10)
+- PASS Enemigo derrotado con el pico: S02.RESISTANCE.N4 (vida del jugador 10/10)
 - PASS Paso N04S02 (12, -5) a altura 0,04
 - PASS Paso N04S02 (10, 3) a altura 0,04
 - PASS Llegada a N04S03
@@ -33,8 +33,8 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Paso N04S03 (10, 3,6) a altura 0,69
 - PASS Paso N04S03 (12, 3,2) a altura 0,69
 - PASS Q09 y Q10 aceptados en el refugio
-- PASS Enemigo derrotado con el pico: N04.RESISTANCE.2 (vida del jugador 9/10)
-- PASS Enemigo derrotado con el pico: N04.RESISTANCE.1 (vida del jugador 10/10)
+- PASS Enemigo derrotado con el pico: N04.RESISTANCE.2 (vida del jugador 10/10)
+- PASS Enemigo derrotado con el pico: N04.RESISTANCE.1 (vida del jugador 9/10)
 - PASS Enemigo derrotado con el pico: N04.LIGHMET.1 (vida del jugador 8/10)
 - PASS Enemigo derrotado con el pico: N04.RESISTANCE.0 (vida del jugador 7/10)
 - PASS Q10: cuatro componentes del cruce
@@ -68,22 +68,22 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Ofrendas de la grieta alta
 - PASS Paso N04S04 (8, 5) a altura 2,64
 - PASS Llegada a N04S05
-- Consumible usado (Núcleo +5): vida 4 → 9
-- PASS Enemigo derrotado con el pico: S05.RESISTANCE.N4 (vida del jugador 9/10)
+- Consumible usado (Núcleo +5): vida 4 → 4
+- PASS Enemigo derrotado con el pico: S05.RESISTANCE.N4 (vida del jugador 4/10)
 - PASS Paso N04S05 (6, -1) a altura 0,04
 - PASS Paso N04S05 (0, 2,4) a altura 0,04
 - PASS Paso N04S05 (0, 3,4) a altura 0,69
 - PASS Investigación de N4 registrada
 
-Ruta N4 automatizada hasta investigar: 89,4 s.
-- PASS Ofrendas legítimas para la cuota 9: 18
+Ruta N4 automatizada hasta investigar: 89,1 s.
+- PASS Ofrendas legítimas para la cuota 9: 17
 - PASS Llegada a N01S01
 - PASS El teléfono conserva el nivel de la expedición
 - PASS Paso N01S01 (4, -4,4) a altura 0,04
 - PASS Altar compartido: cuota 9 cubierta y nivel siguiente abierto
 - PASS Paso N01S01 (-1, -6,6) a altura 0,04
 - PASS Llegada a M01_MAPA
-- FAIL Selector: N5 disponible y enfocado
+- PASS Selector: N5 disponible y enfocado
 - PASS Guardado personal intacto
 
-Finalizado. Fallos: 1
+Finalizado. Fallos: 0

@@ -53,8 +53,8 @@ public sealed class N1PlayChecks : MonoBehaviour
 
     IEnumerator Arrival(string id)
     {
-        float end = Time.realtimeSinceStartup+12;
-        while ((SceneId!=id||M01Expedition.Transitioning)&&Time.realtimeSinceStartup<end)yield return null;
+        float end = Now+12;
+        while ((SceneId!=id||M01Expedition.Transitioning)&&Now<end)yield return null;
         yield return new WaitForSecondsRealtime(.42f);
         Check("Llegada a "+id,SceneId==id&&!M01Expedition.Transitioning);
     }
@@ -70,12 +70,12 @@ public sealed class N1PlayChecks : MonoBehaviour
 
     IEnumerator Walk(float x,float z,bool jump=false)
     {
-        float end=Time.realtimeSinceStartup+15;
+        float end=Now+15;
         bool reached=false;
         bool jumpSent=!jump;
-        while(Time.realtimeSinceStartup<end && !Player.Dead)
+        while(Now<end && !Player.Dead)
         {
-            if(Dialogue&&Dialogue.IsOpen){Keys();yield return Speak();end=Time.realtimeSinceStartup+15;}
+            if(Dialogue&&Dialogue.IsOpen){Keys();yield return Speak();end=Now+15;}
             Vector3 p=Player.transform.position;
             var delta=new Vector2(x-p.x,z-p.z);
             if(delta.magnitude<.23f){reached=true;break;}
@@ -86,8 +86,8 @@ public sealed class N1PlayChecks : MonoBehaviour
             yield return null;
         }
         Keys();
-        float settle=Time.realtimeSinceStartup+2.5f;
-        while(!Player.Grounded&&Time.realtimeSinceStartup<settle)yield return null;
+        float settle=Now+2.5f;
+        while(!Player.Grounded&&Now<settle)yield return null;
         yield return new WaitForSecondsRealtime(.1f);
         Check($"Paso {SceneId} ({x}, {z}) a altura {Player.transform.position.y:F2}",reached);
     }
@@ -110,8 +110,8 @@ public sealed class N1PlayChecks : MonoBehaviour
     {
         var player=Player;
         player.testControl=true;
-        float end=Time.realtimeSinceStartup+18;
-        while(enemy&&!enemy.Defeated&&!player.Dead&&Time.realtimeSinceStartup<end)
+        float end=Now+18;
+        while(enemy&&!enemy.Defeated&&!player.Dead&&Now<end)
         {
             Vector3 delta=enemy.transform.position-player.transform.position;
             var flat=new Vector2(delta.x,delta.z);
@@ -125,9 +125,14 @@ public sealed class N1PlayChecks : MonoBehaviour
         Check("Resistencia derrotada mediante ataque básico",enemy&&enemy.Defeated);
     }
 
+    // Reloj de juego para los plazos (2026-11-08): un fotograma lento del editor cuenta como un paso, no como segundos reales.
+    float clock, previousMaxDelta = .3333f; float Now => clock;
+    void LateUpdate() { clock += Time.timeScale > 0 ? Time.deltaTime / Time.timeScale : Mathf.Min(Time.unscaledDeltaTime, Time.maximumDeltaTime); }
+
     IEnumerator Start()
     {
         Directory.CreateDirectory(Evidence);
+        previousMaxDelta = Time.maximumDeltaTime; Time.maximumDeltaTime = 1f / 30f;
         previousBackground=InputSystem.settings.backgroundBehavior;
         previousFocus=InputSystem.settings.editorInputBehaviorInPlayMode;
         InputSystem.settings.backgroundBehavior=InputSettings.BackgroundBehavior.IgnoreFocus;
@@ -178,7 +183,7 @@ public sealed class N1PlayChecks : MonoBehaviour
         Check("N1 tiene entrada propia y un altar",!FindAnyObjectByType<M01RouteMap>()&&FindObjectsByType<M01Altar>().Length==1&&Data.expeditionAttempt==1);
         yield return Speak();
         Check("Presentación y teléfono del mismo guía",Data.events.Contains("N1A.INTRO")&&Data.phoneOwned&&!Data.pickaxeOwned);
-        n1Started=Time.realtimeSinceStartup;
+        n1Started=Now;
         yield return Walk(-5.8f,2);yield return Tap(Key.E);yield return Speak();
         Check("Q01 se acepta antes de las bajas",Data.Quest("Q01").active&&Data.Quest("Q01").count==0);
         yield return Capture("07_N01S01_Entrada");
@@ -229,10 +234,10 @@ public sealed class N1PlayChecks : MonoBehaviour
         yield return Tap(Key.T);yield return Speak();yield return Arrival("N01S01");
         Check("Teléfono devuelve a la entrada real",SceneId=="N01S01"&&Data.offerings.Count>=3);
         yield return Tap(Key.E);yield return Speak();
-        float deadline=Time.realtimeSinceStartup+12;
-        while(!Data.opened[0]&&Time.realtimeSinceStartup<deadline)yield return null;
+        float deadline=Now+12;
+        while(!Data.opened[0]&&Now<deadline)yield return null;
         Check("Altar acredita 3 y abre N2 tras investigar",Data.contributions[0]==3&&Data.opened[0]);
-        report+=$"\nRuta N1 automatizada hasta apertura: {Time.realtimeSinceStartup-n1Started:F1} segundos, incluye diálogos/capturas y combate opcional; no es duración estimada para jugadores.\n";
+        report+=$"\nRuta N1 automatizada hasta apertura: {Now-n1Started:F1} segundos, incluye diálogos/capturas y combate opcional; no es duración estimada para jugadores.\n";
         yield return Speak();
         yield return Walk(1,1);yield return Walk(6,3.7f);yield return Tap(Key.E);yield return Speak();yield return Tap(Key.E);yield return Speak();
         Check("Q02 paga la cuarta fuente garantizada",Data.Quest("Q02").paid&&Data.collectedStaticIds.Any(s=>s.StartsWith("Q02.REWARD.")));
@@ -251,7 +256,7 @@ public sealed class N1PlayChecks : MonoBehaviour
     }
 
     void OnDestroy()
-    {
+    { Time.maximumDeltaTime = previousMaxDelta;
         if(Keyboard.current!=null)Keys();
         InputSystem.settings.backgroundBehavior=previousBackground;
         InputSystem.settings.editorInputBehaviorInPlayMode=previousFocus;

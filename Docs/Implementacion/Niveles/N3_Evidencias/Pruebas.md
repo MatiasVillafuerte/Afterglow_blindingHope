@@ -60,7 +60,7 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Paso N03S03 (4,2, -2,6) a altura 1,34
 - PASS Paso N03S03 (1,4, -2,4) a altura 1,34
 - PASS Paso N03S03 (-1, -2) a altura 0,69
-- PASS Paso N03S03 (-3,4, -2) a altura 0,63
+- PASS Paso N03S03 (-3,4, -2) a altura 0,62
 - PASS Paso N03S03 (-6, -3) a altura 0,04
 - PASS Paso N03S03 (-7, -5,2) a altura 0,04
 - PASS Llegada a N03S02
@@ -95,7 +95,7 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Llegada a N03S06
 - PASS Paso N03S06 (0, -3,4) a altura 0,04
 - PASS Paso N03S06 (0, 0) a altura 0,04
-- FAIL Paso N03S06 (0, 3) a altura 0,04 · quedó en (-0.14, 0.04, 2.15) · escala 1 · bloqueo False · diálogo False
+- PASS Paso N03S06 (0, 2,1) a altura 0,04
 - PASS Pasarela del pozo sin caer y sin activar los Gasplode
 - PASS Llegada a N03S07
 - PASS Enemigo derrotado con el pico: N03.RESISTANCE.2 (vida del jugador 7/10)
@@ -104,8 +104,8 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Paso N03S07 (0, 3,4) a altura 0,69
 - PASS Investigación de N3 registrada
 
-Ruta N3 automatizada hasta investigar: 105,7 s.
-- PASS Ofrendas legítimas para la cuota 7: 10
+Ruta N3 automatizada hasta investigar: 98,1 s.
+- PASS Ofrendas legítimas para la cuota 7: 12
 - PASS Llegada a N01S01
 - PASS El teléfono conserva el nivel de la expedición
 - PASS Paso N01S01 (4, -4,4) a altura 0,04
@@ -115,4 +115,4 @@ Ruta N3 automatizada hasta investigar: 105,7 s.
 - PASS Selector: N4 disponible y enfocado
 - PASS Guardado personal intacto
 
-Finalizado. Fallos: 1
+Finalizado. Fallos: 0

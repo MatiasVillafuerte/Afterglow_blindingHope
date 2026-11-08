@@ -28,3 +28,10 @@ Esta carpeta Unity es la única raíz operativa. Docs contiene especificaciones 
 
 Leer `Docs/Implementacion/Encargo_Claude_Mundo_1.md`. El encargo de N1 conserva su alcance histórico. El nuevo encargo a Claude abarca correcciones del prototipo y producción de N2–N6 hasta el cierre.
 Copia Word vigente: Docs/GDD/Afterglow_GDD_v0_5_rev_2026_11_07.docx. Afterglow_GDD_v0_5.docx corresponde a la revisión anterior. La fuente editable vigente es Afterglow_GDD_v0_5.md.
+
+## Niveles N2–N6 (8 de noviembre de 2026)
+
+- Planos editables: Docs/Diseno/Niveles/N2–N6_Plano.json → Blender `ArtSource/Blender/Modelado_Afterglow/Niveles/build_level.py` → Unity `M01LevelBuilder.Build("N?")`.
+- Decisiones y parámetros de prueba: Docs/Historial/Decisiones_2026_11_08_Niveles_N2_N6.md.
+- Evidencias de recorrido: Docs/Implementacion/Niveles/N?_Evidencias/Pruebas.md. Recorridos en Tools/PM/N?PlayChecks.cs.
+- Validación del guion: Tools/Documentacion/Validar_Lineas.py.

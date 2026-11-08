@@ -32,6 +32,13 @@ public abstract class M01RouteRunner : MonoBehaviour
     protected IEnumerator Arrival(string id) { float end = Now + 12; while ((SceneId != id || M01Expedition.Transitioning) && Now < end) yield return null; yield return new WaitForSecondsRealtime(.45f); Check("Llegada a " + id, SceneId == id && !M01Expedition.Transitioning); }
     protected IEnumerator Speak() { int presses = 0; while (Dialogue && Dialogue.IsOpen && presses++ < 80) yield return Tap(Key.E); for (float t = 0; t < .25f || M01KeyItemCelebration.Playing; t += Time.unscaledDeltaTime) { if (t > 8) break; yield return null; } }
     protected IEnumerator Capture(string name) { yield return new WaitForSecondsRealtime(.6f); yield return new WaitForEndOfFrame(); ScreenCapture.CaptureScreenshot(Evidence + "/" + name + ".png"); yield return null; }
+    /// <summary>Avanza diálogos encadenados (con pausas de escena entre ellos) hasta llegar a la escena indicada.</summary>
+    protected IEnumerator SpeakUntil(string scene, float timeout = 30)
+    {
+        float end = Now + timeout;
+        while (SceneId != scene && Now < end) { if (Dialogue && Dialogue.IsOpen) yield return Speak(); else yield return null; }
+    }
+
     protected IEnumerator Door(string destination) { yield return Tap(Key.E); yield return Arrival(destination); }
 
     protected IEnumerator Walk(float x, float z, bool jump = false, float timeout = 12)
