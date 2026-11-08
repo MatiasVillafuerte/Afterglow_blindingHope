@@ -1,0 +1,16 @@
+C:\Users\matia\AppData\Local\Temp\AfterglowCameraInput\0.mp4 duration=57,8324851989746
+  0,22: 12,71s
+  0,55: 31,82s
+  0,82: 47,40s
+C:\Users\matia\AppData\Local\Temp\AfterglowCameraInput\1.mp4 duration=55,8408432006836
+  0,22: 12,25s
+  0,55: 30,72s
+  0,82: 45,76s
+C:\Users\matia\AppData\Local\Temp\AfterglowCameraInput\2.mp4 duration=63,3741455078125
+  0,22: 13,92s
+  0,55: 34,87s
+  0,82: 51,93s
+C:\Users\matia\AppData\Local\Temp\AfterglowCameraInput\3.mp4 duration=45,816104888916
+  0,22: 10,06s
+  0,55: 25,19s
+  0,82: 37,55s

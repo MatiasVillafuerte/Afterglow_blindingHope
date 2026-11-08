@@ -1,0 +1,68 @@
+# Recorrido espacial en Play Mode
+
+- PASS Llegada a M01_MENU
+- PASS Llegada a PRO_CASA
+- PASS Carta antes de movimiento
+- PASS Secuencia de diálogo termina
+- PASS Timbre y prólogo sin herramientas
+- PASS Paso PRO_CASA (12,5, 3,15) a altura 0,04
+- PASS Llegada a PRO_PATIO
+- PASS Paso PRO_PATIO (-5, 8,3) a altura 0,04
+- PASS Paso PRO_PATIO (-5, -5,1) a altura 0,04
+- PASS Patio recorrible en profundidad y cámara acompaña Z
+- PASS Paso PRO_PATIO (5, -5,1) a altura 0,04
+- PASS Paso PRO_PATIO (5, 4) a altura 0,04
+- PASS Paso PRO_PATIO (5, -5,1) a altura 0,04
+- PASS Paso PRO_PATIO (12,5, -7,5) a altura 0,04
+- PASS Capitán interactúa desde dentro
+- PASS Secuencia de diálogo termina
+- PASS Llegada a M01_MAPA
+- PASS Capitán abre el selector independiente con N1 enfocado
+- PASS Nodo cerrado conserva selector
+- PASS Llegada a N01S01
+- PASS N1 tiene entrada propia y un altar
+- PASS Secuencia de diálogo termina
+- PASS Presentación y teléfono del mismo guía
+- PASS Paso N01S01 (1, 7,3) a altura 0,04
+- PASS Llegada a N01S02
+- PASS Paso N01S02 (6, -1,4) a altura 0,04
+- PASS Paso N01S02 (6, 1) a altura 0,59
+- PASS Paso N01S02 (6, 3) a altura 1,14
+- PASS Paso N01S02 (6, 5) a altura 1,69
+- PASS Paso N01S02 (6, 7,8) a altura 2,24
+- PASS Salto base y seguimiento vertical hasta 2,2 m
+- PASS Ofrenda de la terraza recogida
+- PASS Paso N01S02 (8, 9,2) a altura 2,24
+- PASS Llegada a N01S03
+- PASS Secuencia de diálogo termina
+- PASS Pico recibido en cámara de trabajo
+- PASS Resistencia derrotada mediante ataque básico
+- PASS Secuencia de diálogo termina
+- PASS Paso N01S03 (1,683255, -0,4655612) a altura 0,04
+- PASS Paso N01S03 (8, 1,6) a altura 0,04
+- PASS Tres ofrendas reales disponibles
+- PASS Paso N01S03 (4,1, 0,54) a altura 0,04
+- PASS Pico abre la roca opcional
+- PASS Resistencia derrotada mediante ataque básico
+- PASS Resistencia derrotada mediante ataque básico
+- PASS Paso N01S03 (-6, 10,65) a altura 0,04
+- PASS Llegada a N01S04
+- PASS Paso N01S04 (7, 3) a altura 0,04
+- PASS Casco accesible en ramal inferior
+- PASS Paso N01S04 (6, -1,45) a altura 0,04
+- PASS Paso N01S04 (-4, -1,45) a altura 0,04
+- PASS Paso N01S04 (-4, 1) a altura 0,59
+- PASS Paso N01S04 (-4, 3) a altura 1,14
+- PASS Paso N01S04 (-4, 5) a altura 1,69
+- PASS Paso N01S04 (-4, 7,8) a altura 2,24
+- PASS Paso N01S04 (-4, 8,75) a altura 2,24
+- PASS Secuencia de diálogo termina
+- PASS Investigación en el derrumbe elevado
+- PASS Secuencia de diálogo termina
+- PASS Llegada a N01S01
+- PASS Teléfono devuelve a la entrada real
+- PASS Secuencia de diálogo termina
+- PASS Altar acredita 3 y abre N2 tras investigar
+- PASS Guardado personal intacto
+
+Finalizado. Fallos: 0

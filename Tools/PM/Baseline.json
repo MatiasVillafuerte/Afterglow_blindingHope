@@ -1,0 +1,122 @@
+[
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\M01_ACCESO.unity",
+    "hash": "18b64dd5635bd3f7139ff8958c8d0adde8004a5e3c69b6b45fe9c021e5cfe744"
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\M01_Base.unity",
+    "hash": "789d0f64dd84c7633072250557d1bc3500b3ee5ca8e5be2aa8e637a4f29703f8"
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\M01_MENU.unity",
+    "hash": "fad92c34b5bb7a5bf6c4255931df9f45bedb60411432b2177fe95802bf671cff"
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\M01_PUEBLO.unity",
+    "hash": "445649a5c8232ec8eef9ea68b304f2833d6eb0fe965dd8811eb31abb91f1cd52"
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\N01S02.unity",
+    "hash": "a68a57dafc46a47a31b5da37442ee59681409573a85f7790c8473f2bd789629d"
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\N01S03.unity",
+    "hash": "8f4cfdb6dbf9f91b896b2ad671dedb4fbb0499910d3a1e0afb9190d50e5bbaf9"
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\N01S04.unity",
+    "hash": "3be7824610094f2f4a98ecc4db4659779887d7509da1f8b549cd68bc71e90981"
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\PRO_CASA.unity",
+    "hash": "df89e2cc91e15c20cea012e2c7f4a92b2ba7c8cba7cf0c1aba0d611fc38ed0d2"
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\PRO_PATIO.unity",
+    "hash": "93302cba7fb8089f69292f390708ce9e5204b3b9b84b6a598aba056a2ccba918"
+  },
+  {
+    "path": "Assets\\Afterglow\\Runtime\\AfterglowCamera.cs",
+    "hash": "06f136ebf6637080df63a77de61a9fbb1f4875a1dd212b73f38e4674eed7f0cd"
+  },
+  {
+    "path": "Packages\\manifest.json",
+    "hash": "8f4850342594901082e0a1e8c7d04ebafb7228ddfbbeddd1e2115a6536280463"
+  },
+  {
+    "path": "ProjectSettings\\ProjectVersion.txt",
+    "hash": "52eb3e6f9571e329731718d034cceb24a4df0757d97550ecbd6589c5b7b03fba"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Attack.anim",
+    "hash": "9c9db47a7b82d2d84f8ac83847b399301ac3b0c6acd7fb1ac7b1eece1c220da5"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Attack.anim.meta",
+    "hash": "ee6c9deb9b6610350326b53cee637071861d2afa5a6524cb78a72125dc9c1252"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Falling.anim",
+    "hash": "a40c96dc9e4e1d89ec67b1a877cd5c3d564da58c5763f1b57abcd1ac8d36ede2"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Falling.anim.meta",
+    "hash": "7dcdb24cef11aacbf77c97af7abb679c4f88338c7575cf7406edffd8e72f740d"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Idle.anim",
+    "hash": "67d97ad0d54b4af6946b90a22c28a3978e591622079e4078e092153e0cc4aff7"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Idle.anim.meta",
+    "hash": "5a0ab879a881b864ddfed70e609922aeaae43183392c8ea447940d2b1a41bfce"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Jump.anim",
+    "hash": "cdbc5be2d29e2f6ef1356baf12abdb3483eb90e4b6b3b6d9e9f8500c962abd3d"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Jump.anim.meta",
+    "hash": "65dc4841c13b64efbc4bc87d2e421cea422b9bc953b9ce5e4f1f6026c7fe410c"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Attack.anim",
+    "hash": "685de1f3cbfe67cef01e4c62494d5d3cf3e07c1e57b3b8b8a0372ae8fc1d26bd"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Attack.anim.meta",
+    "hash": "acf7620a6169697c49458234a776d2604d2ae37596e38f91755b956e4b56ae47"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Controller.overrideController",
+    "hash": "5be91e7b81b52ffff33fc1545c47a243c076ec05f4cea113e05bbb6062975add"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Controller.overrideController.meta",
+    "hash": "899bc7130a53099a69582375378b9e17c6679cb5f164449b6b78a404a5f0ef78"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Idle.anim",
+    "hash": "df27775700e4b00ad86771dd8eb341c5a7b9aa86a6965b052819642a2d8aea81"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Idle.anim.meta",
+    "hash": "fe946f16ecd2d53fa9aba80f5b80ba0685fca0506cd9274dd6255102c2485983"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\PlayerAC.controller",
+    "hash": "a93318148a150fe3ce95281c484658992645d6a178d94c3bf02645b35b57a25d"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\PlayerAC.controller.meta",
+    "hash": "77434941820dca0dfee959d4519e7d5e737b7fd4f8eb981187f9ea79bc51475b"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Walk.anim",
+    "hash": "7aaa22b9130feec327ebc9ba983b34dc2a978277e0f7cee56d59c8d3421d48a1"
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Walk.anim.meta",
+    "hash": "d5d325c9c810488aeb1d060f9820f06c93fcc88ec6816a490d450d1c50cbd54b"
+  }
+]

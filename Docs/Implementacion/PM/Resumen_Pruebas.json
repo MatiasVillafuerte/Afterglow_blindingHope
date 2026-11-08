@@ -1,0 +1,32 @@
+[
+  {
+    "report": "Pruebas_Prologo.md",
+    "pass": 23,
+    "fail": 0
+  },
+  {
+    "report": "Pruebas_Mapa.md",
+    "pass": 24,
+    "fail": 0
+  },
+  {
+    "report": "Pruebas_Progreso.md",
+    "pass": 21,
+    "fail": 0
+  },
+  {
+    "report": "Pruebas_Guardado.md",
+    "pass": 25,
+    "fail": 0
+  },
+  {
+    "report": "Pruebas_Limites_Altar.md",
+    "pass": 12,
+    "fail": 0
+  },
+  {
+    "report": "Inspeccion_Produccion.md",
+    "pass": 11,
+    "fail": 0
+  }
+]

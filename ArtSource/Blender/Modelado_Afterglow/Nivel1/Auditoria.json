@@ -1,0 +1,26 @@
+[
+  {
+    "room": "N01S01",
+    "triangles": 13314,
+    "sourceObjects": 92,
+    "stage": "detail"
+  },
+  {
+    "room": "N01S02",
+    "triangles": 9272,
+    "sourceObjects": 67,
+    "stage": "detail"
+  },
+  {
+    "room": "N01S03",
+    "triangles": 12984,
+    "sourceObjects": 93,
+    "stage": "detail"
+  },
+  {
+    "room": "N01S04",
+    "triangles": 8590,
+    "sourceObjects": 56,
+    "stage": "detail"
+  }
+]

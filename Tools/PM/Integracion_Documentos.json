@@ -1,0 +1,31 @@
+{
+  "copiados_nuevos": [
+    "Docs\\Diseno\\Mapa_Mundo1_Datos_Referencia.json",
+    "Docs\\Diseno\\Prologo_Mapa_y_Escenarios_v0_4.md",
+    "Docs\\Implementacion\\Checklist_Prologo_y_Mapa_v0_4.md",
+    "Docs\\Referencias\\Guia_Escenarios_y_Videos_v0_4.md",
+    "Docs\\Referencias\\Analisis\\Mundo_1\\PLANTILLA_OBSERVACION_v0_4.md",
+    "Reference\\CharacterSource\\Pico de doble hoja con mango naranja.png",
+    "Reference\\General\\Imagenes\\DisenoBocadilloDialogo.png",
+    "Reference\\General\\Imagenes\\DiseñoBocadilloSiguienteDialogo.png",
+    "Reference\\General\\Imagenes\\DiseñoOpcionesDialogopng.png",
+    "Reference\\Mundo 1\\INDICE_PROLOGO_MAPA_v0_4.md",
+    "Reference\\Mundo 1\\Imagenes\\Escenarios\\Camara_Cruce_Carretilla_Concepto.png",
+    "Reference\\Mundo 1\\Imagenes\\Escenarios\\Camara_Terrazas_Concepto.png",
+    "Reference\\Mundo 1\\Imagenes\\Escenarios\\Distribucion_Secciones.png",
+    "Reference\\Mundo 1\\Imagenes\\Escenarios\\Distribucion_Secciones.svg",
+    "Reference\\Mundo 1\\Imagenes\\Escenarios\\Originales\\Boceto_Distribucion_Secciones.png",
+    "Reference\\Mundo 1\\Imagenes\\Escenarios\\Originales\\Boceto_Escenario_A.png",
+    "Reference\\Mundo 1\\Imagenes\\Escenarios\\Originales\\Boceto_Escenario_B.png",
+    "Reference\\Mundo 1\\Imagenes\\Mapa_Seleccion\\Mapa_Mundo1_Concepto.png",
+    "Reference\\Mundo 1\\Imagenes\\Mapa_Seleccion\\Mapa_Mundo1_Funcional.png",
+    "Reference\\Mundo 1\\Imagenes\\Mapa_Seleccion\\Mapa_Mundo1_Funcional.svg",
+    "Reference\\Mundo 1\\Imagenes\\Mapa_Seleccion\\Originales\\Referencia_Mapa_A.png",
+    "Reference\\Mundo 1\\Imagenes\\Mapa_Seleccion\\Originales\\Referencia_Mapa_B.png",
+    "Reference\\Mundo 1\\Imagenes\\Mapa_Seleccion\\Originales\\Referencia_Mapa_C.png",
+    "Reference\\Mundo 1\\Imagenes\\Prologo\\Casa_Jardin_Concepto.png",
+    "Reference\\Mundo 1\\Imagenes\\Prologo\\Dormitorio_Concepto.png",
+    "Reference\\Mundo 1\\Imagenes\\Prologo\\Originales\\Boceto_Casa_Usuario.jpeg"
+  ],
+  "conservados": "No se sobrescriben Estado_Trabajo, Checklist_Mundo_1 ni Plan_Herramientas existentes"
+}

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1240" viewBox="0 0 1600 1240">
+<rect width="1600" height="1240" fill="#17232d"/>
+<style>text{font-family:Arial;fill:#f5ecd4}.title{font-size:22px;font-weight:bold}.note{font-size:15px}.small{font-size:13px}</style>
+<text x="35" y="38" class="title">N1 · plano final editable · X lateral / Z profundidad / Y altura (metros)</text>
+<g id="N01S01"><rect x="20" y="60" width="770" height="530" rx="12" fill="#223541"/><text x="40" y="92" class="title">S01 · Refugio · orientación y retorno</text>
+<rect id="Entry_apron" x="308.0" y="380.0" width="204" height="136" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Entry_apron · cota 0.00 m</title></rect>
+<rect id="Left_work_bay" x="223.0" y="303.5" width="136" height="119" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Left_work_bay · cota 0.00 m</title></rect>
+<rect id="Right_work_bay" x="444.0" y="278.0" width="136" height="102" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Right_work_bay · cota 0.00 m</title></rect>
+<rect id="Central_refuge" x="342.0" y="295.0" width="136" height="102" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Central_refuge · cota 0.00 m</title></rect>
+<rect id="Tunnel_neck" x="384.5" y="235.5" width="85" height="59.5" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Tunnel_neck · cota 0.00 m</title></rect>
+<rect id="Village_path" x="223.0" y="423.35" width="102" height="42.5" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Village_path · cota 0.00 m</title></rect>
+<rect id="Back_left" x="265.5" y="269.5" width="119" height="17" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Back_left · cota 3.60 m</title></rect>
+<rect id="Back_right" x="478.0" y="255.9" width="102" height="17" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Back_right · cota 3.60 m</title></rect>
+<rect id="Workbench_top" x="268.05" y="306.9" width="45.900000000000006" height="13.600000000000001" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Workbench_top · cota 0.93 m</title></rect>
+<rect id="Workbench_top" x="506.05" y="283.1" width="45.900000000000006" height="13.600000000000001" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Workbench_top · cota 0.93 m</title></rect>
+<polyline points="393,474.35 393,446.3 427,346 427,242.3" fill="none" stroke="#b5ffe0" stroke-width="4" stroke-dasharray="7 5"/>
+<circle cx="393" cy="474.35" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="386" y="479.35" class="small">A</text>
+<circle cx="393" cy="446.3" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="386" y="451.3" class="small">H</text>
+<circle cx="478" cy="431" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="471" y="436" class="small">T</text>
+<circle cx="291" cy="346" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="284" y="351" class="small">Q1</text>
+<circle cx="529" cy="312" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="522" y="317" class="small">Q2</text>
+<circle cx="240" cy="444.6" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="233" y="449.6" class="small">P</text>
+<circle cx="427" cy="242.3" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="420" y="247.3" class="small">D</text>
+<text x="40" y="475" class="note">A: aparición segura; D: puerta S02</text>
+<text x="40" y="495" class="note">H: N1A/N1C · teléfono único</text>
+<text x="40" y="515" class="note">T: altar compartido · cuota 3</text>
+<text x="40" y="535" class="note">Q1/Q2: aceptar y devolver</text>
+<text x="40" y="555" class="note">P: pueblo; mapa al sur del acceso</text>
+</g>
+<g id="N01S02"><rect x="810" y="60" width="770" height="530" rx="12" fill="#223541"/><text x="830" y="92" class="title">S02 · Cantera · desplazamiento y salto</text>
+<rect id="Arrival_shelf" x="1013.0" y="417.4" width="102" height="98.6" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Arrival_shelf · cota 0.00 m</title></rect>
+<rect id="Lateral_approach" x="1115.0" y="414.0" width="74.80000000000001" height="51" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Lateral_approach · cota 0.00 m</title></rect>
+<rect id="Safe_jump_base" x="1191.5" y="371.5" width="85" height="85" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Safe_jump_base · cota -0.35 m</title></rect>
+<rect id="First_terrace" x="1208.5" y="380.0" width="51" height="68" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>First_terrace · cota 0.65 m</title></rect>
+<rect id="Second_terrace" x="1251.0" y="337.5" width="68" height="51" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Second_terrace · cota 1.30 m</title></rect>
+<rect id="Third_terrace" x="1268.0" y="278.0" width="68" height="51" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Third_terrace · cota 1.95 m</title></rect>
+<rect id="High_arrival" x="1268.0" y="193.0" width="119" height="85" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>High_arrival · cota 2.20 m</title></rect>
+<rect id="Back_mass" x="1259.5" y="176.0" width="136" height="17" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Back_mass · cota 5.00 m</title></rect>
+<polyline points="1064,468.4 1098,439.5 1177.9,439.5 1234,414 1285,363 1302,306.9 1319,261 1336,210" fill="none" stroke="#b5ffe0" stroke-width="4" stroke-dasharray="7 5"/>
+<circle cx="1064" cy="468.4" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="1057" y="473.4" class="small">A</text>
+<circle cx="1285" cy="363" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="1278" y="368" class="small">O</text>
+<circle cx="1336" cy="210" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="1329" y="215" class="small">D</text>
+<text x="830" y="475" class="note">O: EXP.N01S02.0 · fuente fija</text>
+<text x="830" y="495" class="note">Cotas: 0 / 0,65 / 1,30 / 1,95 / 2,20</text>
+<text x="830" y="515" class="note">Saltos y profundidad alternados</text>
+<text x="830" y="535" class="note">Caída: retorno a A, daño 2</text>
+</g>
+<g id="N01S03"><rect x="20" y="610" width="770" height="530" rx="12" fill="#223541"/><text x="40" y="642" class="title">S03 · Taller · pico, combate y ramal</text>
+<rect id="Arrival_lane" x="469.5" y="984.4" width="85" height="102" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Arrival_lane · cota 0.00 m</title></rect>
+<rect id="Combat_fan" x="308.0" y="872.2" width="272" height="136" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Combat_fan · cota 0.00 m</title></rect>
+<rect id="Optional_work_bay" x="265.5" y="777.0" width="119" height="136" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Optional_work_bay · cota 0.00 m</title></rect>
+<rect id="Exit_neck" x="282.5" y="724.3" width="51" height="61.2" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Exit_neck · cota 0.00 m</title></rect>
+<rect id="Ore_mass" x="399.8" y="802.5" width="68" height="68" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Ore_mass · cota 3.80 m</title></rect>
+<rect id="Neck_left" x="248.5" y="717.5" width="34" height="68" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Neck_left · cota 3.60 m</title></rect>
+<rect id="Neck_right" x="333.5" y="717.5" width="34" height="68" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Neck_right · cota 3.60 m</title></rect>
+<rect id="Crate body" x="273.83000000000004" y="851.63" width="13.94" height="13.94" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Crate body · cota 0.84 m</title></rect>
+<rect id="Crate body" x="522.03" y="985.93" width="13.94" height="13.94" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Crate body · cota 0.84 m</title></rect>
+<polyline points="512,1043.9 427,930 546,902.8 325,879 325,794 308,736.2" fill="none" stroke="#b5ffe0" stroke-width="4" stroke-dasharray="7 5"/>
+<circle cx="512" cy="1043.9" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="505" y="1048.9" class="small">A</text>
+<circle cx="427" cy="930" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="420" y="935" class="small">E1</text>
+<circle cx="325" cy="879" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="318" y="884" class="small">E2</text>
+<circle cx="325" cy="794" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="318" y="799" class="small">E3</text>
+<circle cx="546" cy="902.8" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="539" y="907.8" class="small">O</text>
+<circle cx="308" cy="777" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="301" y="782" class="small">R</text>
+<circle cx="308" cy="736.2" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="301" y="741.2" class="small">D</text>
+<text x="40" y="1025" class="note">N1B entrega pico antes de agresión</text>
+<text x="40" y="1045" class="note">E1: resistencia y ofrenda garantizada</text>
+<text x="40" y="1065" class="note">E2/E3: ramal opcional para Q01</text>
+<text x="40" y="1085" class="note">O: EXP.N01S03.0; R: roca con X</text>
+<text x="40" y="1105" class="note">D: salida a S04 tras cuello minero</text>
+</g>
+<g id="N01S04"><rect x="810" y="610" width="770" height="530" rx="12" fill="#223541"/><text x="830" y="642" class="title">S04 · Garganta · mecanismo y combinación</text>
+<rect id="South_bank" x="1149.0" y="930.0" width="204" height="136" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>South_bank · cota 0.00 m</title></rect>
+<rect id="North_bank" x="1115.0" y="760.0" width="238" height="85" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>North_bank · cota 0.00 m</title></rect>
+<rect id="West_turn" x="1081.0" y="794.0" width="68" height="51" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>West_turn · cota 0.00 m</title></rect>
+<rect id="Final_step_1" x="1098.0" y="811.0" width="68" height="34" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Final_step_1 · cota 0.60 m</title></rect>
+<rect id="Final_step_2" x="1098.0" y="777.0" width="68" height="34" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Final_step_2 · cota 1.20 m</title></rect>
+<rect id="Investigation_ledge" x="1081.0" y="743.0" width="102" height="34" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Investigation_ledge · cota 1.80 m</title></rect>
+<rect id="Helmet_recess" x="1319.0" y="760.0" width="34" height="68" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Helmet_recess · cota 0.00 m</title></rect>
+<rect id="Derrumbe" x="1064.0" y="723.45" width="136" height="18.700000000000003" fill="#4b5561" stroke="#ddd" stroke-width="1"><title>Derrumbe · cota 4.70 m</title></rect>
+<rect id="Puente" x="1208.5" y="843.3" width="51" height="88.4" fill="#c8a24d"/>
+<polyline points="1285,1028.6 1268,967.4 1234,943.6 1234,828 1177.9,828 1132,828 1132,794 1132,760" fill="none" stroke="#b5ffe0" stroke-width="4" stroke-dasharray="7 5"/>
+<circle cx="1285" cy="1028.6" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="1278" y="1033.6" class="small">A</text>
+<circle cx="1268" cy="950.4" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="1261" y="955.4" class="small">L</text>
+<circle cx="1336" cy="794" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="1329" y="799" class="small">Q2</text>
+<circle cx="1132" cy="760" r="11" fill="#163d51" stroke="#ffe2a0"/><text x="1125" y="765" class="small">F</text>
+<text x="830" y="1025" class="note">L: palanca E · N1E.02</text>
+<text x="830" y="1045" class="note">Puente: N01.S04.BRIDGE_OPEN</text>
+<text x="830" y="1065" class="note">Q2: casco opcional a derecha</text>
+<text x="830" y="1085" class="note">F: N1D · investigación tras subir</text>
+<text x="830" y="1105" class="note">T teléfono: volver a S01 sin aportar</text>
+</g>
+<text x="35" y="1190" class="note">Ruta: M01_MAPA → S01 ↔ S02 ↔ S03 ↔ S04. Línea verde: recorrido comprobado; puertas internas bidireccionales.</text>
+<text x="35" y="1215" class="note">Geometría importada del manifiesto final. A: aparición; D: salida. N2 solo se desbloquea; su recorrido queda fuera de esta entrega.</text></svg>

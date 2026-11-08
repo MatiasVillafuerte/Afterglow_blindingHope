@@ -1,0 +1,89 @@
+{
+    "schema": 2,
+    "scene": "Assets/Afterglow/Scenes/M01/M01_ACCESO.unity",
+    "position": {
+        "x": 6.0,
+        "y": 0.040000010281801227,
+        "z": 0.0
+    },
+    "facing": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "progress": {
+        "teamLevel": 1,
+        "experience": 0,
+        "historicGems": 0,
+        "money": 37,
+        "activeMember": 0,
+        "contributions": [
+            3,
+            0,
+            0,
+            0,
+            0
+        ],
+        "investigated": [
+            true,
+            false,
+            false,
+            false,
+            false
+        ],
+        "opened": [
+            true,
+            false,
+            false,
+            false,
+            false
+        ],
+        "phoneOwned": false,
+        "escortActive": false,
+        "worldClosed": false,
+        "fraudDiscovered": false,
+        "offerings": [],
+        "collectedStaticIds": [],
+        "members": [
+            {
+                "id": "BOLIVIANITA",
+                "unlocked": true,
+                "health": 7,
+                "maxHealth": 10,
+                "gems": 0
+            },
+            {
+                "id": "HIJO",
+                "unlocked": false,
+                "health": 14,
+                "maxHealth": 14,
+                "gems": 0
+            }
+        ],
+        "currentLevel": 1,
+        "lastMapNode": 2,
+        "pickaxeOwned": false,
+        "expeditionActive": false,
+        "expeditionAttempt": 0,
+        "events": [
+            "P01.LETTER",
+            "P01.BELL",
+            "P02.CAPTAIN",
+            "M01.WORLD_STARTED"
+        ],
+        "rooms": [
+            {
+                "id": "M01_ACCESO",
+                "enemies": [],
+                "loot": []
+            }
+        ],
+        "quests": [],
+        "questItems": [],
+        "hintsRead": [],
+        "fragments": 0,
+        "restorers": 0,
+        "preparation": "",
+        "preparationRemaining": 0.0
+    }
+}

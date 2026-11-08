@@ -1,0 +1,84 @@
+[
+  {
+    "room": "N01S01",
+    "pass": true,
+    "triangles": 13314,
+    "meshes": [
+      "Export_Crystal",
+      "Export_DarkOak",
+      "Export_Deep",
+      "Export_Dust",
+      "Export_Iron",
+      "Export_Lamp",
+      "Export_Oak",
+      "Export_Path",
+      "Export_Slate",
+      "Export_SlateLight",
+      "Export_Tunnel"
+    ],
+    "requiredParts": []
+  },
+  {
+    "room": "N01S02",
+    "pass": true,
+    "triangles": 9272,
+    "meshes": [
+      "Export_DarkOak",
+      "Export_Deep",
+      "Export_Dust",
+      "Export_Iron",
+      "Export_Lamp",
+      "Export_Oak",
+      "Export_Path",
+      "Export_Slate",
+      "Export_SlateLight",
+      "Export_Tunnel"
+    ],
+    "requiredParts": []
+  },
+  {
+    "room": "N01S03",
+    "pass": true,
+    "triangles": 12984,
+    "meshes": [
+      "Export_BreakableBoulder",
+      "Export_Crystal",
+      "Export_DarkOak",
+      "Export_Deep",
+      "Export_Dust",
+      "Export_Iron",
+      "Export_Lamp",
+      "Export_Oak",
+      "Export_Path",
+      "Export_Slate",
+      "Export_SlateLight",
+      "Export_Trim",
+      "Export_Tunnel"
+    ],
+    "requiredParts": [
+      "Export_BreakableBoulder"
+    ]
+  },
+  {
+    "room": "N01S04",
+    "pass": true,
+    "triangles": 8590,
+    "meshes": [
+      "Export_BridgeDeck",
+      "Export_Counterweight",
+      "Export_Deep",
+      "Export_Dust",
+      "Export_Iron",
+      "Export_Lamp",
+      "Export_LeverArm",
+      "Export_Oak",
+      "Export_Slate",
+      "Export_SlateLight"
+    ],
+    "requiredParts": [
+      "Export_BridgeDeck",
+      "Export_LeverArm",
+      "Export_Counterweight"
+    ]
+  }
+]

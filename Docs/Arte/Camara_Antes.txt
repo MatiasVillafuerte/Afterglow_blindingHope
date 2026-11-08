@@ -1,0 +1,9 @@
+Stage: Antes
+Player: (20.00000, 0.04000, 0.00000)
+Camera position: (21.50000, 3.10000, -14.00000)
+Camera rotation: (5.00000, 0.00000, 0.00000)
+FOV: 32
+Offset: (0.00, 3.10, -14.00)
+Limits: 7, 37
+Anticipation: 1,5
+Smoothing: 0,25

@@ -1,0 +1,112 @@
+{
+    "schema": 5,
+    "scene": "Assets/Afterglow/Scenes/M01/N01S04.unity",
+    "position": {
+        "x": 4.0484185218811039,
+        "y": 0.03999989107251167,
+        "z": -2.3743064403533937
+    },
+    "facing": {
+        "x": -0.2676447331905365,
+        "y": 0.0,
+        "z": 0.9635176658630371
+    },
+    "progress": {
+        "teamLevel": 1,
+        "experience": 0,
+        "historicGems": 0,
+        "money": 19,
+        "activeMember": 0,
+        "contributions": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "investigated": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "opened": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "phoneOwned": true,
+        "escortActive": false,
+        "worldClosed": false,
+        "fraudDiscovered": false,
+        "offerings": [
+            {
+                "kind": "Coca",
+                "sourceId": "FIXTURE.OFFERING",
+                "stolen": false
+            }
+        ],
+        "collectedStaticIds": [
+            "FIXTURE.OFFERING"
+        ],
+        "members": [
+            {
+                "id": "BOLIVIANITA",
+                "unlocked": true,
+                "health": 10,
+                "maxHealth": 10,
+                "gems": 0
+            },
+            {
+                "id": "HIJO",
+                "unlocked": false,
+                "health": 14,
+                "maxHealth": 14,
+                "gems": 0
+            }
+        ],
+        "currentLevel": 1,
+        "lastMapNode": 1,
+        "pickaxeOwned": true,
+        "expeditionActive": true,
+        "expeditionAttempt": 1,
+        "events": [
+            "P01.LETTER",
+            "P01.BELL",
+            "P02.CAPTAIN",
+            "M01.WORLD_STARTED",
+            "M01.N01_ENTERED",
+            "N1A.INTRO",
+            "N1C.PHONE",
+            "N1B.PICKAXE",
+            "N1B.LOOT",
+            "N1E.BRIDGE_HINT",
+            "N01.S03.ROCA_ROTA"
+        ],
+        "rooms": [
+            {
+                "id": "N01S04",
+                "enemies": [],
+                "loot": []
+            }
+        ],
+        "quests": [
+            {
+                "id": "Q02",
+                "active": false,
+                "paid": true,
+                "count": 0,
+                "attempt": 0
+            }
+        ],
+        "questItems": [],
+        "hintsRead": [],
+        "fragments": 0,
+        "restorers": 0,
+        "preparation": "",
+        "preparationRemaining": 0.0
+    }
+}

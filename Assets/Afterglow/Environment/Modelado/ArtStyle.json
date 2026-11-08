@@ -1,0 +1,247 @@
+{
+  "materials": [
+    {
+      "name": "Ivory",
+      "color": [
+        0.91,
+        0.83,
+        0.64
+      ],
+      "family": "Plaster"
+    },
+    {
+      "name": "Plaster",
+      "color": [
+        0.69,
+        0.54,
+        0.37
+      ],
+      "family": "Plaster"
+    },
+    {
+      "name": "Trim",
+      "color": [
+        0.84,
+        0.59,
+        0.25
+      ],
+      "family": "Plaster"
+    },
+    {
+      "name": "Clay",
+      "color": [
+        0.61,
+        0.25,
+        0.13
+      ],
+      "family": "Plaster"
+    },
+    {
+      "name": "ClayLight",
+      "color": [
+        0.74,
+        0.34,
+        0.19
+      ],
+      "family": "Plaster"
+    },
+    {
+      "name": "DarkOak",
+      "color": [
+        0.31,
+        0.14,
+        0.066
+      ],
+      "family": "Wood"
+    },
+    {
+      "name": "Oak",
+      "color": [
+        0.48,
+        0.25,
+        0.105
+      ],
+      "family": "Wood"
+    },
+    {
+      "name": "Velvet",
+      "color": [
+        0.43,
+        0.22,
+        0.46
+      ],
+      "family": "Rug"
+    },
+    {
+      "name": "Linen",
+      "color": [
+        0.96,
+        0.86,
+        0.66
+      ],
+      "family": "Fabric"
+    },
+    {
+      "name": "Glass",
+      "color": [
+        0.22,
+        0.46,
+        0.51
+      ],
+      "family": ""
+    },
+    {
+      "name": "Water",
+      "color": [
+        0.22,
+        0.61,
+        0.64
+      ],
+      "family": ""
+    },
+    {
+      "name": "Iron",
+      "color": [
+        0.12,
+        0.16,
+        0.15
+      ],
+      "family": ""
+    },
+    {
+      "name": "Path",
+      "color": [
+        0.62,
+        0.48,
+        0.32
+      ],
+      "family": "Stone"
+    },
+    {
+      "name": "Paver",
+      "color": [
+        0.72,
+        0.58,
+        0.4
+      ],
+      "family": "Stone"
+    },
+    {
+      "name": "Grass",
+      "color": [
+        0.36,
+        0.49,
+        0.2
+      ],
+      "family": "Grass"
+    },
+    {
+      "name": "Leaf",
+      "color": [
+        0.2,
+        0.37,
+        0.15
+      ],
+      "family": "Grass"
+    },
+    {
+      "name": "LeafLight",
+      "color": [
+        0.42,
+        0.57,
+        0.22
+      ],
+      "family": "Grass"
+    },
+    {
+      "name": "Rose",
+      "color": [
+        0.76,
+        0.32,
+        0.49
+      ],
+      "family": ""
+    },
+    {
+      "name": "Lamp",
+      "color": [
+        1,
+        0.74,
+        0.32
+      ],
+      "family": ""
+    },
+    {
+      "name": "Earth",
+      "color": [
+        0.34,
+        0.24,
+        0.15
+      ],
+      "family": "Stone"
+    },
+    {
+      "name": "Dust",
+      "color": [
+        0.54,
+        0.4,
+        0.27
+      ],
+      "family": "Stone"
+    },
+    {
+      "name": "Slate",
+      "color": [
+        0.54,
+        0.38,
+        0.29
+      ],
+      "family": "Stone"
+    },
+    {
+      "name": "SlateLight",
+      "color": [
+        0.7,
+        0.51,
+        0.34
+      ],
+      "family": "Stone"
+    },
+    {
+      "name": "Deep",
+      "color": [
+        0.35,
+        0.27,
+        0.32
+      ],
+      "family": "Stone"
+    },
+    {
+      "name": "Crystal",
+      "color": [
+        0.61,
+        0.32,
+        0.71
+      ],
+      "family": ""
+    },
+    {
+      "name": "Tunnel",
+      "color": [
+        0.035,
+        0.042,
+        0.055
+      ],
+      "family": ""
+    },
+    {
+      "name": "Canvas",
+      "color": [
+        0.38,
+        0.44,
+        0.24
+      ],
+      "family": "Fabric"
+    }
+  ]
+}

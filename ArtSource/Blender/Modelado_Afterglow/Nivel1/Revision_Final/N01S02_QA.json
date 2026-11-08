@@ -1,0 +1,619 @@
+[
+  {
+    "object": "Back_mass",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Back_mass: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Return_marker",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Return_marker: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Return_marker.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Return_marker.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Recess.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Recess.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=2.2 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Load bearing jamb.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Load bearing jamb.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=2.2 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Iron collar.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Iron collar.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.64 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Dressed footing.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Dressed footing.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=2.2 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Knee brace.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Knee brace.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.1602 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Load bearing jamb.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Load bearing jamb.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=2.2 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Iron collar.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Iron collar.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.64 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Dressed footing.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Dressed footing.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=2.2 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Knee brace.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Knee brace.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.1602 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine lintel.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine lintel.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.89 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Threshold.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Threshold.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=2.2005 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern cap.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern cap.001: ~61.18% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Lantern cap.001: 2 n-gons",
+      "asset lowest point z=4.54 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Warm glass.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Warm glass.001: ~96.38% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Warm glass.001: 2 n-gons",
+      "asset lowest point z=4.08 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern foot.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern foot.001: ~91.86% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Lantern foot.001: 2 n-gons",
+      "asset lowest point z=4.01 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.004",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.004: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.06 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.005: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.06 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.006",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.006: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.06 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.007",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.007: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.06 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrain_mass_0",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrain_mass_0: 7 n-gons",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrain_mass_1",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrain_mass_1: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Terrain_mass_1: 4 n-gons",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrain_mass_2",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrain_mass_2: 3 n-gons",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.012",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.012: ~94.34% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.012: 4 n-gons",
+      "asset lowest point z=-2.5123 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.013",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.013: ~96.47% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.013: 4 n-gons",
+      "asset lowest point z=-3.0151 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.014",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.014: ~79.59% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.014: 2 n-gons",
+      "asset lowest point z=-2.9718 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.015",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.015: ~90.19% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.015: 8 n-gons",
+      "asset lowest point z=-2.5834 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.016",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.016: ~89.61% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.016: 2 n-gons",
+      "asset lowest point z=-2.9538 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.017",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.017: ~99.73% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.017: 2 n-gons",
+      "asset lowest point z=-3.3368 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.018",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.018: ~91.64% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.018: 2 n-gons",
+      "asset lowest point z=-2.4632 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.019",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.019: ~55.34% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.019: 8 n-gons",
+      "asset lowest point z=-2.9932 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.020",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.020: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.020: 4 n-gons",
+      "asset lowest point z=-3.3309 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.021",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.021: ~60.26% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.021: 8 n-gons",
+      "asset lowest point z=-2.2492 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.022",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.022: ~59.29% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.022: 4 n-gons",
+      "asset lowest point z=-2.9584 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cavern_backdrop.023",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cavern_backdrop.023: ~94.27% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cavern_backdrop.023: 4 n-gons",
+      "asset lowest point z=-3.4032 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Stratum_Back_mass",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Stratum_Back_mass: ~90.01% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Stratum_Back_mass: 6 n-gons",
+      "asset lowest point z=-0.292 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Stratum_Back_mass.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Stratum_Back_mass.001: ~83.33% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Stratum_Back_mass.001: 8 n-gons",
+      "asset lowest point z=-0.3024 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Stratum_Back_mass.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Stratum_Back_mass.002: ~90.67% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Stratum_Back_mass.002: 6 n-gons",
+      "asset lowest point z=-0.3301 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Stratum_Back_mass.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Stratum_Back_mass.003: ~93.32% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Stratum_Back_mass.003: 4 n-gons",
+      "asset lowest point z=-0.339 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lamp_post.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lamp_post.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Lantern cap.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern cap.005: ~61.18% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Lantern cap.005: 2 n-gons",
+      "asset lowest point z=4.84 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Warm glass.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Warm glass.005: ~96.38% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Warm glass.005: 2 n-gons",
+      "asset lowest point z=4.38 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern foot.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern foot.005: ~91.86% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Lantern foot.005: 2 n-gons",
+      "asset lowest point z=4.31 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.020",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.020: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.36 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.021",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.021: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.36 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.022",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.022: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.36 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.023",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.023: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.36 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_front_trim",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_front_trim: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.365 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_timber",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_timber: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_timber.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_timber.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_front_trim.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_front_trim.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.015 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_timber.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_timber.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_timber.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_timber.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_front_trim.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_front_trim.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.665 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_timber.004",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_timber.004: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_timber.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_timber.005: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_front_trim.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_front_trim.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.915 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_timber.006",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_timber.006: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrace_timber.007",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrace_timber.007: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Rail head.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Rail head.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.05 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Rail head.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Rail head.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.05 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Sleeper.011",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.011: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Sleeper.012",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.012: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Sleeper.013",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.013: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Sleeper.014",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.014: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Sleeper.015",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.015: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  }
+]

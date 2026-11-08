@@ -1,0 +1,57 @@
+{
+  "uso": "Referencia de datos, no implementación ni esquema obligatorio del motor",
+  "nodos": [
+    {
+      "id": "M01N01",
+      "nombre": "Entrada de la mina",
+      "predecesor": null,
+      "cuota_para_siguiente": 3,
+      "entrada": "resolver_desde_escena_real",
+      "requiere_prologo_completado": true
+    },
+    {
+      "id": "M01N02",
+      "nombre": "Rieles cruzados",
+      "predecesor": "M01N01",
+      "cuota_para_siguiente": 5,
+      "entrada": "resolver_desde_escena_real",
+      "requiere_prologo_completado": true
+    },
+    {
+      "id": "M01N03",
+      "nombre": "Galerías de las señales",
+      "predecesor": "M01N02",
+      "cuota_para_siguiente": 7,
+      "entrada": "resolver_desde_escena_real",
+      "requiere_prologo_completado": true
+    },
+    {
+      "id": "M01N04",
+      "nombre": "La vía suspendida",
+      "predecesor": "M01N03",
+      "cuota_para_siguiente": 9,
+      "entrada": "resolver_desde_escena_real",
+      "requiere_prologo_completado": true
+    },
+    {
+      "id": "M01N05",
+      "nombre": "Galería sin luz",
+      "predecesor": "M01N04",
+      "cuota_para_siguiente": 12,
+      "entrada": "resolver_desde_escena_real",
+      "requiere_prologo_completado": true
+    },
+    {
+      "id": "M01N06",
+      "nombre": "Cámara del derrumbe",
+      "predecesor": "M01N05",
+      "cuota_para_siguiente": null,
+      "entrada": "resolver_desde_escena_real",
+      "requiere_prologo_completado": true
+    }
+  ],
+  "regla_apertura": "N1 tras prólogo; N(i+1) exige investigación de Ni y crédito de su cuota",
+  "acceso": "M01_ACCESO",
+  "mapa_desde_pausa_en_galeria": false,
+  "puertas_internas": "físicas y con estado persistente"
+}

@@ -1,0 +1,211 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope"
+    },
+    "server": {
+      "version": "0.0.1",
+      "port": 7800
+    },
+    "commands": [],
+    "count": 0,
+    "total": 0,
+    "offset": 0,
+    "limit": null,
+    "hint": "Ningún comando de Pipeline coincide con «^editor.playmode|^editor set_auto_tick|^script run|^console status». Para buscar comandos y plugins de la CLI, ejecuta unity commands --grep <pattern>.",
+    "search": {
+      "pattern": "^editor.playmode|^editor set_auto_tick|^script run|^console status",
+      "count": 8,
+      "matches": [
+        {
+          "kind": "pipeline",
+          "name": "console status",
+          "path": "console status",
+          "description": "Console ground truth and buffer counters without pulling entries: compile-failure flag, Editor console counts, and the buffer's retained counts and cursor.",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command console status --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor set_auto_tick",
+          "path": "editor set_auto_tick",
+          "description": "Keep the editor ticking while unfocused by forcing EditorApplication.SignalTick at a throttled rate",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor set_auto_tick --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode list_instances",
+          "path": "editor.playmode list_instances",
+          "description": "List running Editor instances reachable over Pipeline (this Editor + its MPPM virtual player clones). Connect to one with 'unity command --project-path <its projectPath>'.",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode list_instances --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode pause",
+          "path": "editor.playmode pause",
+          "description": "Toggle pause state of Unity Editor play mode",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode pause --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode set_run_in_background",
+          "path": "editor.playmode set_run_in_background",
+          "description": "Override the project's Run In Background Player Setting, recording enough state to restore it later and to keep it out of builds",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode set_run_in_background --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode start",
+          "path": "editor.playmode start",
+          "description": "Enter Unity Editor play mode",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode start --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode stop",
+          "path": "editor.playmode stop",
+          "description": "Exit Unity Editor play mode",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode stop --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "script run",
+          "path": "script run",
+          "description": "Compile a project C# file in memory (no domain reload) and execute a named static entry point. The builder-pattern path for bulk construction. Still arbitrary code execution — shares script eval's capability gate.",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command script run --project-path ."
+        }
+      ],
+      "hint": "",
+      "items": [
+        {
+          "kind": "pipeline",
+          "name": "console status",
+          "path": "console status",
+          "description": "Console ground truth and buffer counters without pulling entries: compile-failure flag, Editor console counts, and the buffer's retained counts and cursor.",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command console status --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor set_auto_tick",
+          "path": "editor set_auto_tick",
+          "description": "Keep the editor ticking while unfocused by forcing EditorApplication.SignalTick at a throttled rate",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor set_auto_tick --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode list_instances",
+          "path": "editor.playmode list_instances",
+          "description": "List running Editor instances reachable over Pipeline (this Editor + its MPPM virtual player clones). Connect to one with 'unity command --project-path <its projectPath>'.",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode list_instances --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode pause",
+          "path": "editor.playmode pause",
+          "description": "Toggle pause state of Unity Editor play mode",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode pause --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode set_run_in_background",
+          "path": "editor.playmode set_run_in_background",
+          "description": "Override the project's Run In Background Player Setting, recording enough state to restore it later and to keep it out of builds",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode set_run_in_background --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode start",
+          "path": "editor.playmode start",
+          "description": "Enter Unity Editor play mode",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode start --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "editor.playmode stop",
+          "path": "editor.playmode stop",
+          "description": "Exit Unity Editor play mode",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command editor.playmode stop --project-path ."
+        },
+        {
+          "kind": "pipeline",
+          "name": "script run",
+          "path": "script run",
+          "description": "Compile a project C# file in memory (no domain reload) and execute a named static entry point. The builder-pattern path for bulk construction. Still arbitrary code execution — shares script eval's capability gate.",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command script run --project-path ."
+        }
+      ],
+      "total": 8,
+      "nextPage": null,
+      "partial": false
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

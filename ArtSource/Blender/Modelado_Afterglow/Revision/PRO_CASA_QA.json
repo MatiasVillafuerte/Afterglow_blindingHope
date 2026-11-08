@@ -1,0 +1,1787 @@
+[
+  {
+    "object": "Parquet substrate",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet substrate: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-0.4 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Parquet board",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.004",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.004: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.005: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.006",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.006: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.007",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.007: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.008",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.008: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.009",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.009: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.010",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.010: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.011",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.011: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.012",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.012: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.013",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.013: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.014",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.014: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.015",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.015: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.016",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.016: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.017",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.017: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.018",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.018: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.019",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.019: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.020",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.020: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.021",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.021: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.022",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.022: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.023",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.023: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.024",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.024: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.025",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.025: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.026",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.026: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.027",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.027: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.028",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.028: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.029",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.029: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.030",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.030: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.031",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.031: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.032",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.032: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.033",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.033: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.034",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.034: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.035",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.035: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.036",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.036: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.037",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.037: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.038",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.038: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.039",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.039: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.040",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.040: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.041",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.041: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.042",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.042: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.043",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.043: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.044",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.044: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.045",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.045: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.046",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.046: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.047",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.047: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.048",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.048: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.049",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.049: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.050",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.050: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.051",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.051: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.052",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.052: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.053",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.053: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.054",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.054: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.055",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.055: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.056",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.056: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.057",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.057: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.058",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.058: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.059",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.059: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.060",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.060: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.061",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.061: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.062",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.062: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.063",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.063: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.064",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.064: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.065",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.065: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.066",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.066: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.067",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.067: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.068",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.068: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.069",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.069: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.070",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.070: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.071",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.071: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.072",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.072: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.073",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.073: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.074",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.074: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.075",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.075: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.076",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.076: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.077",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.077: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.078",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.078: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.079",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.079: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.080",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.080: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.081",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.081: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.082",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.082: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Parquet board.083",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Parquet board.083: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Wallpaper",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.004",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.004: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.005: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.006",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.006: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.007",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.007: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.008",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.008: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.009",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.009: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.010",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.010: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.011",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.011: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.012",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.012: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.013",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.013: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.014",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.014: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.015",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.015: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.016",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.016: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.017",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.017: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.018",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.018: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.019",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.019: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.020",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.020: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.021",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.021: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.022",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.022: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.023",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.023: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.024",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.024: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.025",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.025: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.026",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.026: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.027",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.027: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.028",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.028: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.029",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.029: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.030",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.030: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.031",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.031: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.032",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.032: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.033",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.033: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wallpaper stripe.034",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wallpaper stripe.034: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.12 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wood wainscot trim",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wood wainscot trim: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.075 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wood wainscot trim.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wood wainscot trim.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.075 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wood wainscot trim.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wood wainscot trim.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=5.635 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Rug border",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Rug border: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.0255 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Violet woven rug",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Violet woven rug: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.0515 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Woven diamond",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Woven diamond: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.083 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Woven diamond.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Woven diamond.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.083 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Woven diamond.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Woven diamond.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.083 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Woven diamond.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Woven diamond.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.083 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Bed base",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Bed base: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.225 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Folded coverlet",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Folded coverlet: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.855 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Coverlet hem",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Coverlet hem: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.0725 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Carved headboard",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Carved headboard: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.475 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Headboard inset",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Headboard inset: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.025 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Turned bed post",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Turned bed post: ~98.13% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Turned bed post: 2 n-gons",
+      "asset lowest point z=0.16 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Turned bed post.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Turned bed post.001: ~98.13% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Turned bed post.001: 2 n-gons",
+      "asset lowest point z=0.16 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Pillow",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Pillow: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.035 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Pillow.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Pillow.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.035 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Window recess",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Window recess: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.79 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Blue window",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Blue window: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.925 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Window frame",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Window frame: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.86 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Window frame.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Window frame.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.86 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Window frame.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Window frame.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.86 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Window crosspiece",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Window crosspiece: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.315 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.001: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.001: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.002: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.002: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.003: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.003: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.004",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.004: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.004: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.005: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.005: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.006",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.006: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.006: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.007",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.007: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.007: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.008",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.008: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.008: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.009",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.009: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.009: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.010",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.010: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.010: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.011",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.011: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.011: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.012",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.012: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.012: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.013",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.013: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.013: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.014",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.014: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.014: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Velvet drapery fold.015",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Velvet drapery fold.015: ~98.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Velvet drapery fold.015: 2 n-gons",
+      "asset lowest point z=1.69 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Curtain rod",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Curtain rod: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=5.32 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Writing desk top",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Writing desk top: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.925 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Folded letter",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Folded letter: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.115 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Writing desk drawers",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Writing desk drawers: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.675 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Turned desk leg",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Turned desk leg: ~95.1% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Turned desk leg: 2 n-gons"
+    ]
+  },
+  {
+    "object": "Turned desk leg.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Turned desk leg.001: ~95.1% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Turned desk leg.001: 2 n-gons"
+    ]
+  },
+  {
+    "object": "Turned desk leg.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Turned desk leg.002: ~95.1% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Turned desk leg.002: 2 n-gons"
+    ]
+  },
+  {
+    "object": "Turned desk leg.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Turned desk leg.003: ~95.1% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Turned desk leg.003: 2 n-gons"
+    ]
+  },
+  {
+    "object": "Family portrait frame",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Family portrait frame: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=2.84 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Portrait silhouette",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Portrait silhouette: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=2.97 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wardrobe body",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wardrobe body: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Wardrobe cornice",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wardrobe cornice: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.365 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wardrobe raised panel",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wardrobe raised panel: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.29 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Wardrobe raised panel.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Wardrobe raised panel.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.29 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Garden door",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Garden door: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Door moulding",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Door moulding: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=2.89 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Door jamb",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Door jamb: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-0.01 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Door jamb.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Door jamb.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-0.01 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern cap",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern cap: ~61.18% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Lantern cap: 2 n-gons",
+      "asset lowest point z=3.93 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Warm glass",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Warm glass: ~96.38% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Warm glass: 2 n-gons",
+      "asset lowest point z=3.47 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern foot",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern foot: ~91.86% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Lantern foot: 2 n-gons",
+      "asset lowest point z=3.4 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.45 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.45 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.45 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lantern mullion.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lantern mullion.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.45 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Bedside cabinet",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Bedside cabinet: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Bedside top",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Bedside top: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.11 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Bedside brass lamp",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Bedside brass lamp: ~85.06% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Bedside brass lamp: 2 n-gons",
+      "asset lowest point z=1.23 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Cream lampshade",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Cream lampshade: ~77.71% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Cream lampshade: 2 n-gons",
+      "asset lowest point z=1.77 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mineral display shelf",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mineral display shelf: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=4.33 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Inanimate mineral",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Inanimate mineral: ~99.5% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Inanimate mineral: 2 n-gons",
+      "asset lowest point z=4.47 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Inanimate mineral.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Inanimate mineral.001: ~99.5% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Inanimate mineral.001: 2 n-gons",
+      "asset lowest point z=4.47 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Inanimate mineral.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Inanimate mineral.002: ~99.5% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Inanimate mineral.002: 2 n-gons",
+      "asset lowest point z=4.47 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Shelf bracket",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Shelf bracket: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.9785 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Shelf bracket.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Shelf bracket.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.9785 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Classical pediment",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Classical pediment: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.56 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Pediment left cornice",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Pediment left cornice: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.5118 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Pediment right cornice",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Pediment right cornice: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=3.5118 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Headboard carved finial",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Headboard carved finial: ~93.41% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Headboard carved finial: 2 n-gons",
+      "asset lowest point z=2.8 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Headboard carved finial.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Headboard carved finial.001: ~93.41% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Headboard carved finial.001: 2 n-gons",
+      "asset lowest point z=2.8 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Bound book",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Bound book: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.135 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Bound book.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Bound book.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.095 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Bound book.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Bound book.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.135 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Bound book.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Bound book.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.095 (not resting on ground plane z=0)"
+    ]
+  }
+]

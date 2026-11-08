@@ -1,0 +1,122 @@
+[
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\M01_ACCESO.unity",
+    "unchanged": false
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\M01_Base.unity",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\M01_MENU.unity",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\M01_PUEBLO.unity",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\N01S02.unity",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\N01S03.unity",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\N01S04.unity",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\PRO_CASA.unity",
+    "unchanged": false
+  },
+  {
+    "path": "Assets\\Afterglow\\Scenes\\M01\\PRO_PATIO.unity",
+    "unchanged": false
+  },
+  {
+    "path": "Assets\\Afterglow\\Runtime\\AfterglowCamera.cs",
+    "unchanged": true
+  },
+  {
+    "path": "Packages\\manifest.json",
+    "unchanged": true
+  },
+  {
+    "path": "ProjectSettings\\ProjectVersion.txt",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Attack.anim",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Attack.anim.meta",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Falling.anim",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Falling.anim.meta",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Idle.anim",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Idle.anim.meta",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Jump.anim",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Jump.anim.meta",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Attack.anim",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Attack.anim.meta",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Controller.overrideController",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Controller.overrideController.meta",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Idle.anim",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\M01_Idle.anim.meta",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\PlayerAC.controller",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\PlayerAC.controller.meta",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Walk.anim",
+    "unchanged": true
+  },
+  {
+    "path": "Assets\\Afterglow\\Character\\Animations\\Walk.anim.meta",
+    "unchanged": true
+  }
+]

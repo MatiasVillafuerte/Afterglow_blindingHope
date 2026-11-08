@@ -1,0 +1,58 @@
+[
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Scenes\\M01\\N01S02.unity",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Runtime\\AfterglowCamera.cs",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Prefabs\\Player.prefab",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Packages\\manifest.json",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\ProjectSettings\\ProjectVersion.txt",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Settings\\PC_RPAsset.asset",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Settings\\PC_Renderer.asset",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Attack.anim",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Falling.anim",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Idle.anim",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Jump.anim",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\M01_Attack.anim",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\M01_Idle.anim",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Walk.anim",
+    "unchanged": true
+  }
+]

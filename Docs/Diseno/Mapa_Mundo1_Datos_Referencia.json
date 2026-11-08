@@ -1,0 +1,64 @@
+{
+  "uso": "Referencia de datos, no implementación ni esquema obligatorio del motor",
+  "nodos": [
+    {
+      "id": "M01N01",
+      "nombre": "Entrada de la mina",
+      "predecesor": null,
+      "cuota_para_siguiente": 3,
+      "entrada": "Assets/Afterglow/Scenes/M01/N01S01.unity",
+      "requiere_prologo_completado": true
+    },
+    {
+      "id": "M01N02",
+      "nombre": "Rieles cruzados",
+      "predecesor": "M01N01",
+      "cuota_para_siguiente": 5,
+      "entrada": null,
+      "requiere_prologo_completado": true,
+      "estado_escena": "Pendiente de producción del mundo uno"
+    },
+    {
+      "id": "M01N03",
+      "nombre": "Galerías de las señales",
+      "predecesor": "M01N02",
+      "cuota_para_siguiente": 7,
+      "entrada": null,
+      "requiere_prologo_completado": true,
+      "estado_escena": "Pendiente de producción del mundo uno"
+    },
+    {
+      "id": "M01N04",
+      "nombre": "Galería sin luz",
+      "predecesor": "M01N03",
+      "cuota_para_siguiente": 9,
+      "entrada": null,
+      "requiere_prologo_completado": true,
+      "estado_escena": "Pendiente de producción del mundo uno"
+    },
+    {
+      "id": "M01N05",
+      "nombre": "La vía suspendida",
+      "predecesor": "M01N04",
+      "cuota_para_siguiente": 12,
+      "entrada": null,
+      "requiere_prologo_completado": true,
+      "estado_escena": "Pendiente de producción del mundo uno"
+    },
+    {
+      "id": "M01N06",
+      "nombre": "Cámara del derrumbe",
+      "predecesor": "M01N05",
+      "cuota_para_siguiente": null,
+      "entrada": null,
+      "requiere_prologo_completado": true,
+      "estado_escena": "Pendiente de producción del mundo uno"
+    }
+  ],
+  "regla_apertura": "N1 tras prólogo; N(i+1) exige investigación de Ni y crédito de su cuota",
+  "acceso": "N01S01",
+  "mapa_desde_pausa_en_galeria": false,
+  "puertas_internas": "físicas y con estado persistente",
+  "version_diseno": "0.5",
+  "selector": "M01_MAPA"
+}

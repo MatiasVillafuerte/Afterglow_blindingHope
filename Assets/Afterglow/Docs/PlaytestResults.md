@@ -1,0 +1,31 @@
+# Live Play Mode verification
+
+- [x] Play loop advances — PASS frame=7202
+- [x] Right arrow — PASS 
+- [x] Left arrow — PASS 
+- [x] Up arrow depth — PASS 
+- [x] Down arrow depth — PASS 
+- [x] Normalized diagonal — PASS distance=1,518271
+- [x] No double jump — PASS 
+- [ ] Jump animation — FAIL 
+- [ ] Falling animation — FAIL 
+- [x] Lands and idles — PASS 
+- [x] Full route with single jumps — PASS x=95,00751 jumps=8 maxY=5,618037
+- [x] Camera keeps player visible — PASS 
+- [x] Holding X attacks only once — PASS health=2
+- [x] Second hit — PASS health=1
+- [x] Third hit defeats enemy — PASS 
+- [x] Exactly three EXP drops — PASS world + already collected = 3
+- [x] Collect three once — PASS EXP=3
+- [x] No repeated EXP — PASS 
+- [x] Out of range does no damage — PASS 
+- [x] Behind player does no damage — PASS 
+- [x] Different height does no damage — PASS 
+- [x] Enemy detects and pursues — PASS 
+- [x] Enemy leans and hits — PASS 
+- [x] Contact is not per-frame damage — PASS 
+- [x] One second invulnerability — PASS 
+- [x] Death resets complete state — PASS 
+- [x] Fall resets complete state — PASS 
+- [x] No duplicate camera or HUD — PASS 
+- [x] Verification complete — PASS 

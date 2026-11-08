@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "command": "console get",
+    "parameters": {
+      "level": "error",
+      "tail": "20"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 5,
+          "timestampUtc": "2026-11-03T03:58:52.3470083Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "NullReferenceException: Object reference not set to an instance of an object",
+          "stackTrace": "M01StoryChecks+<Start>d__6.MoveNext () (at Tools/M01/StoryChecks.cs:27)\nUnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <31995d14579b46ad8dd078d2fe61a81c>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 6,
+          "timestampUtc": "2026-11-03T04:07:57.2246032Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "NullReferenceException: Object reference not set to an instance of an object",
+          "stackTrace": "M01StoryChecks+<Start>d__6.MoveNext () (at Tools/M01/StoryChecks.cs:30)\nUnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <31995d14579b46ad8dd078d2fe61a81c>:0)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 6,
+      "session": "b59f9d127a3e439d9853979040f47ae2",
+      "returned": 2,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 2,
+        "warn": 0,
+        "log": 4
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-03T04:16:02.7741614Z",
+        "ageMs": 71,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 0,
+        "consoleLogs": 0,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

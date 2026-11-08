@@ -1,0 +1,26 @@
+# Pruebas de recursos M01
+
+- C11 99+2: PASS 
+- C11 multiple thresholds and historical son grant: PASS 
+- C14 sufficient legitimate preserves stolen: PASS 
+- C14 partial and rejection: PASS 
+- C14 remaining credit preserves stolen: PASS 
+- C15 quota alone cannot open: PASS 
+- C15 opens once after investigation: PASS 
+- C13 no second payment: PASS 
+- C15 reverse order: PASS 
+- C11 actual orb updates player and shared state: PASS 
+- C11 money remains separate: PASS 
+- C10 static pickup once: PASS 
+- C10 static pickup not duplicated: PASS 
+- C10 descriptive key inventory: PASS 
+- C16 requires confirmation: PASS 
+- C16 returns without losing resources or investigating: PASS 
+- C17 escort blocks phone: PASS 
+- C13 altar preview before payment: PASS 
+- C13 confirmed payment in scene: PASS 
+- C15 delayed unique announcement: PASS 
+- C14 rejection presentation has no damage: PASS 
+- C12 loot lifetime pauses: PASS 
+- C12 loot expires: PASS 
+- resource verification finished: PASS 

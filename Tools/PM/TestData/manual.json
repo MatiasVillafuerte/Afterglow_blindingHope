@@ -1,0 +1,92 @@
+{
+    "schema": 2,
+    "scene": "Assets/Afterglow/Scenes/M01/N01S02.unity",
+    "position": {
+        "x": 6.0,
+        "y": 0.03999989107251167,
+        "z": 0.0
+    },
+    "facing": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "progress": {
+        "teamLevel": 1,
+        "experience": 0,
+        "historicGems": 0,
+        "money": 37,
+        "activeMember": 0,
+        "contributions": [
+            3,
+            0,
+            0,
+            0,
+            0
+        ],
+        "investigated": [
+            true,
+            false,
+            false,
+            false,
+            false
+        ],
+        "opened": [
+            true,
+            false,
+            false,
+            false,
+            false
+        ],
+        "phoneOwned": true,
+        "escortActive": false,
+        "worldClosed": false,
+        "fraudDiscovered": false,
+        "offerings": [],
+        "collectedStaticIds": [],
+        "members": [
+            {
+                "id": "BOLIVIANITA",
+                "unlocked": true,
+                "health": 7,
+                "maxHealth": 10,
+                "gems": 0
+            },
+            {
+                "id": "HIJO",
+                "unlocked": false,
+                "health": 14,
+                "maxHealth": 14,
+                "gems": 0
+            }
+        ],
+        "currentLevel": 1,
+        "lastMapNode": 2,
+        "pickaxeOwned": true,
+        "expeditionActive": true,
+        "expeditionAttempt": 4,
+        "events": [
+            "P01.LETTER",
+            "P01.BELL",
+            "P02.CAPTAIN",
+            "M01.WORLD_STARTED",
+            "N1A.INTRO",
+            "N1C.PHONE",
+            "M01.N01_ENTERED"
+        ],
+        "rooms": [
+            {
+                "id": "N01S02",
+                "enemies": [],
+                "loot": []
+            }
+        ],
+        "quests": [],
+        "questItems": [],
+        "hintsRead": [],
+        "fragments": 0,
+        "restorers": 0,
+        "preparation": "",
+        "preparationRemaining": 0.0
+    }
+}

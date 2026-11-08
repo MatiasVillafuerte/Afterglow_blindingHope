@@ -1,0 +1,1542 @@
+[
+  {
+    "room": "N01S01",
+    "object": "Authored_terrain",
+    "triangles": 584
+  },
+  {
+    "room": "N01S01",
+    "object": "Back_left",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Back_right",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Load bearing jamb",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Dressed footing",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Load bearing jamb.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Dressed footing.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Stratum_Back_left",
+    "triangles": 244
+  },
+  {
+    "room": "N01S01",
+    "object": "Stratum_Back_left.001",
+    "triangles": 274
+  },
+  {
+    "room": "N01S01",
+    "object": "Stratum_Back_left.002",
+    "triangles": 250
+  },
+  {
+    "room": "N01S01",
+    "object": "Stratum_Back_right",
+    "triangles": 316
+  },
+  {
+    "room": "N01S01",
+    "object": "Stratum_Back_right.001",
+    "triangles": 276
+  },
+  {
+    "room": "N01S01",
+    "object": "Stratum_Back_right.002",
+    "triangles": 312
+  },
+  {
+    "room": "N01S01",
+    "object": "Recess",
+    "triangles": 188
+  },
+  {
+    "room": "N01S01",
+    "object": "Iron collar",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Knee brace",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Iron collar.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Knee brace.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Mine lintel",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Threshold",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern cap",
+    "triangles": 60
+  },
+  {
+    "room": "N01S01",
+    "object": "Warm glass",
+    "triangles": 28
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern foot",
+    "triangles": 28
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Altar_plinth",
+    "triangles": 116
+  },
+  {
+    "room": "N01S01",
+    "object": "Altar_emblem",
+    "triangles": 318
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop",
+    "triangles": 306
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.001",
+    "triangles": 268
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.002",
+    "triangles": 276
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.003",
+    "triangles": 268
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.004",
+    "triangles": 268
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.005",
+    "triangles": 268
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.006",
+    "triangles": 262
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.007",
+    "triangles": 262
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.008",
+    "triangles": 256
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.009",
+    "triangles": 258
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.010",
+    "triangles": 238
+  },
+  {
+    "room": "N01S01",
+    "object": "Cavern_backdrop.011",
+    "triangles": 238
+  },
+  {
+    "room": "N01S01",
+    "object": "Lamp_post",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern cap.003",
+    "triangles": 60
+  },
+  {
+    "room": "N01S01",
+    "object": "Warm glass.003",
+    "triangles": 28
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern foot.003",
+    "triangles": 28
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.012",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.013",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.014",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.015",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lamp_post.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern cap.004",
+    "triangles": 60
+  },
+  {
+    "room": "N01S01",
+    "object": "Warm glass.004",
+    "triangles": 28
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern foot.004",
+    "triangles": 28
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.016",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.017",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.018",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Lantern mullion.019",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Workbench_top",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Workbench_leg",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Workbench_leg.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_rack",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_handle",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_head",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_handle.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_head.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_handle.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_head.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Workbench_top.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Workbench_leg.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Workbench_leg.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_rack.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_handle.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_head.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_handle.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_head.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_handle.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Tool_head.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Rail head",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Rail head.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.006",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.007",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.008",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.009",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Sleeper.010",
+    "triangles": 108
+  },
+  {
+    "room": "N01S01",
+    "object": "Mineral_outcrop",
+    "triangles": 252
+  },
+  {
+    "room": "N01S01",
+    "object": "Mineral_outcrop.001",
+    "triangles": 296
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrain_mass_0",
+    "triangles": 66
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrain_mass_1",
+    "triangles": 28
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrain_mass_2",
+    "triangles": 26
+  },
+  {
+    "room": "N01S02",
+    "object": "Back_mass",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Load bearing jamb.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Dressed footing.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Load bearing jamb.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Dressed footing.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Stratum_Back_mass",
+    "triangles": 276
+  },
+  {
+    "room": "N01S02",
+    "object": "Stratum_Back_mass.001",
+    "triangles": 270
+  },
+  {
+    "room": "N01S02",
+    "object": "Stratum_Back_mass.002",
+    "triangles": 292
+  },
+  {
+    "room": "N01S02",
+    "object": "Stratum_Back_mass.003",
+    "triangles": 262
+  },
+  {
+    "room": "N01S02",
+    "object": "Return_marker",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Return_marker.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Recess.001",
+    "triangles": 188
+  },
+  {
+    "room": "N01S02",
+    "object": "Iron collar.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Knee brace.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Iron collar.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Knee brace.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Mine lintel.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Threshold.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern cap.001",
+    "triangles": 60
+  },
+  {
+    "room": "N01S02",
+    "object": "Warm glass.001",
+    "triangles": 28
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern foot.001",
+    "triangles": 28
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern mullion.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern mullion.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern mullion.006",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern mullion.007",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.012",
+    "triangles": 310
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.013",
+    "triangles": 258
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.014",
+    "triangles": 220
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.015",
+    "triangles": 298
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.016",
+    "triangles": 244
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.017",
+    "triangles": 244
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.018",
+    "triangles": 268
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.019",
+    "triangles": 270
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.020",
+    "triangles": 286
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.021",
+    "triangles": 266
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.022",
+    "triangles": 258
+  },
+  {
+    "room": "N01S02",
+    "object": "Cavern_backdrop.023",
+    "triangles": 282
+  },
+  {
+    "room": "N01S02",
+    "object": "Lamp_post.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern cap.005",
+    "triangles": 60
+  },
+  {
+    "room": "N01S02",
+    "object": "Warm glass.005",
+    "triangles": 28
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern foot.005",
+    "triangles": 28
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern mullion.020",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern mullion.021",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern mullion.022",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Lantern mullion.023",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_front_trim",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_timber",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_timber.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_front_trim.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_timber.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_timber.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_front_trim.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_timber.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_timber.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_front_trim.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_timber.006",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Terrace_timber.007",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Rail head.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Rail head.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Sleeper.011",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Sleeper.012",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Sleeper.013",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Sleeper.014",
+    "triangles": 108
+  },
+  {
+    "room": "N01S02",
+    "object": "Sleeper.015",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Authored_terrain.001",
+    "triangles": 468
+  },
+  {
+    "room": "N01S03",
+    "object": "Ore_mass",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Neck_left",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Neck_right",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Load bearing jamb.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Dressed footing.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Load bearing jamb.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Dressed footing.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Stratum_Ore_mass",
+    "triangles": 320
+  },
+  {
+    "room": "N01S03",
+    "object": "Stratum_Ore_mass.001",
+    "triangles": 238
+  },
+  {
+    "room": "N01S03",
+    "object": "BreakableBoulder",
+    "triangles": 384
+  },
+  {
+    "room": "N01S03",
+    "object": "Return_marker.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Return_marker.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Recess.002",
+    "triangles": 188
+  },
+  {
+    "room": "N01S03",
+    "object": "Iron collar.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Knee brace.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Iron collar.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Knee brace.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Mine lintel.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Threshold.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern cap.002",
+    "triangles": 60
+  },
+  {
+    "room": "N01S03",
+    "object": "Warm glass.002",
+    "triangles": 28
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern foot.002",
+    "triangles": 28
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.008",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.009",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.010",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.011",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.024",
+    "triangles": 270
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.025",
+    "triangles": 286
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.026",
+    "triangles": 286
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.027",
+    "triangles": 262
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.028",
+    "triangles": 276
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.029",
+    "triangles": 276
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.030",
+    "triangles": 244
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.031",
+    "triangles": 264
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.032",
+    "triangles": 258
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.033",
+    "triangles": 256
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.034",
+    "triangles": 296
+  },
+  {
+    "room": "N01S03",
+    "object": "Cavern_backdrop.035",
+    "triangles": 268
+  },
+  {
+    "room": "N01S03",
+    "object": "Lamp_post.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern cap.006",
+    "triangles": 60
+  },
+  {
+    "room": "N01S03",
+    "object": "Warm glass.006",
+    "triangles": 28
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern foot.006",
+    "triangles": 28
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.024",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.025",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.026",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.027",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lamp_post.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern cap.007",
+    "triangles": 60
+  },
+  {
+    "room": "N01S03",
+    "object": "Warm glass.007",
+    "triangles": 28
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern foot.007",
+    "triangles": 28
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.028",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.029",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.030",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Lantern mullion.031",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Rail head.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Rail head.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.016",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.017",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.018",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.019",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.020",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.021",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Rail head.006",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Rail head.007",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.022",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.023",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.024",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.025",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.026",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.027",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.028",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.029",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.030",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Sleeper.031",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate body",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate boards",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate boards.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate boards.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate band",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate band.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate diagonal",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate body.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate boards.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate boards.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate boards.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate band.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate band.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Crate diagonal.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S03",
+    "object": "Ore_on_workbench",
+    "triangles": 236
+  },
+  {
+    "room": "N01S03",
+    "object": "Ore_on_workbench.001",
+    "triangles": 246
+  },
+  {
+    "room": "N01S03",
+    "object": "Ore_on_workbench.002",
+    "triangles": 246
+  },
+  {
+    "room": "N01S03",
+    "object": "Ore_on_workbench.003",
+    "triangles": 264
+  },
+  {
+    "room": "N01S04",
+    "object": "Terrain_mass_0.001",
+    "triangles": 564
+  },
+  {
+    "room": "N01S04",
+    "object": "Terrain_mass_1.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Derrumbe",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Stratum_Derrumbe",
+    "triangles": 262
+  },
+  {
+    "room": "N01S04",
+    "object": "Stratum_Derrumbe.001",
+    "triangles": 266
+  },
+  {
+    "room": "N01S04",
+    "object": "Stratum_Derrumbe.002",
+    "triangles": 238
+  },
+  {
+    "room": "N01S04",
+    "object": "Stratum_Derrumbe.003",
+    "triangles": 262
+  },
+  {
+    "room": "N01S04",
+    "object": "Bridge_deck",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lever_arm",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Counterweight",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.001",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.002",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.003",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.006",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.007",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.008",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.009",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.010",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.011",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Deck_plank.012",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lever_base",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Return_marker.004",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Return_marker.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.036",
+    "triangles": 262
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.037",
+    "triangles": 248
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.038",
+    "triangles": 262
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.039",
+    "triangles": 282
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.040",
+    "triangles": 266
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.041",
+    "triangles": 262
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.042",
+    "triangles": 262
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.043",
+    "triangles": 244
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.044",
+    "triangles": 284
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.045",
+    "triangles": 262
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.046",
+    "triangles": 306
+  },
+  {
+    "room": "N01S04",
+    "object": "Cavern_backdrop.047",
+    "triangles": 262
+  },
+  {
+    "room": "N01S04",
+    "object": "Lamp_post.005",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern cap.008",
+    "triangles": 60
+  },
+  {
+    "room": "N01S04",
+    "object": "Warm glass.008",
+    "triangles": 28
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern foot.008",
+    "triangles": 28
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern mullion.032",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern mullion.033",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern mullion.034",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern mullion.035",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lamp_post.006",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern cap.009",
+    "triangles": 60
+  },
+  {
+    "room": "N01S04",
+    "object": "Warm glass.009",
+    "triangles": 28
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern foot.009",
+    "triangles": 28
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern mullion.036",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern mullion.037",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern mullion.038",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Lantern mullion.039",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Counterweight_frame",
+    "triangles": 108
+  },
+  {
+    "room": "N01S04",
+    "object": "Counterweight_cable",
+    "triangles": 108
+  }
+]

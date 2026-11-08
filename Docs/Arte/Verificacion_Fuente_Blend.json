@@ -1,0 +1,13 @@
+{
+  "packed_images": [
+    "Stone_BaseColor",
+    "Timber_BaseColor"
+  ],
+  "models": [
+    "RailModule",
+    "Rock_A",
+    "Rock_B",
+    "Rock_C",
+    "TimberSupport"
+  ]
+}

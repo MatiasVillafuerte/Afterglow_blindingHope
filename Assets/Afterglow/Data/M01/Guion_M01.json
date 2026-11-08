@@ -1,0 +1,764 @@
+{
+  "lines": [
+    {
+      "id": "P01.02",
+      "speaker": "Carta de los padres",
+      "text": "Nuestra querida bolivianita: la visita a nuestro amigo se ha alargado más de lo que esperábamos. Nos ha pedido ayuda con su trabajo y todavía quedan algunas cosas por resolver. No te preocupes: estamos bien."
+    },
+    {
+      "id": "P01.03",
+      "speaker": "Carta de los padres",
+      "text": "Sabemos que puedes cuidar de la casa. Intenta también descansar de vez en cuando. Te escribiremos en cuanto sepamos cuándo volvemos. Con cariño, mamá y papá."
+    },
+    {
+      "id": "P01.04",
+      "speaker": "Aviso",
+      "text": "Alguien tocó la puerta"
+    },
+    {
+      "id": "P01.05",
+      "speaker": "Ayuda contextual",
+      "text": "Muévete con las flechas. Salta con [Espacio]."
+    },
+    {
+      "id": "P01.06",
+      "speaker": "Interacción opcional con la carta",
+      "text": "Su estancia se ha alargado. Dicen que están bien."
+    },
+    {
+      "id": "P02.02",
+      "speaker": "Capitán de minas",
+      "text": "¡Por fin! Perdona que llegue así. Necesito hablar con tus padres."
+    },
+    {
+      "id": "P02.04",
+      "speaker": "Capitán de minas",
+      "text": "¿Siguen fuera? Mal momento. Hubo un derrumbe en la mina. Varios de mis hombres quedaron al otro lado."
+    },
+    {
+      "id": "P02.05",
+      "speaker": "Capitán de minas",
+      "text": "Estamos abriendo paso, pero necesitamos revisar las galerías. Tú has aprendido de los mejores. Sabrás moverte ahí dentro."
+    },
+    {
+      "id": "P02.07",
+      "speaker": "Capitán de minas",
+      "text": "Bien. Mi hijo conoce el acceso. Te explicará el recorrido. Y tú procura que no pierda tiempo dándole vueltas a todo."
+    },
+    {
+      "id": "N1A.01",
+      "speaker": "Capitán de minas",
+      "text": "Acompáñalo hasta la entrada. Y esta vez habla claro."
+    },
+    {
+      "id": "N1A.02",
+      "speaker": "Hijo del minero",
+      "text": "Sí, papá. Yo… ya revisé el primer tramo."
+    },
+    {
+      "id": "N1A.03",
+      "speaker": "Capitán de minas",
+      "text": "Revisar está bien. Hace falta avanzar."
+    },
+    {
+      "id": "N1A.05",
+      "speaker": "Hijo del minero",
+      "text": "No le hagas mucho caso cuando está preocupado. Aunque… también habla así cuando no lo está."
+    },
+    {
+      "id": "N1A.06",
+      "speaker": "Hijo del minero",
+      "text": "Los atrapados estaban extrayendo mineral de una galería nueva. La roca cedió y cerró el paso. Desde aquí no se oyen sus voces, pero seguimos intentando llegar."
+    },
+    {
+      "id": "N1A.07",
+      "speaker": "Hijo del minero",
+      "text": "Te esperaré en las entradas para contarte lo que sepamos. Dentro tendrás que fijarte bien en los rieles y las paredes."
+    },
+    {
+      "id": "N1B.02",
+      "speaker": "Hijo del minero",
+      "text": "Esa cosa no estaba antes. Se inclina hacia atrás justo antes de golpear. Si esperas a que termine, tendrás un momento para acercarte."
+    },
+    {
+      "id": "N1B.04",
+      "speaker": "Hijo del minero",
+      "text": "¿No has traído un pico? Ah. Pensé que… Da igual. Toma este; está en buen estado."
+    },
+    {
+      "id": "N1B.05",
+      "speaker": "Sistema",
+      "text": "Has recibido el pico. Pulsa [X] para golpear hacia delante. Por ahora te detienes al atacar."
+    },
+    {
+      "id": "N1B.06",
+      "speaker": "Hijo del minero",
+      "text": "No hace falta demostrar nada de un solo golpe. Mira cuándo ataca y busca tu momento."
+    },
+    {
+      "id": "N1B.08",
+      "speaker": "Sistema",
+      "text": "Recoge el botín antes de que desaparezca. La EXP llena el medidor de progreso."
+    },
+    {
+      "id": "N1B.09",
+      "speaker": "Hijo del minero",
+      "text": "También puedes romper esas rocas agrietadas. Las otras sostienen la galería; no todas se van a mover con un pico."
+    },
+    {
+      "id": "N1C.01",
+      "speaker": "Hijo del minero",
+      "text": "Y esto es un teléfono de minas. Cuando quieras regresar, llámame con [T]. Te ayudaremos a salir con lo que hayas encontrado."
+    },
+    {
+      "id": "N1C.02",
+      "speaker": "Sistema",
+      "text": "Teléfono de minas obtenido. Puedes leer su descripción en Objetos clave. Para llamar durante la exploración de este mundo, pulsa [T]"
+    },
+    {
+      "id": "N1C.03",
+      "speaker": "Hijo del minero",
+      "text": "Al final del tramo están los que despejan el derrumbe. Habla con ellos antes de dar la investigación por terminada."
+    },
+    {
+      "id": "N1C.04",
+      "speaker": "Hijo del minero",
+      "text": "Este es el altar del Tío. Aquí dejamos ofrendas y cuidamos la mina. Cuando reunamos lo necesario, volveremos para pedir que el trabajo avance."
+    },
+    {
+      "id": "N1C.05",
+      "speaker": "Hijo del minero",
+      "text": "Alcohol, cigarros o coca: para esta entrega cada unidad cuenta igual. No importa traerlo todo de una sola vez. Lo aceptado se queda como aporte."
+    },
+    {
+      "id": "N1C.06",
+      "speaker": "Hijo del minero",
+      "text": "Pero no todo lo que alguien vende debería acabar aquí. Yo tendría cuidado con los tratos demasiado buenos."
+    },
+    {
+      "id": "N1C.07",
+      "speaker": "Sistema",
+      "text": "Acércate al altar y pulsa [E]. Aporte para el siguiente paso: 0/3."
+    },
+    {
+      "id": "N1D.01",
+      "speaker": "Minero",
+      "text": "Hasta aquí llegamos por ahora. Más allá sigue todo cerrado."
+    },
+    {
+      "id": "N1D.02",
+      "speaker": "Minero",
+      "text": "Ya revisaste este tramo. Vuelve al altar con las ofrendas; nosotros seguiremos trabajando."
+    },
+    {
+      "id": "N1D.03",
+      "speaker": "Sistema",
+      "text": "Investigación del tramo completada. Puedes volver con el teléfono de minas."
+    },
+    {
+      "id": "N1D.04",
+      "speaker": "Teléfono antes de terminar el recorrido",
+      "text": "¿Volver al acceso de la mina? Conservarás lo recogido. La investigación de este tramo seguirá pendiente."
+    },
+    {
+      "id": "N1D.05",
+      "speaker": "Teléfono con recorrido terminado",
+      "text": "¿Llamar para volver al acceso con lo conseguido?"
+    },
+    {
+      "id": "N1D.07",
+      "speaker": "Teléfono bloqueado durante escolta",
+      "text": "El rescate por teléfono solo admite a una persona. Esta vez tendrán que volver por su cuenta"
+    },
+    {
+      "id": "ALT.01",
+      "speaker": "Sin ofrendas y con cuota pendiente",
+      "text": "Aún no tienes ofrendas para entregar. Faltan {cantidad} para completar el aporte."
+    },
+    {
+      "id": "ALT.02",
+      "speaker": "Legítimas insuficientes",
+      "text": "El Tío ha recibido tus ofrendas. El aporte queda aquí, pero todavía faltan {cantidad}. Habrá que seguir buscando."
+    },
+    {
+      "id": "ALT.03",
+      "speaker": "Cuota completada sin sobrantes",
+      "text": "El Tío parece satisfecho. El aporte está completo."
+    },
+    {
+      "id": "ALT.04",
+      "speaker": "Cuota completada con sobrantes",
+      "text": "El Tío ha tomado lo necesario y parece satisfecho. Puedes conservar lo que sobró."
+    },
+    {
+      "id": "ALT.05",
+      "speaker": "Rechazo de robadas",
+      "text": "Estas ofrendas no han sido aceptadas."
+    },
+    {
+      "id": "ALT.06",
+      "speaker": "Mensaje tras la piedra",
+      "text": "Al Tío no le agradan las ofrendas que llegan a costa de otros. Será mejor buscar unas de buena procedencia."
+    },
+    {
+      "id": "ALT.07",
+      "speaker": "Mezcla que aún no alcanza",
+      "text": "El Tío ha conservado las ofrendas legítimas, pero ha rechazado las demás. Todavía faltan {cantidad} para completar el aporte."
+    },
+    {
+      "id": "ALT.08",
+      "speaker": "Entrega suficiente con robadas en inventario",
+      "text": "El Tío ha tomado lo necesario y parece satisfecho. Puedes conservar lo que no has entregado"
+    },
+    {
+      "id": "ALT.09",
+      "speaker": "Cuota completa pero falta investigar el final",
+      "text": "El aporte está preparado. Antes de abrir el siguiente paso, falta revisar el final del tramo actual."
+    },
+    {
+      "id": "ALT.11",
+      "speaker": "Minero",
+      "text": "¡Se ha despejado el paso! Ya podemos entrar en la siguiente galería."
+    },
+    {
+      "id": "ALT.12",
+      "speaker": "Tras acabar el mundo",
+      "text": "El Tío parece tranquilo. Los mineros de la zona se encargarán de cuidar este lugar."
+    },
+    {
+      "id": "PUE.01",
+      "speaker": "Habitante del pueblo vendedor",
+      "text": "¿Buscas ofrendas? Te ahorraré unas cuantas vueltas. Tres por ocho. No encontrarás una oferta igual."
+    },
+    {
+      "id": "PUE.02",
+      "speaker": "Compra",
+      "text": "Comprar paquete de 3 ofrendas por 8 de dinero"
+    },
+    {
+      "id": "PUE.03",
+      "speaker": "Si rechaza",
+      "text": "Como quieras. La oferta sigue aquí si te cansas de caminar."
+    },
+    {
+      "id": "PUE.04",
+      "speaker": "Si vuelve tras el rechazo del altar",
+      "text": "¿No las aceptó? Qué… exigente anda hoy."
+    },
+    {
+      "id": "PUE.05",
+      "speaker": "Hijo del minero, si está presente en el acceso",
+      "text": "Quizá el problema no eran las ofrendas, sino cómo llegaron a sus manos."
+    },
+    {
+      "id": "PUE.06",
+      "speaker": "Habitante del pueblo vendedor",
+      "text": "También conozco un escondite junto a la vía. Eso sí que no es un cuento… Bueno, la parte del escondite."
+    },
+    {
+      "id": "PUE.07",
+      "speaker": "Lector de coca",
+      "text": "Puedo orientarte sobre lo que queda en estas galerías, o prepararte para el camino. Una pista cuesta una hoja de coca. Una lectura de preparación, dos."
+    },
+    {
+      "id": "PUE.09",
+      "speaker": "Pista ejemplo N2",
+      "text": "Un trabajador dejó una caja detrás de una roca agrietada, por el desvío alto. Dice que agradecería recuperarla."
+    },
+    {
+      "id": "PUE.10",
+      "speaker": "Sin pista disponible",
+      "text": "Ya has revisado lo que conozco de este tramo. No voy a cobrarte por repetírtelo."
+    },
+    {
+      "id": "PUE.11",
+      "speaker": "Preparación",
+      "text": "Lleva esta calma contigo. Cuando toque moverse, procura hacerlo sin perder el paso."
+    },
+    {
+      "id": "PUE.12",
+      "speaker": "Habitante de la tienda",
+      "text": "Tengo fragmentos pulidos para recuperar fuerzas. Dos puntos de vida por cinco de dinero. Y si necesitas algo mayor, pregunta por los núcleos."
+    },
+    {
+      "id": "SEC.01",
+      "speaker": "Q01 inicio",
+      "text": "Esas resistencias no nos dejan revisar la galería. Si derrotas a tres después de hablar conmigo, podré acercarme. Te guardaré una ofrenda."
+    },
+    {
+      "id": "SEC.02",
+      "speaker": "Q01 entrega",
+      "text": "Ahora sí se puede trabajar. Esto es por la ayuda."
+    },
+    {
+      "id": "SEC.03",
+      "speaker": "Q02 inicio",
+      "text": "Dejé el casco por el ramal de la derecha. Sin él, el capitán no me deja ni mirar la entrada. ¿Me lo traes?"
+    },
+    {
+      "id": "SEC.04",
+      "speaker": "Q02 entrega",
+      "text": "¡Aquí está! Prometo no volver a dejarlo. Al menos hoy."
+    },
+    {
+      "id": "SEC.05",
+      "speaker": "Q03 inicio",
+      "text": "Si pones esos dos carros en los apartaderos marcados, podremos pasar la carga. Están vacíos; solo hay que empujarlos hasta el tope."
+    },
+    {
+      "id": "SEC.06",
+      "speaker": "Q03 entrega",
+      "text": "Eso nos ahorra bastante trabajo. Toma estas ofrendas; las guardábamos para el siguiente turno."
+    },
+    {
+      "id": "SEC.07",
+      "speaker": "Q04 inicio",
+      "text": "Mi caja de herramientas quedó tras las rocas del desvío alto. Son las agrietadas, no las columnas. Mejor aclararlo antes."
+    },
+    {
+      "id": "SEC.08",
+      "speaker": "Q04 entrega",
+      "text": "Todo en su sitio. Hasta la herramienta que nunca encuentro."
+    },
+    {
+      "id": "SEC.09",
+      "speaker": "Q05 encuentro",
+      "text": "He pasado tres veces por esa misma piedra. Ya le estaba poniendo nombre. ¿Puedo seguirte hasta la entrada?"
+    },
+    {
+      "id": "SEC.10",
+      "speaker": "Q05 regreso",
+      "text": "¡La entrada! Casi me alegro de reconocerla más que de salir. Gracias; esto es para ti."
+    },
+    {
+      "id": "SEC.11",
+      "speaker": "Q06 inicio",
+      "text": "Hay tres placas giradas en la galería lateral. No cambian el camino principal, pero ya han mandado a más de uno a un callejón. ¿Las revisas?"
+    },
+    {
+      "id": "SEC.12",
+      "speaker": "Q06 entrega",
+      "text": "Ahora señalan algo más útil que una pared. Gracias."
+    },
+    {
+      "id": "SEC.13",
+      "speaker": "Q07 inicio",
+      "text": "La vía auxiliar vuelve a llenarse de piedras. Rompe las cuatro marcadas y te daré algo por el trabajo."
+    },
+    {
+      "id": "SEC.14",
+      "speaker": "Q07 entrega",
+      "text": "Listo para otro viaje. Ojalá las piedras aprendieran a caer en otro sitio."
+    },
+    {
+      "id": "SEC.15",
+      "speaker": "Q08 inicio",
+      "text": "Una vagoneta dejó un paquete junto al recorrido. Si lo recoges y llegas al andén, aquí estará su dueño."
+    },
+    {
+      "id": "SEC.16",
+      "speaker": "Q08 entrega",
+      "text": "¡Mi pedido! Y sin una sola rueda de más. Aquí tienes lo prometido."
+    },
+    {
+      "id": "SEC.17",
+      "speaker": "Q09 inicio",
+      "text": "La lámpara de mi refugio se apagó. Ese carro tiene una encendida. Si lo acercas por el riel, podré volver sin perder el camino."
+    },
+    {
+      "id": "SEC.18",
+      "speaker": "Q09 entrega",
+      "text": "Ahora sí. A veces no hace falta una luz enorme, solo una que esté donde toca."
+    },
+    {
+      "id": "SEC.19",
+      "speaker": "Q10 inicio",
+      "text": "Hay cuatro componentes rondando el cruce. Necesitamos pasar por ahí para llevar herramientas al fondo. ¿Nos despejas el camino?"
+    },
+    {
+      "id": "SEC.20",
+      "speaker": "Q10 entrega",
+      "text": "Ya podemos llevarlas. Cada viaje que hacemos nos acerca a los que faltan."
+    },
+    {
+      "id": "N2.01",
+      "speaker": "Hijo del minero, al acceso",
+      "text": "Los carros siguen sobre los rieles, pero no donde deberían. Si los colocas en los apartaderos, quizá despejes el paso sin tocar las vigas."
+    },
+    {
+      "id": "N2.02",
+      "speaker": "Minero ante el primer puzle",
+      "text": "Ese carro mantiene bajada la placa. Déjalo sobre la marca y la reja seguirá abierta."
+    },
+    {
+      "id": "N2.03",
+      "speaker": "Si el carro queda mal",
+      "text": "La palanca devuelve los carros a sus topes. No hace falta empezar toda la galería otra vez."
+    },
+    {
+      "id": "N2.04",
+      "speaker": "Minero al final",
+      "text": "La siguiente zona está llena de cruces. Nosotros seguiremos despejando esta puerta. Ve preparando el aporte del altar."
+    },
+    {
+      "id": "N3.01",
+      "speaker": "Hijo del minero",
+      "text": "Hay cámaras que se parecen demasiado. Anoté una ruta: busca la lámpara encendida, sigue los rieles continuos a la derecha y baja donde veas dos postes."
+    },
+    {
+      "id": "N3.02",
+      "speaker": "Hijo del minero",
+      "text": "Si quieres explorar los otros ramales, hazlo. Solo recuerda qué señal dejaste atrás."
+    },
+    {
+      "id": "N3.03",
+      "speaker": "Primer error de camino",
+      "text": "Esta salida te ha devuelto a la misma habitación. Conservas lo encontrado. Tendrás que buscar otra ruta."
+    },
+    {
+      "id": "N3.04",
+      "speaker": "Errores posteriores",
+      "text": "Otra vez la misma habitación. Revisa las señales."
+    },
+    {
+      "id": "N3.05",
+      "speaker": "Minero al final",
+      "text": "Llegaste. Eso ya es más de lo que consiguió el que puso los carteles. Oímos una vía al otro lado; abriremos por aquí."
+    },
+    {
+      "id": "N4.01",
+      "speaker": "Hijo del minero",
+      "text": "Las lámparas fijas siguen indicando parte del camino. Si una zona queda oscura, mira si puedes acercar un carro con luz."
+    },
+    {
+      "id": "N4.02",
+      "speaker": "Hijo del minero",
+      "text": "Primero busca dónde vas a apoyar los pies. Después podrás pensar en subir."
+    },
+    {
+      "id": "N4.03",
+      "speaker": "Minero",
+      "text": "Con la luz de ese carro podremos ver el cruce. Aquí los rieles se confunden con las grietas."
+    },
+    {
+      "id": "N4.04",
+      "speaker": "Minero",
+      "text": "Hemos abierto hasta la estación de carga. La vía cruza un corte de la mina; completa el aporte y podrás llegar hasta allí."
+    },
+    {
+      "id": "N4.05",
+      "speaker": "Minero del bloqueo",
+      "text": "Los de la siguiente galería se quedaron sin luz. No tardaremos en abrirte, pero ve con cuidado cuando entres."
+    },
+    {
+      "id": "N5.01",
+      "speaker": "Hijo del minero",
+      "text": "La vía cruza un corte de la mina. La vagoneta puede pasar, pero hay piedras y tramos sin riel. Revisa bien dónde saltar."
+    },
+    {
+      "id": "N5.02",
+      "speaker": "Sistema",
+      "text": "Recorrido en vagoneta. [Espacio] para saltar; [Abajo] para frenar brevemente. ¿Subir?"
+    },
+    {
+      "id": "N5.03",
+      "speaker": "Minero",
+      "text": "Los minerales suspendidos marcan la curva del salto. No hace falta recogerlos todos para llegar."
+    },
+    {
+      "id": "N5.04",
+      "speaker": "Minero",
+      "text": "¡Buen viaje! Bueno… llegaste entero. Para esta vía cuenta como buen viaje."
+    },
+    {
+      "id": "N6A.02",
+      "speaker": "Minero tras la puerta",
+      "text": "¿Han oído eso?"
+    },
+    {
+      "id": "N6A.03",
+      "speaker": "Otro minero",
+      "text": "¡Aquí! ¡Estamos aquí!"
+    },
+    {
+      "id": "N6A.04",
+      "speaker": "Minero tras la puerta",
+      "text": "Despacio con la puerta. El techo no parece de fiar."
+    },
+    {
+      "id": "N6A.06",
+      "speaker": "Minero",
+      "text": "¡Vinieron por nosotros! Pensábamos que…"
+    },
+    {
+      "id": "N6A.07",
+      "speaker": "Otro minero",
+      "text": "¡Estamos a salvo!"
+    },
+    {
+      "id": "N6A.08",
+      "speaker": "Hijo del minero",
+      "text": "La galería ya está abierta. Salgan de uno en uno y…"
+    },
+    {
+      "id": "N6A.10",
+      "speaker": "Minero",
+      "text": "¡Eso no estaba aquí cuando entramos!"
+    },
+    {
+      "id": "N6A.11",
+      "speaker": "Hijo del minero",
+      "text": "¡Atrás! ¡Salgan de la cámara!"
+    },
+    {
+      "id": "N6A.13",
+      "speaker": "Hijo del minero",
+      "text": "Las resistencias de arriba controlan la máquina. Si se atasca, tendrán que bajar para soltarla. ¡Ese será tu momento!"
+    },
+    {
+      "id": "N6A.14",
+      "speaker": "Hijo del minero",
+      "text": "Voy a lanzarte ofrendas desde aquí. Reúne cinco y llévalas al altar. Estas son para esta pelea; las que guardaste fuera no servirán."
+    },
+    {
+      "id": "N6A.15",
+      "speaker": "Sistema",
+      "text": "Recoge 5 ofrendas de arena y pulsa [E] junto al altar."
+    },
+    {
+      "id": "N6B.01",
+      "speaker": "Primer atasco",
+      "text": "¡Ahora! ¡Han bajado a desengancharlo!"
+    },
+    {
+      "id": "N6B.02",
+      "speaker": "Si golpea al jugador",
+      "text": "¡No dejes que te alcance de frente!"
+    },
+    {
+      "id": "N6B.03",
+      "speaker": "Si se libera con supervivientes",
+      "text": "No se han recuperado. El daño que les hiciste sigue ahí."
+    },
+    {
+      "id": "N6B.04",
+      "speaker": "Al acabar el primer grupo, escena breve",
+      "text": "fase dos"
+    },
+    {
+      "id": "N6B.05",
+      "speaker": "Hijo del minero",
+      "text": "Siguen viniendo… Y el Tío no está contento con todo este daño. A partir de ahora no conviene tardar demasiado en llevarle ofrendas."
+    },
+    {
+      "id": "N6B.06",
+      "speaker": "Hijo del minero",
+      "text": "Si se desquita contigo, entregar cinco lo calmará. Eso no te dará una ayuda al mismo tiempo: primero hay que dejar las cosas en paz."
+    },
+    {
+      "id": "N6B.08",
+      "speaker": "Al acabar el segundo grupo, escena breve",
+      "text": "Más arriba… Esta vez se reparten por los dos lados. Mira dónde bajan."
+    },
+    {
+      "id": "N6B.09",
+      "speaker": "Al recibir mejora",
+      "text": "Le diste ofrendas al Tío. Parece que ha decidido echarte una mano."
+    },
+    {
+      "id": "N6B.10",
+      "speaker": "Al recibir perjuicio",
+      "text": "Cuidado. El Tío está enfadado por el daño a la mina… Creo que esta vez se ha desquitado contigo."
+    },
+    {
+      "id": "N6B.11",
+      "speaker": "Al eliminar perjuicio",
+      "text": "Ya parece más tranquilo. Sigue atento a la máquina."
+    },
+    {
+      "id": "N6B.12",
+      "speaker": "Intento de entrega con mejora activa",
+      "text": "El Tío ya te está ayudando. Conserva estas ofrendas para después."
+    },
+    {
+      "id": "N6B.13",
+      "speaker": "Con menos de cinco",
+      "text": "Todavía necesitas {cantidad} ofrendas de arena para esta entrega."
+    },
+    {
+      "id": "N6C.01",
+      "speaker": "Sistema al llegar a cero",
+      "text": "La mina todavía necesita tu ayuda."
+    },
+    {
+      "id": "N6C.03",
+      "speaker": "Frente a la puerta",
+      "text": "Mantén [F] para omitir el rescate y la presentación del jefe."
+    },
+    {
+      "id": "FIN.02",
+      "speaker": "Hijo del minero",
+      "text": "Lo detuviste… Lo detuvimos."
+    },
+    {
+      "id": "FIN.04",
+      "speaker": "Al examinar",
+      "text": "Una pieza del taladro. Tiene un emblema y unas siglas grabadas: [SIGLAS]."
+    },
+    {
+      "id": "FIN.06",
+      "speaker": "Capitán de minas",
+      "text": "Todos fuera. Por fin… Han hecho un buen trabajo."
+    },
+    {
+      "id": "FIN.08",
+      "speaker": "Capitán de minas",
+      "text": "¿Esa marca? No. No la había visto nunca."
+    },
+    {
+      "id": "FIN.09",
+      "speaker": "Capitán de minas",
+      "text": "Pero mira el material. Esa máquina está hecha de oro. Aquí no tenemos fábrica ni equipos para construir algo de ese tamaño."
+    },
+    {
+      "id": "FIN.10",
+      "speaker": "Capitán de minas",
+      "text": "En las cataratas viven muchos minerales de oro. Quizá reconozcan el trabajo o sepan quién podría fabricarlo. Es una pista, al menos."
+    },
+    {
+      "id": "FIN.11",
+      "speaker": "Hijo del minero",
+      "text": "Nunca había visto una máquina así por estas galerías. Si ha llegado hasta aquí, deberíamos averiguar de dónde salió."
+    },
+    {
+      "id": "FIN.13",
+      "speaker": "Hijo del minero",
+      "text": "¿Contigo? Yo… Sí. Puedo revisar los caminos. Y anotar lo que encontremos."
+    },
+    {
+      "id": "FIN.14",
+      "speaker": "Capitán de minas",
+      "text": "Lleva un registro claro. Y avisa cuando lleguéis."
+    },
+    {
+      "id": "FIN.15",
+      "speaker": "Sistema",
+      "text": "El hijo del minero se ha unido al equipo. Puedes seleccionarlo en el menú."
+    },
+    {
+      "id": "FIN.16",
+      "speaker": "Minero cerca de una pared rota",
+      "text": "Detrás de esa lona está la vía de carga antigua. Sale hacia el valle de las cataratas. La máquina la dejó al descubierto."
+    },
+    {
+      "id": "FIN.18",
+      "speaker": "Interacción con vagoneta",
+      "text": "¿Viajar hacia las cataratas?"
+    },
+    {
+      "id": "FIN.20",
+      "speaker": "Pantalla",
+      "text": "Continuará"
+    },
+    {
+      "id": "SYS.01",
+      "speaker": "Guardado correcto",
+      "text": "Partida guardada."
+    },
+    {
+      "id": "SYS.02",
+      "speaker": "Error de guardado",
+      "text": "No se pudo guardar la partida. Tu sesión sigue abierta. Inténtalo de nuevo."
+    },
+    {
+      "id": "SYS.03",
+      "speaker": "Salir",
+      "text": "¿Quieres guardar antes de salir?"
+    },
+    {
+      "id": "SYS.04",
+      "speaker": "Salir sin guardar",
+      "text": "Perderás los cambios desde el último guardado. ¿Salir de todas formas?"
+    },
+    {
+      "id": "SYS.05",
+      "speaker": "Teléfono bloqueado en jefe",
+      "text": "Ahora no puedes llamar. Primero tendrás que detener la máquina."
+    },
+    {
+      "id": "SYS.06",
+      "speaker": "Reembolso",
+      "text": "Se quitarán {nodos} y recuperarás {gemas} gemas. ¿Continuar?"
+    },
+    {
+      "id": "SYS.07",
+      "speaker": "Subida de nivel",
+      "text": "¡El equipo ha subido de nivel! Vida del personaje activo recuperada. Cada compañero desbloqueado obtiene 3 gemas para habilidades"
+    },
+    {
+      "id": "PUE2.01",
+      "speaker": "Habitante del pueblo vendedor tras descubrir el fraude",
+      "text": "Bien, quizá no pregunté todo lo que debía antes de venderlas. Pero sé dónde dejaron una caja de herramientas. Eso sí que puedo arreglarlo"
+    },
+    {
+      "id": "PUE2.02",
+      "speaker": "Habitante del pueblo vendedor",
+      "text": "Está detrás de las tablas, en el desvío del acceso. Llévasela al trabajador que la busca. Si necesitas que te señale el sitio, esta vez no te cobro"
+    },
+    {
+      "id": "PUE2.03",
+      "speaker": "Minero dueño de la caja al recibirla",
+      "text": "Es la nuestra. Llevábamos rato buscándola. Gracias por traerla; esto compensa la ayuda"
+    },
+    {
+      "id": "PUE2.04",
+      "speaker": "Habitante del pueblo después de Q11",
+      "text": "¿La recibió? Bien. Por una vez no hizo falta discutir el precio"
+    },
+    {
+      "id": "SYS2.01",
+      "speaker": "Ficha de teléfono activo",
+      "text": "Teléfono de minas. Permite pedir ayuda para regresar al acceso durante la exploración de las minas bolivianas. Las llamadas se realizan con [T]. No admite acompañantes"
+    },
+    {
+      "id": "SYS2.02",
+      "speaker": "Ficha de teléfono tras cerrar el mundo",
+      "text": "Teléfono de minas. Sirvió para pedir ayuda en las minas bolivianas. Fuera de ese recorrido ya no puede utilizarse. Conservas el recuerdo del rescate"
+    },
+    {
+      "id": "SYS2.03",
+      "speaker": "Ficha de pieza con emblema",
+      "text": "Pieza del taladro. Conserva un símbolo y unas siglas sin identificar. El material de la máquina apunta hacia las cataratas"
+    },
+    {
+      "id": "SYS2.04",
+      "speaker": "Guardado no disponible",
+      "text": "No puedes guardar durante una batalla de jefe, un recorrido en vagoneta o una escena. Para salir ahora, tendrás que usar tu último guardado"
+    },
+    {
+      "id": "SYS2.05",
+      "speaker": "Teléfono bloqueado en minijuego",
+      "text": "Ahora estás en la vagoneta. Llega a un andén para pedir ayuda"
+    },
+    {
+      "id": "SYS2.06",
+      "speaker": "Teléfono fuera de su ámbito",
+      "text": "Este teléfono pertenece al servicio de las minas bolivianas. Aquí solo puedes consultar su descripción"
+    },
+    {
+      "id": "SYS2.07",
+      "speaker": "Aviso de aporte suficiente sin investigación",
+      "text": "Las ofrendas ya están preparadas. Falta revisar el final del tramo para que el equipo pueda abrir el siguiente paso"
+    },
+    {
+      "id": "N1E.02",
+      "speaker": "Hijo del minero",
+      "text": "Pulsa E junto a la palanca para bajar el puente. El contrapeso lo dejará firme y podremos cruzar. Después sube hasta el equipo del derrumbe."
+    },
+    {
+      "id": "N5.05",
+      "speaker": "Minero",
+      "text": "Desde aquí ya se oyen sus golpes. La cámara está tras ese tramo derrumbado. Completa el aporte y haremos el último esfuerzo."
+    }
+  ]
+}

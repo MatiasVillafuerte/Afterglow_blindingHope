@@ -1,0 +1,44 @@
+[
+  {
+    "room": "PRO_CASA",
+    "sourceParts": 205,
+    "triangles": 22960,
+    "sampleGate": true
+  },
+  {
+    "room": "PRO_PATIO",
+    "sourceParts": 1250,
+    "triangles": 173460,
+    "sampleGate": true
+  },
+  {
+    "room": "N01S01",
+    "sourceParts": 149,
+    "triangles": 28988,
+    "sampleGate": true
+  },
+  {
+    "room": "N01S02",
+    "sourceParts": 196,
+    "triangles": 40872,
+    "sampleGate": true
+  },
+  {
+    "room": "N01S03",
+    "sourceParts": 198,
+    "triangles": 37064,
+    "sampleGate": true
+  },
+  {
+    "room": "N01S04",
+    "sourceParts": 192,
+    "triangles": 42944,
+    "sampleGate": true
+  },
+  {
+    "room": "M01_MAPA",
+    "sourceParts": 78,
+    "triangles": 16878,
+    "sampleGate": true
+  }
+]

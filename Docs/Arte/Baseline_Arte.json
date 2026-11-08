@@ -1,0 +1,58 @@
+[
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Scenes\\M01\\N01S02.unity",
+    "hash": "A68A57DAFC46A47A31B5DA37442EE59681409573A85F7790C8473F2BD789629D"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Runtime\\AfterglowCamera.cs",
+    "hash": "06F136EBF6637080DF63A77DE61A9FBB1F4875A1DD212B73F38E4674EED7F0CD"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Prefabs\\Player.prefab",
+    "hash": "49E9D2EE7AE06FDCF02DF5F7816D611A1F8629C9C90A201FAF6B623EE5FB8707"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Packages\\manifest.json",
+    "hash": "8F4850342594901082E0A1E8C7D04EBAFB7228DDFBBEDDD1E2115A6536280463"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\ProjectSettings\\ProjectVersion.txt",
+    "hash": "52EB3E6F9571E329731718D034CCEB24A4DF0757D97550ECBD6589C5B7B03FBA"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Settings\\PC_RPAsset.asset",
+    "hash": "7CFA894E760F2AA087D24B2FA260E2EFA497B58B89D52E4C2B28371CF6336AAF"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Settings\\PC_Renderer.asset",
+    "hash": "3D0B01D8DED3327263B6690BE128A3DE58D17C514943AE42FE743A3E084A9C79"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Attack.anim",
+    "hash": "9C9DB47A7B82D2D84F8AC83847B399301AC3B0C6ACD7FB1AC7B1EECE1C220DA5"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Falling.anim",
+    "hash": "A40C96DC9E4E1D89EC67B1A877CD5C3D564DA58C5763F1B57ABCD1AC8D36EDE2"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Idle.anim",
+    "hash": "67D97AD0D54B4AF6946B90A22C28A3978E591622079E4078E092153E0CC4AFF7"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Jump.anim",
+    "hash": "CDBC5BE2D29E2F6EF1356BAF12ABDB3483EB90E4B6B3B6D9E9F8500C962ABD3D"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\M01_Attack.anim",
+    "hash": "685DE1F3CBFE67CEF01E4C62494D5D3CF3E07C1E57B3B8B8A0372AE8FC1D26BD"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\M01_Idle.anim",
+    "hash": "DF27775700E4B00AD86771DD8EB341C5A7B9AA86A6965B052819642A2D8AEA81"
+  },
+  {
+    "path": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope\\Assets\\Afterglow\\Character\\Animations\\Walk.anim",
+    "hash": "7AAA22B9130FEEC327EBC9BA983B34DC2A978277E0F7CEE56D59C8D3421D48A1"
+  }
+]

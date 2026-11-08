@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "command": "console status",
+    "parameters": {},
+    "result": {
+      "entries": [],
+      "cursor": 17,
+      "session": "d796d326741d4d7da4620ad5202496a1",
+      "returned": 0,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 0,
+        "warn": 0,
+        "log": 7
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-11-04T00:43:13.7967754Z",
+        "ageMs": 169,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 0,
+        "consoleLogs": 0,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\04_Cuarto Semestre\\Game Development\\Afterglow_blindingHope"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

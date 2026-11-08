@@ -1,0 +1,12 @@
+# Guardado manual y estado de expedición
+- Guardado solo bajo orden manual: True
+- Incluye salud, enemigos y botín: True
+- Cambiar sesión no sobrescribe archivo: True
+- Continuar acepta partida válida: True
+- Carga conserva vida, dinero y enemigo: True
+- Carga conserva recogida estática: True
+- Preparación no descuenta tiempo cerrado: True
+- Carga conserva botín suelto: True
+- Contexto restringido bloquea escritura: True
+- Fallo de escritura conserva último válido: True
+- Carga inválida no reemplaza sesión: True

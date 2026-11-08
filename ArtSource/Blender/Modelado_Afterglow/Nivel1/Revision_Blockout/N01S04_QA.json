@@ -1,0 +1,80 @@
+[
+  {
+    "object": "Derrumbe",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Derrumbe: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Bridge_deck",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Bridge_deck: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-0.24 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Lever_base",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lever_base: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Lever_arm",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lever_arm: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.53 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Counterweight",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Counterweight: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.55 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Return_marker.004",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Return_marker.004: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Return_marker.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Return_marker.005: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Terrain_mass_0.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrain_mass_0.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Terrain_mass_0.001: 18 n-gons",
+      "asset lowest point z=-3.045 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Terrain_mass_1.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Terrain_mass_1.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-3.0 (not resting on ground plane z=0)"
+    ]
+  }
+]

@@ -1,0 +1,138 @@
+{
+    "schema": 1,
+    "scene": "Assets/Afterglow/Scenes/M01/N01S03.unity",
+    "position": {
+        "x": 4.0,
+        "y": 0.03999989107251167,
+        "z": 0.0
+    },
+    "facing": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "progress": {
+        "teamLevel": 1,
+        "experience": 0,
+        "historicGems": 0,
+        "money": 42,
+        "activeMember": 0,
+        "contributions": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "investigated": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "opened": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "phoneOwned": false,
+        "escortActive": false,
+        "worldClosed": false,
+        "fraudDiscovered": false,
+        "offerings": [
+            {
+                "kind": "Coca",
+                "sourceId": "EXP.N01S03.0",
+                "stolen": false
+            }
+        ],
+        "collectedStaticIds": [
+            "EXP.N01S03.0"
+        ],
+        "members": [
+            {
+                "id": "BOLIVIANITA",
+                "unlocked": true,
+                "health": 7,
+                "maxHealth": 10,
+                "gems": 0
+            },
+            {
+                "id": "HIJO",
+                "unlocked": false,
+                "health": 14,
+                "maxHealth": 14,
+                "gems": 0
+            }
+        ],
+        "currentLevel": 1,
+        "pickaxeOwned": true,
+        "expeditionActive": false,
+        "expeditionAttempt": 0,
+        "events": [
+            "N1B.PICKAXE",
+            "N1B.LOOT"
+        ],
+        "rooms": [
+            {
+                "id": "PRO_CASA",
+                "enemies": [],
+                "loot": []
+            },
+            {
+                "id": "N01S03",
+                "enemies": [
+                    {
+                        "id": "N01.RESISTANCE.1",
+                        "position": {
+                            "x": 34.0,
+                            "y": 0.05000000074505806,
+                            "z": -2.0
+                        },
+                        "health": 3
+                    },
+                    {
+                        "id": "N01.RESISTANCE.0",
+                        "position": {
+                            "x": 28.0,
+                            "y": 0.05000000074505806,
+                            "z": 2.0
+                        },
+                        "health": 3
+                    },
+                    {
+                        "id": "N01.TUTORIAL.RESISTANCE",
+                        "position": {
+                            "x": 20.0,
+                            "y": 0.05000000074505806,
+                            "z": 0.0
+                        },
+                        "health": 2
+                    }
+                ],
+                "loot": [
+                    {
+                        "position": {
+                            "x": 12.0,
+                            "y": 0.4000000059604645,
+                            "z": -2.0
+                        },
+                        "kind": 1,
+                        "amount": 7,
+                        "remaining": 4.0
+                    }
+                ]
+            }
+        ],
+        "quests": [],
+        "questItems": [],
+        "hintsRead": [],
+        "fragments": 0,
+        "restorers": 0,
+        "preparation": "Velocidad",
+        "preparationRemaining": 72.82210540771485
+    }
+}

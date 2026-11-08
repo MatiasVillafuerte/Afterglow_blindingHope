@@ -1,0 +1,590 @@
+fileFormatVersion: 2
+guid: 7634fb7576e2b764eb2186c001c4c82b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7679363181815085027
+    second: Hoja de personaje minero desarmado_0
+  - first:
+      213: 8739101931207831165
+    second: Hoja de personaje minero desarmado_1
+  - first:
+      213: 7864845566647395498
+    second: Hoja de personaje minero desarmado_2
+  - first:
+      213: 6379099776807377420
+    second: Hoja de personaje minero desarmado_3
+  - first:
+      213: 4089032736015507556
+    second: Hoja de personaje minero desarmado_4
+  - first:
+      213: 3770427147978167389
+    second: Hoja de personaje minero desarmado_5
+  - first:
+      213: 5691881857013111267
+    second: Hoja de personaje minero desarmado_6
+  - first:
+      213: -5669699936780664111
+    second: Hoja de personaje minero desarmado_7
+  - first:
+      213: -3555805649253658115
+    second: Hoja de personaje minero desarmado_8
+  - first:
+      213: -5442903859843526320
+    second: Hoja de personaje minero desarmado_9
+  - first:
+      213: 4022579755501515907
+    second: Hoja de personaje minero desarmado_10
+  - first:
+      213: 2683792534388252659
+    second: Hoja de personaje minero desarmado_11
+  - first:
+      213: 5746961600598643549
+    second: Hoja de personaje minero desarmado_12
+  - first:
+      213: 3780970015367278453
+    second: Hoja de personaje minero desarmado_13
+  - first:
+      213: -5917218696137677572
+    second: Hoja de personaje minero desarmado_14
+  - first:
+      213: -8589557588604975935
+    second: Hoja de personaje minero desarmado_15
+  - first:
+      213: -9126924750437204939
+    second: Hoja de personaje minero desarmado_16
+  - first:
+      213: -6761505563604961119
+    second: Hoja de personaje minero desarmado_17
+  - first:
+      213: -8935233281821288724
+    second: Hoja de personaje minero desarmado_18
+  - first:
+      213: -3185619698773595036
+    second: Hoja de personaje minero desarmado_19
+  - first:
+      213: -5496105415949627949
+    second: Hoja de personaje minero desarmado_20
+  - first:
+      213: -4482521909273490664
+    second: Hoja de personaje minero desarmado_21
+  - first:
+      213: 4224217492878125449
+    second: Hoja de personaje minero desarmado_22
+  - first:
+      213: -4046136126616347043
+    second: Hoja de personaje minero desarmado_23
+  - first:
+      213: 2405065310924524651
+    second: Hoja de personaje minero desarmado_24
+  - first:
+      213: -8321418171367362801
+    second: Hoja de personaje minero desarmado_25
+  - first:
+      213: -9031111062258592324
+    second: Hoja de personaje minero desarmado_26
+  - first:
+      213: 1744109858997863259
+    second: Hoja de personaje minero desarmado_27
+  - first:
+      213: 7931323231177779852
+    second: Hoja de personaje minero desarmado_28
+  - first:
+      213: 8027867114213019235
+    second: Hoja de personaje minero desarmado_29
+  - first:
+      213: -3869292333120152784
+    second: Hoja de personaje minero desarmado_30
+  - first:
+      213: 4863894416596068337
+    second: Hoja de personaje minero desarmado_31
+  - first:
+      213: 8431033316868526876
+    second: Hoja de personaje minero desarmado_32
+  - first:
+      213: 5112764144389276240
+    second: Hoja de personaje minero desarmado_33
+  - first:
+      213: 3467902362909270005
+    second: Hoja de personaje minero desarmado_34
+  - first:
+      213: -4851377704803457213
+    second: Hoja de personaje minero desarmado_35
+  - first:
+      213: -1423386519168747499
+    second: Hoja de personaje minero desarmado_36
+  - first:
+      213: -6216307077176161660
+    second: Hoja de personaje minero desarmado_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player_Head
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1184
+        width: 262
+        height: 338
+      alignment: 9
+      pivot: {x: 0.5101153, y: 0.02172707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e73d497024929a60800000000000000
+      internalID: 7679363181815085027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_RightArmA
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1132
+        width: 130
+        height: 136
+      alignment: 9
+      pivot: {x: 0.72424036, y: 0.7922911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2422562fd2151b0800000000000000
+      internalID: -5669699936780664111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_LeftArmA
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1134
+        width: 109
+        height: 134
+      alignment: 9
+      pivot: {x: 0.3541243, y: 0.6977694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0519c67f6cbe674b0800000000000000
+      internalID: -5442903859843526320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_LeftArmB
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 877
+        width: 150
+        height: 205
+      alignment: 9
+      pivot: {x: 0.3586621, y: 0.87489283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384785f99f213d730800000000000000
+      internalID: 4022579755501515907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Chest
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 684
+        width: 262
+        height: 458
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d531e75802f41cf40800000000000000
+      internalID: 5746961600598643549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_RightArmB
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 868
+        width: 143
+        height: 204
+      alignment: 9
+      pivot: {x: 0.7409186, y: 0.8767305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fae505234b87430800000000000000
+      internalID: 3780970015367278453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_RightArmC
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 721
+        width: 104
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5000009, y: 0.81643087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4e96652f0d1eda0800000000000000
+      internalID: -5917218696137677572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_LeftArmC
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 729
+        width: 105
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5000012, y: 0.8604131}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce65bcbcbacaff380800000000000000
+      internalID: -8935233281821288724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_RightLegA
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 509
+        width: 175
+        height: 201
+      alignment: 9
+      pivot: {x: 0.59086114, y: 0.9087227}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46cec1913c76ac3d0800000000000000
+      internalID: -3185619698773595036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_LeftLegA
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 504
+        width: 193
+        height: 207
+      alignment: 9
+      pivot: {x: 0.33522785, y: 0.884073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989edfccd6f6f9a30800000000000000
+      internalID: 4224217492878125449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_RightLegB
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 324
+        width: 207
+        height: 170
+      alignment: 9
+      pivot: {x: 0.5384072, y: 0.8741317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e582451ac39d7c0800000000000000
+      internalID: -4046136126616347043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_LeftLegB
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 325
+        width: 205
+        height: 171
+      alignment: 9
+      pivot: {x: 0.48707306, y: 0.840949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5303d21da2543810800000000000000
+      internalID: 1744109858997863259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_RightLegC
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 31
+        width: 302
+        height: 274
+      alignment: 9
+      pivot: {x: 0.3332716, y: 0.86753255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7e63ea336008340800000000000000
+      internalID: 4863894416596068337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_LeftLegC
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 31
+        width: 291
+        height: 274
+      alignment: 9
+      pivot: {x: 0.29964843, y: 0.9158921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0524da696ef24f640800000000000000
+      internalID: 5112764144389276240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d879e6c30775790438c445091ec70fd7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hoja de personaje minero desarmado_1: 8739101931207831165
+      Hoja de personaje minero desarmado_11: 2683792534388252659
+      Hoja de personaje minero desarmado_15: -8589557588604975935
+      Hoja de personaje minero desarmado_16: -9126924750437204939
+      Hoja de personaje minero desarmado_17: -6761505563604961119
+      Hoja de personaje minero desarmado_2: 7864845566647395498
+      Hoja de personaje minero desarmado_20: -5496105415949627949
+      Hoja de personaje minero desarmado_21: -4482521909273490664
+      Hoja de personaje minero desarmado_24: 2405065310924524651
+      Hoja de personaje minero desarmado_25: -8321418171367362801
+      Hoja de personaje minero desarmado_26: -9031111062258592324
+      Hoja de personaje minero desarmado_28: 7931323231177779852
+      Hoja de personaje minero desarmado_29: 8027867114213019235
+      Hoja de personaje minero desarmado_3: 6379099776807377420
+      Hoja de personaje minero desarmado_30: -3869292333120152784
+      Hoja de personaje minero desarmado_32: 8431033316868526876
+      Hoja de personaje minero desarmado_34: 3467902362909270005
+      Hoja de personaje minero desarmado_35: -4851377704803457213
+      Hoja de personaje minero desarmado_36: -1423386519168747499
+      Hoja de personaje minero desarmado_37: -6216307077176161660
+      Hoja de personaje minero desarmado_4: 4089032736015507556
+      Hoja de personaje minero desarmado_5: 3770427147978167389
+      Hoja de personaje minero desarmado_6: 5691881857013111267
+      Hoja de personaje minero desarmado_8: -3555805649253658115
+      Player_Chest: 5746961600598643549
+      Player_Head: 7679363181815085027
+      Player_LeftArmA: -5442903859843526320
+      Player_LeftArmB: 4022579755501515907
+      Player_LeftArmC: -8935233281821288724
+      Player_LeftLegA: 4224217492878125449
+      Player_LeftLegB: 1744109858997863259
+      Player_LeftLegC: 5112764144389276240
+      Player_RightArmA: -5669699936780664111
+      Player_RightArmB: 3780970015367278453
+      Player_RightArmC: -5917218696137677572
+      Player_RightLegA: -3185619698773595036
+      Player_RightLegB: -4046136126616347043
+      Player_RightLegC: 4863894416596068337
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

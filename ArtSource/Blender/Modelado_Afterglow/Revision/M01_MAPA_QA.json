@@ -1,0 +1,726 @@
+[
+  {
+    "object": "Diorama soil",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Diorama soil: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-1.335 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Diorama grass",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Diorama grass: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-0.025 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Expedition road",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Expedition road: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.185 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Expedition road.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Expedition road.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.185 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Expedition road.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Expedition road.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.185 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Expedition road.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Expedition road.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.185 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Expedition road.004",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Expedition road.004: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.185 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Expedition road.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Expedition road.005: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.185 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine hillside",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine hillside: ~77.72% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Mine hillside: 2 n-gons",
+      "asset lowest point z=-0.5389 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine opening",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine opening: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.04 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine frame",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine frame: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Mine frame.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine frame.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Lintel",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lintel: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.02 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine hillside.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine hillside.001: ~72.74% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Mine hillside.001: 6 n-gons",
+      "asset lowest point z=-0.5234 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine opening.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine opening.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.04 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine frame.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine frame.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Mine frame.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine frame.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Lintel.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lintel.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.02 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine lantern",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine lantern: ~82.14% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Mine lantern: 2 n-gons",
+      "asset lowest point z=0.88 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine hillside.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine hillside.002: ~89.7% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Mine hillside.002: 2 n-gons",
+      "asset lowest point z=-0.5149 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine opening.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine opening.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.04 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mine frame.004",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine frame.004: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Mine frame.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mine frame.005: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Lintel.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Lintel.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.02 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Blocked mouth",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Blocked mouth: ~74.45% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Blocked mouth: 6 n-gons",
+      "asset lowest point z=0.0304 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Blocked mouth.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Blocked mouth.001: ~88.47% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Blocked mouth.001: 6 n-gons",
+      "asset lowest point z=0.0319 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Blocked mouth.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Blocked mouth.002: ~75.44% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Blocked mouth.002: 8 n-gons",
+      "asset lowest point z=0.029 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Blocked mouth.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Blocked mouth.003: ~82.86% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Blocked mouth.003: 12 n-gons",
+      "asset lowest point z=0.0244 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Rail head.014",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Rail head.014: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.2 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Rail head.015",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Rail head.015: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.2 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Sleeper.107",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.107: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.15 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Sleeper.108",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.108: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.15 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Sleeper.109",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.109: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.15 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Sleeper.110",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.110: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.15 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Rail head.016",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Rail head.016: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.2 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Rail head.017",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Rail head.017: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.2 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Sleeper.111",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.111: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.15 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Sleeper.112",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.112: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.15 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Sleeper.113",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.113: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.15 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Sleeper.114",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Sleeper.114: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.15 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Mini cart",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Mini cart: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.22 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Crossing sign post",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Crossing sign post: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.005 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Crossing sign",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Crossing sign: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=1.02 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Viaduct column",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Viaduct column: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Viaduct column.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Viaduct column.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Viaduct column.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Viaduct column.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Viaduct column.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Viaduct column.003: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)"
+    ]
+  },
+  {
+    "object": "Viaduct deck",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Viaduct deck: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.94 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Village house",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Village house: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-0.005 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Village tiled roof",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Village tiled roof: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.7005 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Village house.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Village house.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-0.005 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Village tiled roof.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Village tiled roof.001: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.7005 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Village house.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Village house.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=-0.005 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Village tiled roof.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Village tiled roof.002: ~100.0% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "asset lowest point z=0.7005 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim: ~73.92% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim: 4 n-gons",
+      "asset lowest point z=0.0148 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.001",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.001: ~79.04% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.001: 6 n-gons",
+      "asset lowest point z=-0.0822 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.002",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.002: ~76.05% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.002: 4 n-gons",
+      "asset lowest point z=-0.3014 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.003",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.003: ~80.45% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.003: 3 n-gons",
+      "asset lowest point z=-0.2233 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.004",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.004: ~78.91% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.004: 4 n-gons",
+      "asset lowest point z=-0.3542 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.005",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.005: ~72.83% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.005: 2 n-gons",
+      "asset lowest point z=0.06 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.006",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.006: ~64.86% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.006: 8 n-gons",
+      "asset lowest point z=-0.3324 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.007",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.007: ~72.87% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.007: 2 n-gons",
+      "asset lowest point z=-0.2993 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.008",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.008: ~75.27% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.008: 6 n-gons",
+      "asset lowest point z=-0.0691 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.009",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.009: ~81.88% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.009: 4 n-gons",
+      "asset lowest point z=-0.1601 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.010",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.010: ~83.56% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.010: 5 n-gons",
+      "asset lowest point z=-0.1896 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.011",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.011: ~85.97% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.011: 4 n-gons",
+      "asset lowest point z=-0.3256 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.012",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.012: ~84.31% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.012: 4 n-gons",
+      "asset lowest point z=0.0238 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.013",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.013: ~88.1% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.013: 4 n-gons",
+      "asset lowest point z=-0.3339 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.014",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.014: ~80.62% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.014: 4 n-gons",
+      "asset lowest point z=-0.0738 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.015",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.015: ~82.94% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.015: 2 n-gons",
+      "asset lowest point z=-0.0279 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.016",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.016: ~73.01% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.016: 5 n-gons",
+      "asset lowest point z=-0.2928 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.017",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.017: ~72.43% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.017: 4 n-gons",
+      "asset lowest point z=-0.1607 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.018",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.018: ~75.41% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.018: 3 n-gons",
+      "asset lowest point z=0.0511 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.019",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.019: ~74.37% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.019: 4 n-gons",
+      "asset lowest point z=0.0332 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.020",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.020: ~59.97% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.020: 2 n-gons",
+      "asset lowest point z=-0.2407 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.021",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.021: ~81.64% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.021: 3 n-gons",
+      "asset lowest point z=0.0266 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.022",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.022: ~70.24% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.022: 4 n-gons",
+      "asset lowest point z=-0.0094 (not resting on ground plane z=0)"
+    ]
+  },
+  {
+    "object": "Valley rim.023",
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "Valley rim.023: ~80.01% UV overlap (ok only if mirrored/stacked on purpose; bakes break)",
+      "Valley rim.023: 3 n-gons",
+      "asset lowest point z=-0.0103 (not resting on ground plane z=0)"
+    ]
+  }
+]

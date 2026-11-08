@@ -1,0 +1,23 @@
+[
+  {
+    "name": "scenario-blender-expert",
+    "path": "C:\\Users\\matia\\.codex\\skills\\scenario-blender-expert",
+    "revision": "e24bc7d40be97b428e7b9fd467c415366e1dd974",
+    "files": 8,
+    "skillHash": "049F0ECD4BBBDC3E6EE09BEAC9CE5F262D6970F6932221E20E0420BF492BD5F2"
+  },
+  {
+    "name": "scenario-blender-hard-surface",
+    "path": "C:\\Users\\matia\\.codex\\skills\\scenario-blender-hard-surface",
+    "revision": "e24bc7d40be97b428e7b9fd467c415366e1dd974",
+    "files": 7,
+    "skillHash": "2BFCC5FBAB235B0AA6F94D73D9C01521B0143C89A5DC7BA994FA49EE0F3D2510"
+  },
+  {
+    "name": "scenario-blender-export",
+    "path": "C:\\Users\\matia\\.codex\\skills\\scenario-blender-export",
+    "revision": "e24bc7d40be97b428e7b9fd467c415366e1dd974",
+    "files": 4,
+    "skillHash": "742D381564DD1709B6054EA92CAF6D48566A91FFA1D8032415FC3D1F6200D475"
+  }
+]

@@ -1,0 +1,396 @@
+{
+  "blender": "5.2.3 LTS",
+  "seed": 40201,
+  "assets": [
+    {
+      "name": "Rock_A",
+      "file": "Rock_A.fbx",
+      "dimensionsBlender": [
+        1.7559781074523926,
+        1.2147197723388672,
+        1.0869144201278687
+      ],
+      "triangles": 60,
+      "vertices": 32,
+      "uvCount": 1,
+      "materials": [
+        "M01_Stone"
+      ],
+      "sourceGate": {
+        "profile": "game",
+        "eps": 0.00024,
+        "tol": 0.004792,
+        "gap": 0.023959,
+        "pass": true,
+        "errors": [],
+        "warnings": [],
+        "per_object": {
+          "Rock_A": {
+            "tris": 60,
+            "parts": 1,
+            "errors": [],
+            "warnings": []
+          }
+        },
+        "skipped": []
+      },
+      "gate": {
+        "profile": "game",
+        "eps": 0.00024,
+        "tol": 0.004792,
+        "gap": 0.023959,
+        "pass": true,
+        "errors": [],
+        "warnings": [],
+        "per_object": {
+          "Rock_A_Export": {
+            "tris": 60,
+            "parts": 1,
+            "errors": [],
+            "warnings": []
+          }
+        },
+        "skipped": []
+      },
+      "beforeExport": {
+        "objects": {
+          "Rock_A_Export": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              1.756,
+              1.2147,
+              1.0869
+            ],
+            "tris": 60,
+            "shape_keys": [],
+            "maps": {
+              "M01_Stone": [
+                "Base Color"
+              ]
+            }
+          }
+        },
+        "actions": []
+      }
+    },
+    {
+      "name": "Rock_B",
+      "file": "Rock_B.fbx",
+      "dimensionsBlender": [
+        1.365999460220337,
+        0.9782768487930298,
+        2.1738715171813965
+      ],
+      "triangles": 60,
+      "vertices": 32,
+      "uvCount": 1,
+      "materials": [
+        "M01_Stone"
+      ],
+      "sourceGate": {
+        "profile": "game",
+        "eps": 0.000275,
+        "tol": 0.005495,
+        "gap": 0.027475,
+        "pass": true,
+        "errors": [],
+        "warnings": [],
+        "per_object": {
+          "Rock_B": {
+            "tris": 60,
+            "parts": 1,
+            "errors": [],
+            "warnings": []
+          }
+        },
+        "skipped": []
+      },
+      "gate": {
+        "profile": "game",
+        "eps": 0.000275,
+        "tol": 0.005495,
+        "gap": 0.027475,
+        "pass": true,
+        "errors": [],
+        "warnings": [],
+        "per_object": {
+          "Rock_B_Export": {
+            "tris": 60,
+            "parts": 1,
+            "errors": [],
+            "warnings": []
+          }
+        },
+        "skipped": []
+      },
+      "beforeExport": {
+        "objects": {
+          "Rock_B_Export": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              1.366,
+              0.9783,
+              2.1739
+            ],
+            "tris": 60,
+            "shape_keys": [],
+            "maps": {
+              "M01_Stone": [
+                "Base Color"
+              ]
+            }
+          }
+        },
+        "actions": []
+      }
+    },
+    {
+      "name": "Rock_C",
+      "file": "Rock_C.fbx",
+      "dimensionsBlender": [
+        1.93307626247406,
+        1.514737844467163,
+        1.266318917274475
+      ],
+      "triangles": 60,
+      "vertices": 32,
+      "uvCount": 1,
+      "materials": [
+        "M01_Stone"
+      ],
+      "sourceGate": {
+        "profile": "game",
+        "eps": 0.000276,
+        "tol": 0.005526,
+        "gap": 0.027631,
+        "pass": true,
+        "errors": [],
+        "warnings": [],
+        "per_object": {
+          "Rock_C": {
+            "tris": 60,
+            "parts": 1,
+            "errors": [],
+            "warnings": []
+          }
+        },
+        "skipped": []
+      },
+      "gate": {
+        "profile": "game",
+        "eps": 0.000276,
+        "tol": 0.005526,
+        "gap": 0.027631,
+        "pass": true,
+        "errors": [],
+        "warnings": [],
+        "per_object": {
+          "Rock_C_Export": {
+            "tris": 60,
+            "parts": 1,
+            "errors": [],
+            "warnings": []
+          }
+        },
+        "skipped": []
+      },
+      "beforeExport": {
+        "objects": {
+          "Rock_C_Export": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              1.9331,
+              1.5147,
+              1.2663
+            ],
+            "tris": 60,
+            "shape_keys": [],
+            "maps": {
+              "M01_Stone": [
+                "Base Color"
+              ]
+            }
+          }
+        },
+        "actions": []
+      }
+    },
+    {
+      "name": "TimberSupport",
+      "file": "TimberSupport.fbx",
+      "dimensionsBlender": [
+        4.3790740966796875,
+        0.41999998688697815,
+        4.425495624542236
+      ],
+      "triangles": 660,
+      "vertices": 328,
+      "uvCount": 1,
+      "materials": [
+        "M01_Timber"
+      ],
+      "sourceGate": {
+        "profile": "game",
+        "eps": 0.000624,
+        "tol": 0.01248,
+        "gap": 0.0624,
+        "pass": true,
+        "errors": [],
+        "warnings": [
+          "TimberSupport: 9 n-gons"
+        ],
+        "per_object": {
+          "TimberSupport": {
+            "tris": 660,
+            "parts": 1,
+            "errors": [],
+            "warnings": [
+              "TimberSupport: 9 n-gons"
+            ]
+          }
+        },
+        "skipped": []
+      },
+      "gate": {
+        "profile": "game",
+        "eps": 0.000624,
+        "tol": 0.01248,
+        "gap": 0.0624,
+        "pass": true,
+        "errors": [],
+        "warnings": [],
+        "per_object": {
+          "TimberSupport_Export": {
+            "tris": 660,
+            "parts": 1,
+            "errors": [],
+            "warnings": []
+          }
+        },
+        "skipped": []
+      },
+      "beforeExport": {
+        "objects": {
+          "TimberSupport_Export": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              4.3791,
+              0.42,
+              4.4255
+            ],
+            "tris": 660,
+            "shape_keys": [],
+            "maps": {
+              "M01_Timber": [
+                "Base Color"
+              ]
+            }
+          }
+        },
+        "actions": []
+      }
+    },
+    {
+      "name": "RailModule",
+      "file": "RailModule.fbx",
+      "dimensionsBlender": [
+        3.0,
+        1.4799998998641968,
+        0.42500004172325134
+      ],
+      "triangles": 1032,
+      "vertices": 512,
+      "uvCount": 1,
+      "materials": [
+        "M01_Timber",
+        "M01_Iron"
+      ],
+      "sourceGate": {
+        "profile": "game",
+        "eps": 0.000337,
+        "tol": 0.006744,
+        "gap": 0.033721,
+        "pass": true,
+        "errors": [],
+        "warnings": [
+          "RailModule: 16 n-gons"
+        ],
+        "per_object": {
+          "RailModule": {
+            "tris": 1032,
+            "parts": 1,
+            "errors": [],
+            "warnings": [
+              "RailModule: 16 n-gons"
+            ]
+          }
+        },
+        "skipped": []
+      },
+      "gate": {
+        "profile": "game",
+        "eps": 0.000337,
+        "tol": 0.006744,
+        "gap": 0.033721,
+        "pass": true,
+        "errors": [],
+        "warnings": [],
+        "per_object": {
+          "RailModule_Export": {
+            "tris": 1032,
+            "parts": 1,
+            "errors": [],
+            "warnings": []
+          }
+        },
+        "skipped": []
+      },
+      "beforeExport": {
+        "objects": {
+          "RailModule_Export": {
+            "type": "MESH",
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "size": [
+              3.0,
+              1.48,
+              0.425
+            ],
+            "tris": 1032,
+            "shape_keys": [],
+            "maps": {
+              "M01_Timber": [
+                "Base Color"
+              ],
+              "M01_Iron": []
+            }
+          }
+        },
+        "actions": []
+      }
+    }
+  ]
+}

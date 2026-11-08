@@ -1,0 +1,13 @@
+# Servicios, consumibles y encargos iniciales
+- Tienda cobra cinco y añade fragmento: True
+- Vendedor vende solo alcohol/cigarro: True
+- Pista gasta la coca del altar: True
+- Pista repetida no cobra: True
+- Preparación cuesta dos hojas y pausa duración: True
+- Preparación afecta velocidad: True
+- Fragmento cura dos sin superar máximo: True
+- Aceptar Q01 no cuenta bajas anteriores: True
+- Q01 entrega una vez: True
+- Q01 no paga otra vez: True
+- Casco recogible persistente: True
+- Q02 devuelve casco y recompensa única: True

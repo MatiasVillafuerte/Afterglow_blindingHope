@@ -1,0 +1,11 @@
+# Verificación de importación y escena
+- Colisiones originales idénticas: True
+- Cámara aprobada conservada: True
+- Rock_A: PASS=True, triángulos=60, escala/pivote=True, normales=True, UV=True, materiales URP=True
+- Rock_B: PASS=True, triángulos=60, escala/pivote=True, normales=True, UV=True, materiales URP=True
+- Rock_C: PASS=True, triángulos=60, escala/pivote=True, normales=True, UV=True, materiales URP=True
+- TimberSupport: PASS=True, triángulos=660, escala/pivote=True, normales=True, UV=True, materiales URP=True
+- RailModule: PASS=True, triángulos=1032, escala/pivote=True, normales=True, UV=True, materiales URP=True
+- Cabezas de ambos rieles con hierro: True (triángulos correctos 4, incorrectos 0)
+- Componentes perdidos: 0
+- Resultado conjunto: True

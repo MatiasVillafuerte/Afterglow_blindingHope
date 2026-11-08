@@ -1,0 +1,12 @@
+# Prólogo y transición de salas
+- Carta literal y control bloqueado: True
+- Carta completa y timbre único: True
+- Puerta caminando casa a patio: True
+- Capitán lleva al acceso: True
+- Teléfono una vez y pico aún no entregado: True
+- Puerta física inicia expedición: True
+- Pico antes de agresión: True
+- Regreso conserva vida y posición enemiga: True
+- Cruzar salas no renueva expedición: True
+- Enemigo derrotado sigue derrotado: True
+- Expedición voluntaria renueva enemigos: True
