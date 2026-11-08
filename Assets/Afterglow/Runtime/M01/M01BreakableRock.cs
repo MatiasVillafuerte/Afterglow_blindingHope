@@ -6,9 +6,13 @@ namespace Afterglow.M01
     public sealed class M01BreakableRock : MonoBehaviour
     {
         const string Broken = "N01.S03.ROCA_ROTA";
+        public string eventId = Broken;
+        /// <summary>Encargo que cuenta esta roca (Q07). Con perAttempt la roca reaparece en cada expedición voluntaria.</summary>
+        public string questId; public bool perAttempt;
+        string EventKey => perAttempt ? eventId + "." + M01Session.Instance.data.expeditionAttempt : eventId;
         void Start()
         {
-            if (M01Session.Instance.data.events.Contains(Broken)) gameObject.SetActive(false);
+            if (M01Session.Instance.data.events.Contains(EventKey)) gameObject.SetActive(false);
         }
 
         public void TryStrike(Vector3 origin, Vector3 facing)
@@ -24,7 +28,8 @@ namespace Afterglow.M01
         {
             if (!gameObject.activeInHierarchy) return;
             var events = M01Session.Instance.data.events;
-            if (!events.Contains(Broken)) events.Add(Broken);
+            if (!events.Contains(EventKey)) events.Add(EventKey);
+            if (!string.IsNullOrEmpty(questId)) { var q = M01Session.Instance.data.Quest(questId); if (q.active && !q.paid) q.count++; }
             Debris();
             gameObject.SetActive(false);
         }

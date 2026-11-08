@@ -219,6 +219,18 @@ N2.03 · Si el carro queda mal: «La palanca devuelve los carros a sus topes. No
 
 N2.04 · Minero al final: «La siguiente zona está llena de cruces. Nosotros seguiremos despejando esta puerta. Ve preparando el aporte del altar.»
 
+N2P.01 · Platicio, consejo en el andén: «Más adelante cuelga un Hangzzer del farol. Cuando baja y silba, salen resistencias del túnel. Golpéalo mientras está abajo.»
+
+N2P.02 · Platicio, orientación: «La torre de poleas del fondo marca la galería final. Si te pierdes, búscala sobre el muro.»
+
+N2M.01 · Minero Ticona, conversación ambiental: «Este carro y yo llevamos veinte años juntos. Él no se queja, yo sí. Funciona.»
+
+N2M.02 · Minero Ticona: «Si escuchas un silbido en el patio, no es el capataz. El capataz no sabe silbar.»
+
+N2D.01 · Minero del derrumbe, investigación: «El techo cedió justo después del cruce. Detrás se oyen golpes: hay gente esperando.»
+
+N2D.02 · Minero del derrumbe, cierre de la investigación: «Anota lo que viste y vuelve al altar del acceso. Con el aporte completo, el capitán abrirá las galerías de las señales.» Al terminar se registra la investigación de N2.
+
 ### Escena N3 Laberinto
 
 N3.01 · Platicio: «En las cámaras de cruce hay cuatro puertas. Una es para volver. Para seguir, tendrás que fijarte en la pista de esa habitación.»
@@ -238,6 +250,18 @@ N3.07 · Primera confirmación, texto ambiental: «Una marca del equipo. Vamos p
 N3.08 · Acotación: las pistas concretas se redactan después de definir el plano y la solución de cada cámara. Cada texto debe corresponder a una puerta real y correcta; no conservar un consejo espacial que haya dejado de ser cierto tras remodelar.
 
 Los mineros ambientales hablan al interactuar. Ejemplo propuesto: «Ese farol lleva tres turnos trabajando. Ya pidió vacaciones». La conversación es repetible y no inicia una misión.
+
+N3M.01 · Minero Choque, ambiental en la bocamina: «Ese farol lleva tres turnos trabajando. Ya pidió vacaciones.»
+
+N3M.02 · Minero Choque: «Yo cuento los faroles dos veces. La segunda, por si el primero se equivocó.»
+
+N3M.03 · Minero rescatado, tras Q05: «Ya reconozco esta piedra. Es la de la entrada. Creo.»
+
+N3M.04 · Minero perdido, al empezar a seguir: «Voy detrás de ti. Si cruzas una puerta, cruzo la misma.»
+
+N3D.01 · Minero de la galería oscura, investigación: «Desde aquí ya no se ve el fondo. Necesitaremos luz para seguir; vuelve al altar con el aporte y prepararemos el paso.» Al terminar se registra la investigación de N3.
+
+N3 · Código de pistas implementado (8 de noviembre): cada cámara de cruce tiene una señal con N faroles y la continuación principal es la única puerta con N faroles sobre el dintel (cruce de las tres bocas: 2; cruce escalonado: 3; galería del pozo: 1). La puerta baja del cruce escalonado es el ramal especial del taller de placas.
 
 ### Escena N4 Oscuridad
 

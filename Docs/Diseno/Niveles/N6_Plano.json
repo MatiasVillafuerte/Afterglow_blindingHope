@@ -1,0 +1,242 @@
+{
+  "level": 6,
+  "id": "M01N06",
+  "name": "Cámara del derrumbe",
+  "units": "metros Unity. Arena circular de radio 10 (GDD 7). PerforAudora escalado ×4 (≈4,6 m).",
+  "slabFormat": "[nombre, x, z, ancho, fondo, cota_superior, material]",
+  "wallFormat": "[nombre, x, z, ancho, fondo, alto]",
+  "beats": [
+    [
+      "N06S01",
+      0.3,
+      "Corredor narrativo: voces de los atrapados como subtítulos; puerta del rescate"
+    ],
+    [
+      "N06S02",
+      1.0,
+      "Arena: tres grupos, piedras, altar de arena, Tío; victoria, pieza, capitán, vagoneta y Continuará"
+    ]
+  ],
+  "gates": [
+    {
+      "from": "N06S01",
+      "to": "N06S02",
+      "needs": [
+        "interactuar con la puerta (o mantener F tras una derrota)"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "N06S01",
+      "name": "Corredor del derrumbe",
+      "lights": [
+        [
+          -8,
+          3,
+          -1,
+          1.4
+        ],
+        [
+          0,
+          3,
+          -1,
+          1.4
+        ],
+        [
+          8,
+          3,
+          -1,
+          1.6
+        ]
+      ],
+      "function": "Pasillo narrativo estrecho que contrasta con la arena. Las voces de los atrapados aparecen como subtítulos al avanzar. E en la puerta inicia el rescate.",
+      "camera": {
+        "focusX": [
+          -10,
+          10
+        ],
+        "focusZ": [
+          -4,
+          0
+        ],
+        "depthBlend": [
+          -4,
+          0
+        ]
+      },
+      "entry": [
+        -10,
+        0.05,
+        -2
+      ],
+      "slabs": [
+        [
+          "Corridor",
+          0,
+          -2,
+          26,
+          4,
+          0,
+          "Dust"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall",
+          0,
+          0.6,
+          26,
+          1.2,
+          5
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Salida al valle",
+          "to": "M01_MAPA",
+          "pos": [
+            -12,
+            0,
+            -4
+          ],
+          "trigger": [
+            -12,
+            0,
+            -3.4
+          ],
+          "arrival": [
+            0,
+            0,
+            0
+          ],
+          "portal": false
+        }
+      ],
+      "props": {
+        "lamps": [
+          [
+            -8,
+            2.6,
+            -0.4,
+            0
+          ],
+          [
+            0,
+            2.6,
+            -0.4,
+            0
+          ],
+          [
+            8,
+            2.6,
+            -0.4,
+            0
+          ]
+        ],
+        "rescueDoor": [
+          11,
+          0,
+          0
+        ]
+      },
+      "offerings": [],
+      "npcs": [],
+      "enemies": []
+    },
+    {
+      "id": "N06S02",
+      "name": "Cámara del derrumbe",
+      "boss": true,
+      "lights": [
+        [
+          0,
+          7,
+          0,
+          3.0
+        ],
+        [
+          -6,
+          4,
+          -5,
+          1.4
+        ],
+        [
+          0,
+          5,
+          11,
+          1.6
+        ]
+      ],
+      "function": "Arena circular de radio 10 con pared continua, altar de batalla independiente y cornisa segura de Platicio. Tras la victoria: pieza, capitán, vagoneta escondida y Continuará.",
+      "camera": {
+        "focusX": [
+          -7,
+          7
+        ],
+        "focusZ": [
+          -8,
+          7
+        ],
+        "depthBlend": [
+          -8,
+          6
+        ]
+      },
+      "entry": [
+        0,
+        0.05,
+        -7.5
+      ],
+      "slabs": [],
+      "walls": [],
+      "arena": {
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "radius": 10,
+        "altar": [
+          -6,
+          0,
+          -5
+        ],
+        "ledge": [
+          0,
+          2.6,
+          11.6
+        ],
+        "drill": [
+          0,
+          0,
+          3
+        ],
+        "cart": [
+          8,
+          0,
+          -12.5
+        ],
+        "cartEnd": [
+          22,
+          0,
+          -12.5
+        ],
+        "captain": [
+          -3,
+          0,
+          -8.5
+        ],
+        "cartMiner": [
+          5.5,
+          0,
+          -12
+        ]
+      },
+      "doors": [],
+      "offerings": [],
+      "npcs": [],
+      "enemies": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "room": "N02S01",
+    "triangles": 21032,
+    "pieces": []
+  },
+  {
+    "room": "N02S02",
+    "triangles": 21302,
+    "pieces": [
+      "Export_Cart_CARRO_REJA",
+      "Export_Cart_CARRO_REJA.001",
+      "Export_Plate_CARRO_REJA",
+      "Export_Cart_CARRO_Q03_1",
+      "Export_Cart_CARRO_Q03_1.001",
+      "Export_Cart_CARRO_Q03_1.002",
+      "Export_Plate_CARRO_Q03_1"
+    ]
+  },
+  {
+    "room": "N02S03",
+    "triangles": 16248,
+    "pieces": [
+      "Export_Cart_CARRO_Q03_2",
+      "Export_Cart_CARRO_Q03_2.001",
+      "Export_Cart_CARRO_Q03_2.002",
+      "Export_Plate_CARRO_Q03_2"
+    ]
+  },
+  {
+    "room": "N02S04",
+    "triangles": 10674,
+    "pieces": [
+      "Export_Rock_N02.S04.ROCA.0",
+      "Export_Rock_N02.S04.ROCA.1",
+      "Export_Rock_N02.S04.ROCA.2"
+    ]
+  },
+  {
+    "room": "N02S05",
+    "triangles": 10778,
+    "pieces": []
+  }
+]

@@ -382,22 +382,22 @@
     },
     {
       "id": "N2.01",
-      "speaker": "Hijo del minero, al acceso",
+      "speaker": "Platicio",
       "text": "Los carros siguen sobre los rieles, pero no donde deberían. Si los colocas en los apartaderos, quizá despejes el paso sin tocar las vigas."
     },
     {
       "id": "N2.02",
-      "speaker": "Minero ante el primer puzle",
+      "speaker": "Minero del cruce",
       "text": "Ese carro mantiene bajada la placa. Déjalo sobre la marca y la reja seguirá abierta."
     },
     {
       "id": "N2.03",
-      "speaker": "Si el carro queda mal",
+      "speaker": "Minero del cruce",
       "text": "La palanca devuelve los carros a sus topes. No hace falta empezar toda la galería otra vez."
     },
     {
       "id": "N2.04",
-      "speaker": "Minero al final",
+      "speaker": "Minero del derrumbe",
       "text": "La siguiente zona está llena de cruces. Nosotros seguiremos despejando esta puerta. Ve preparando el aporte del altar."
     },
     {
@@ -759,6 +759,71 @@
       "id": "N5.05",
       "speaker": "Minero",
       "text": "Desde aquí ya se oyen sus golpes. La cámara está tras ese tramo derrumbado. Completa el aporte y haremos el último esfuerzo."
+    },
+    {
+      "id": "N2P.01",
+      "speaker": "Platicio",
+      "text": "Más adelante cuelga un Hangzzer del farol. Cuando baja y silba, salen resistencias del túnel. Golpéalo mientras está abajo."
+    },
+    {
+      "id": "N2P.02",
+      "speaker": "Platicio",
+      "text": "La torre de poleas del fondo marca la galería final. Si te pierdes, búscala sobre el muro."
+    },
+    {
+      "id": "N2M.01",
+      "speaker": "Minero Ticona",
+      "text": "Este carro y yo llevamos veinte años juntos. Él no se queja, yo sí. Funciona."
+    },
+    {
+      "id": "N2M.02",
+      "speaker": "Minero Ticona",
+      "text": "Si escuchas un silbido en el patio, no es el capataz. El capataz no sabe silbar."
+    },
+    {
+      "id": "N2D.01",
+      "speaker": "Minero del derrumbe",
+      "text": "El techo cedió justo después del cruce. Detrás se oyen golpes: hay gente esperando."
+    },
+    {
+      "id": "N2D.02",
+      "speaker": "Minero del derrumbe",
+      "text": "Anota lo que viste y vuelve al altar del acceso. Con el aporte completo, el capitán abrirá las galerías de las señales."
+    },
+    {
+      "id": "N3.06",
+      "speaker": "Acotación",
+      "text": "Una marca del equipo minero cambia la composición del espacio."
+    },
+    {
+      "id": "N3.07",
+      "speaker": "Marca del equipo",
+      "text": "Una marca del equipo. Vamos por buen camino."
+    },
+    {
+      "id": "N3M.01",
+      "speaker": "Minero Choque",
+      "text": "Ese farol lleva tres turnos trabajando. Ya pidió vacaciones."
+    },
+    {
+      "id": "N3M.02",
+      "speaker": "Minero Choque",
+      "text": "Yo cuento los faroles dos veces. La segunda, por si el primero se equivocó."
+    },
+    {
+      "id": "N3M.03",
+      "speaker": "Minero rescatado",
+      "text": "Ya reconozco esta piedra. Es la de la entrada. Creo."
+    },
+    {
+      "id": "N3M.04",
+      "speaker": "Minero perdido",
+      "text": "Voy detrás de ti. Si cruzas una puerta, cruzo la misma."
+    },
+    {
+      "id": "N3D.01",
+      "speaker": "Minero de la galería oscura",
+      "text": "Desde aquí ya no se ve el fondo. Necesitaremos luz para seguir; vuelve al altar con el aporte y prepararemos el paso."
     }
   ]
 }

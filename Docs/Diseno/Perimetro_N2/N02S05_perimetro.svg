@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876" height="766" font-family="sans-serif" font-size="11">
+<rect width="100%" height="100%" fill="#f6f1e7"/><text x="8" y="18" font-size="15" font-weight="bold">N02S05 · perímetro protegido y huecos jugables (vista superior, +Z arriba)</text>
+<g transform="translate(0,30)">
+<rect x="56.0" y="509.6" width="504.0" height="140.0" fill="rgb(215,203,185)" stroke="#6b5a45" stroke-width=".6"/>
+<text x="60.2" y="522.2">South_bank y=0.00</text>
+<rect x="56.0" y="257.6" width="504.0" height="112.0" fill="rgb(215,203,185)" stroke="#6b5a45" stroke-width=".6"/>
+<text x="60.2" y="270.2">North_bank y=0.00</text>
+<rect x="112.0" y="201.6" width="112.0" height="56.0" fill="rgb(203,191,173)" stroke="#6b5a45" stroke-width=".6"/>
+<text x="116.2" y="214.2">Step_A y=0.65</text>
+<rect x="112.0" y="145.6" width="112.0" height="56.0" fill="rgb(191,179,161)" stroke="#6b5a45" stroke-width=".6"/>
+<text x="116.2" y="158.2">Step_B y=1.30</text>
+<rect x="112.0" y="89.6" width="280.0" height="56.0" fill="rgb(179,167,149)" stroke="#6b5a45" stroke-width=".6"/>
+<text x="116.2" y="102.2">Final_ledge y=1.95</text>
+<rect x="112.0" y="56.0" width="280.0" height="33.6" fill="#5c534b" opacity=".75"/>
+<rect x="336.0" y="224.0" width="224.0" height="33.6" fill="#5c534b" opacity=".75"/>
+<rect x="56.0" y="369.6" width="504.0" height="140.0" fill="#f0a030" opacity=".7" stroke="#b06a00" stroke-dasharray="4 3"/>
+<text x="565.6" y="439.6" fill="#8a4b00">Garganta de la polea</text>
+<line x1="56.0" y1="649.6" x2="560.0" y2="649.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="56.0" y1="649.6" x2="56.0" y2="509.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="560.0" y1="649.6" x2="560.0" y2="509.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="56.0" y1="257.6" x2="105.0" y2="257.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="224.0" y1="257.6" x2="329.0" y2="257.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="56.0" y1="369.6" x2="56.0" y2="257.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="560.0" y1="369.6" x2="560.0" y2="257.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="112.0" y1="250.6" x2="112.0" y2="201.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="224.0" y1="250.6" x2="224.0" y2="201.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="112.0" y1="201.6" x2="112.0" y2="145.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="224.0" y1="201.6" x2="224.0" y2="152.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="231.0" y1="145.6" x2="392.0" y2="145.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="112.0" y1="145.6" x2="112.0" y2="89.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="392.0" y1="145.6" x2="392.0" y2="89.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(636,50)"><rect width="16" height="10" fill="#c8bba3"/><text x="22" y="9">Superficie (más oscura = más alta)</text>
+<line x1="0" y1="28" x2="16" y2="28" stroke="#c0262d" stroke-width="3.5"/><text x="22" y="32">Perímetro protegido: barrera + estacas</text>
+<rect y="44" width="16" height="10" fill="#f0a030"/><text x="22" y="53">Hueco jugable: caída −2, vuelta a la entrada</text>
+<rect y="66" width="16" height="10" fill="#5c534b"/><text x="22" y="75">Masa sólida o pared</text></g>
+</svg>

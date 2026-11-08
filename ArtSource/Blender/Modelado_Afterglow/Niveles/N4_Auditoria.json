@@ -1,0 +1,32 @@
+[
+  {
+    "room": "N04S01",
+    "triangles": 9130,
+    "pieces": []
+  },
+  {
+    "room": "N04S02",
+    "triangles": 13596,
+    "pieces": []
+  },
+  {
+    "room": "N04S03",
+    "triangles": 15874,
+    "pieces": [
+      "Export_Cart_CARRO_LUZ",
+      "Export_Cart_CARRO_LUZ.001",
+      "Export_Cart_CARRO_LUZ.002",
+      "Export_Plate_CARRO_LUZ"
+    ]
+  },
+  {
+    "room": "N04S04",
+    "triangles": 11032,
+    "pieces": []
+  },
+  {
+    "room": "N04S05",
+    "triangles": 9076,
+    "pieces": []
+  }
+]

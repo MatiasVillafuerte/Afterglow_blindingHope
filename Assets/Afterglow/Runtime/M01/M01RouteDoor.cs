@@ -14,6 +14,9 @@ namespace Afterglow.M01
         public float interactionRadius=1.8f;
         public float verticalTolerance;
         public bool fade, blockedWhenWorldClosed;
+        /// <summary>Puerta equivocada de un cruce de N3: devuelve a la misma cámara lógica y muestra N3.03 o N3.04.</summary>
+        public bool wrongDoor;
+        public string firstErrorLine = "N3.03", laterErrorLine = "N3.04";
         InputAction interact;
         bool requested;
         void OnEnable()
@@ -40,6 +43,7 @@ namespace Afterglow.M01
             {
                 if(!warned){warned=true;FindAnyObjectByType<M01Dialogue>().BeginText("Paso cerrado",requiredOpening>=0?"Primero termina la investigación y completa el aporte en el altar.":"Habla con quien te espera junto a la entrada.");}return;
             }
+            if(wrongDoor){bool first=!data.events.Contains("N3.ERROR");if(first)data.events.Add("N3.ERROR");M01Expedition.PendingLines=new[]{first?firstErrorLine:laterErrorLine};}
             M01Expedition.Travel(destination,arrival,leaveExpedition,enterExpedition,fade);
         }
     }

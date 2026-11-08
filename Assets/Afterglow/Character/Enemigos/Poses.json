@@ -1,0 +1,345 @@
+{
+  "Drilly": [
+    {
+      "file": "Drilly_0.png",
+      "source_box": [
+        117,
+        146,
+        1512,
+        618
+      ],
+      "size": [
+        1465,
+        571
+      ]
+    }
+  ],
+  "Gasplode": [
+    {
+      "file": "Gasplode_0.png",
+      "source_box": [
+        56,
+        179,
+        542,
+        570
+      ],
+      "size": [
+        545,
+        573
+      ]
+    },
+    {
+      "file": "Gasplode_1.png",
+      "source_box": [
+        614,
+        131,
+        535,
+        618
+      ],
+      "size": [
+        538,
+        621
+      ]
+    },
+    {
+      "file": "Gasplode_2.png",
+      "source_box": [
+        1140,
+        238,
+        609,
+        494
+      ],
+      "size": [
+        612,
+        497
+      ]
+    },
+    {
+      "file": "Gasplode_3.png",
+      "source_box": [
+        1443,
+        280,
+        61,
+        58
+      ],
+      "size": [
+        64,
+        61
+      ]
+    }
+  ],
+  "Hangzzer": [
+    {
+      "file": "Hangzzer_0.png",
+      "source_box": [
+        131,
+        236,
+        667,
+        475
+      ],
+      "size": [
+        610,
+        418
+      ]
+    },
+    {
+      "file": "Hangzzer_1.png",
+      "source_box": [
+        1063,
+        41,
+        498,
+        798
+      ],
+      "size": [
+        441,
+        741
+      ]
+    }
+  ],
+  "HangzzerSeparadoColgado": [
+    {
+      "file": "HangzzerSeparadoColgado_0.png",
+      "source_box": [
+        216,
+        301,
+        482,
+        437
+      ],
+      "size": [
+        455,
+        410
+      ]
+    },
+    {
+      "file": "HangzzerSeparadoColgado_1.png",
+      "source_box": [
+        284,
+        138,
+        169,
+        140
+      ],
+      "size": [
+        142,
+        113
+      ]
+    },
+    {
+      "file": "HangzzerSeparadoColgado_2.png",
+      "source_box": [
+        471,
+        141,
+        166,
+        138
+      ],
+      "size": [
+        139,
+        111
+      ]
+    },
+    {
+      "file": "HangzzerSeparadoColgado_3.png",
+      "source_box": [
+        1074,
+        113,
+        231,
+        553
+      ],
+      "size": [
+        204,
+        526
+      ]
+    },
+    {
+      "file": "HangzzerSeparadoColgado_4.png",
+      "source_box": [
+        1318,
+        247,
+        223,
+        543
+      ],
+      "size": [
+        196,
+        516
+      ]
+    }
+  ],
+  "HangzzerSeparadoSilbando": [
+    {
+      "file": "HangzzerSeparadoSilbando_0.png",
+      "source_box": [
+        217,
+        279,
+        635,
+        460
+      ],
+      "size": [
+        608,
+        433
+      ]
+    },
+    {
+      "file": "HangzzerSeparadoSilbando_1.png",
+      "source_box": [
+        286,
+        140,
+        167,
+        140
+      ],
+      "size": [
+        140,
+        113
+      ]
+    },
+    {
+      "file": "HangzzerSeparadoSilbando_2.png",
+      "source_box": [
+        472,
+        140,
+        163,
+        140
+      ],
+      "size": [
+        136,
+        113
+      ]
+    },
+    {
+      "file": "HangzzerSeparadoSilbando_3.png",
+      "source_box": [
+        955,
+        156,
+        372,
+        511
+      ],
+      "size": [
+        345,
+        484
+      ]
+    },
+    {
+      "file": "HangzzerSeparadoSilbando_4.png",
+      "source_box": [
+        1268,
+        366,
+        374,
+        311
+      ],
+      "size": [
+        347,
+        284
+      ]
+    }
+  ],
+  "Lighmet": [
+    {
+      "file": "Lighmet_0.png",
+      "source_box": [
+        254,
+        13,
+        599,
+        556
+      ],
+      "size": [
+        572,
+        529
+      ]
+    },
+    {
+      "file": "Lighmet_1.png",
+      "source_box": [
+        685,
+        579,
+        387,
+        273
+      ],
+      "size": [
+        360,
+        246
+      ]
+    },
+    {
+      "file": "Lighmet_2.png",
+      "source_box": [
+        980,
+        13,
+        535,
+        558
+      ],
+      "size": [
+        508,
+        531
+      ]
+    }
+  ],
+  "PerforAudora": [
+    {
+      "file": "PerforAudora_0.png",
+      "source_box": [
+        128,
+        67,
+        1531,
+        726
+      ],
+      "size": [
+        1484,
+        679
+      ]
+    }
+  ],
+  "PerforAudoraSinLogo": [
+    {
+      "file": "PerforAudoraSinLogo_0.png",
+      "source_box": [
+        131,
+        69,
+        1527,
+        718
+      ],
+      "size": [
+        1480,
+        671
+      ]
+    }
+  ],
+  "Resisworm": [
+    {
+      "file": "Resisworm_0.png",
+      "source_box": [
+        118,
+        368,
+        564,
+        396
+      ],
+      "size": [
+        532,
+        364
+      ]
+    },
+    {
+      "file": "Resisworm_1.png",
+      "source_box": [
+        831,
+        0,
+        251,
+        800
+      ],
+      "size": [
+        219,
+        780
+      ]
+    },
+    {
+      "file": "Resisworm_2.png",
+      "source_box": [
+        1339,
+        0,
+        422,
+        776
+      ],
+      "size": [
+        390,
+        765
+      ]
+    }
+  ]
+}

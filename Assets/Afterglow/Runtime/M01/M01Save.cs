@@ -22,7 +22,7 @@ namespace Afterglow.M01
                 var player=UnityEngine.Object.FindAnyObjectByType<AfterglowPlayer>();
                 var rules=player?player.GetComponent<M01PlayerRules>():null;
                 var dialogue=UnityEngine.Object.FindAnyObjectByType<M01Dialogue>();
-                return player&&rules&&!player.Dead&&player.Grounded&&!rules.Recovering&&!rules.scriptedControl&&!rules.restrictedActivity&&!M01Expedition.Transitioning&&(!dialogue||!dialogue.IsOpen);
+                return !M01PlayerRules.SaveBlocked&&player&&rules&&!player.Dead&&player.Grounded&&!rules.Recovering&&!rules.scriptedControl&&!rules.restrictedActivity&&!M01Expedition.Transitioning&&(!dialogue||!dialogue.IsOpen);
             }
         }
         public static bool TryWrite(out string error,string file=null)

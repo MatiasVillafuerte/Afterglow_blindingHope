@@ -1,0 +1,134 @@
+{
+  "level": 4,
+  "id": "M01N04",
+  "name": "Galería sin luz",
+  "units": "metros Unity; mismas métricas. Iluminación: ambiente casi negro; lámpara del casco de 4,2 m para el suelo inmediato; faroles fijos en cada rellano; carro de luz y Lighmet como luces móviles.",
+  "slabFormat": "[nombre, x, z, ancho, fondo, cota_superior, material]",
+  "wallFormat": "[nombre, x, z, ancho, fondo, alto]",
+  "lampFormat": "[x, alto_del_poste, z, cota_de_la_base]",
+  "beats": [
+    ["N04S01", 0.15, "Andén oscuro: Platicio explica que las lámparas fijas marcan el camino"],
+    ["N04S02", 0.45, "Descenso por rellanos iluminados; primer Lighmet cuyas bolas de fuego alumbran"],
+    ["N04S03", 0.7, "Cruce largo y oscuro: el carro de luz revela el camino (Q09); componentes del cruce (Q10)"],
+    ["N04S04", 0.5, "Ascenso en profundidad por peldaños con un farol en cada uno"],
+    ["N04S05", 0.2, "Estación de carga: investigación; anuncia la vía suspendida"]
+  ],
+  "gates": [
+    {"from": "N04S01", "to": "N04S02", "needs": []},
+    {"from": "N04S02", "to": "N04S03", "needs": []},
+    {"from": "N04S03", "to": "N04S04", "needs": []},
+    {"from": "N04S04", "to": "N04S05", "needs": []},
+    {"from": "N04S05", "to": "INVESTIGACION", "needs": []}
+  ],
+  "rooms": [
+    {
+      "id": "N04S01", "name": "Andén oscuro", "dark": true,
+      "lights": [[-8, 3, 0, 1.8], [6, 3.4, 0, 2.2]],
+      "function": "Entrada. Solo dos faroles: el del fondo marca la puerta de salida. Platicio da los consejos N4.01–02.",
+      "camera": {"focusX": [-7, 7], "focusZ": [-7, 3], "depthBlend": [-6, 3]},
+      "entry": [-7, 0.05, -4],
+      "slabs": [["Floor", 0, -3, 20, 8, 0, "Dust"], ["Back_shelf", -6, 3, 8, 4, 0.65, "SlateLight"]],
+      "walls": [["Back_right", 5, 1.6, 10, 1.2, 4], ["Back_wall", -6, 5.6, 8, 1.2, 5]],
+      "doors": [
+        {"name": "Descenso", "to": "N04S02", "pos": [6, 0, 1], "trigger": [6, 0, 0.2], "arrival": [-8, 2.65, -3], "portal": true},
+        {"name": "Salida al valle", "to": "M01_MAPA", "pos": [-8, 0, -7], "trigger": [-8, 0, -6.3], "arrival": [0, 0, 0], "portal": false}
+      ],
+      "props": {"lamps": [[-8, 2.6, 0.6, 0], [7.6, 2.6, 0.2, 0]]},
+      "offerings": [["EXP.N04S01.0", -8, 1.0, 3.5], ["EXP.N04S01.1", 9, 0.35, -6]],
+      "npcs": [
+        {"id": "PLATICIO", "label": "Platicio", "pos": [-4, 0, -3], "kind": "story", "lines": ["N4.01", "N4.02"], "event": "N4.INTRO", "automatic": true, "radius": 3.2, "gift": "N4"},
+        {"id": "MINERO_APAZA", "label": "Minero Apaza", "pos": [3, 0, -5], "kind": "talk", "lines": ["N4M.01", "N4M.02"]}
+      ],
+      "enemies": []
+    },
+    {
+      "id": "N04S02", "name": "Descenso de las vigas", "dark": true,
+      "lights": [[-9, 5, -1, 1.6], [-3, 4.4, -1, 1.5], [1, 3.8, -1, 1.5], [5, 3.1, -1, 1.5], [11, 2.8, 3, 1.6]],
+      "function": "Bajada por rellanos de 0,65 m. Cada rellano tiene su farol (TOK 1:39). Un Lighmet flota sobre el tercer rellano y sus bolas de fuego iluminan al pasar.",
+      "camera": {"focusX": [-8, 11], "focusZ": [-6, 3], "depthBlend": [-5, 3]},
+      "entry": [-8, 2.65, -3],
+      "slabs": [
+        ["Top_landing", -8, -3, 6, 6, 2.6, "SlateLight"],
+        ["Landing_2", -3, -3, 4, 6, 1.95, "SlateLight"],
+        ["Landing_3", 1, -3, 4, 6, 1.3, "SlateLight"],
+        ["Landing_4", 5, -3, 4, 6, 0.65, "SlateLight"],
+        ["Bottom", 10, -1, 6, 10, 0, "Dust"]
+      ],
+      "walls": [["Back_upper", -3, 0.6, 16, 1.2, 6], ["Bottom_back", 10, 4.6, 6, 1.2, 5]],
+      "doors": [
+        {"name": "Andén oscuro", "to": "N04S01", "pos": [-8, 2.6, -6], "trigger": [-8, 2.6, -5.4], "arrival": [6, 0.05, -0.6], "portal": false},
+        {"name": "Cruce oscuro", "to": "N04S03", "pos": [10, 0, 4], "trigger": [10, 0, 3.2], "arrival": [-12, 0.05, -4], "portal": true}
+      ],
+      "props": {"lamps": [[-9, 2.4, -0.5, 2.6], [-3, 2.4, -0.5, 1.95], [1, 2.4, -0.5, 1.3], [5, 2.4, -0.5, 0.65], [11.6, 2.6, 3.4, 0]]},
+      "offerings": [["EXP.N04S02.0", -3, 2.3, -5], ["EXP.N04S02.1", 12, 0.35, -5]],
+      "npcs": [],
+      "enemies": [
+        {"id": "S02.LIGHMET.N4", "type": "Lighmet", "pos": [1, 1.35, -3]},
+        {"id": "S02.RESISTANCE.N4", "type": "Resisworm", "pos": [10, 0.05, -2]}
+      ]
+    },
+    {
+      "id": "N04S03", "name": "Cruce del carro de luz", "dark": true,
+      "lights": [[-12, 3, 0, 1.6], [11, 3.6, 4, 1.8]],
+      "function": "Cruce largo y oscuro. El carro de luz recorre el riel y alumbra el paso; llevarlo al refugio cumple Q09. Cuatro componentes rondan el cruce (Q10).",
+      "camera": {"focusX": [-11, 11], "focusZ": [-6, 5], "depthBlend": [-5, 4]},
+      "entry": [-12, 0.05, -4],
+      "slabs": [["Floor", 0, -2, 28, 8, 0, "Dust"], ["Refuge", 11, 4, 6, 4, 0.65, "SlateLight"]],
+      "walls": [["Back_wall", -3, 2.6, 22, 1.2, 4], ["Refuge_back", 11, 6.6, 6, 1.2, 5]],
+      "doors": [
+        {"name": "Descenso", "to": "N04S02", "pos": [-12, 0, -6], "trigger": [-12, 0, -5.4], "arrival": [10, 0.05, 3.2], "portal": false},
+        {"name": "Grieta alta", "to": "N04S04", "pos": [12, 0.65, 6], "trigger": [12, 0.65, 5.2], "arrival": [0, 0.05, -5.5], "portal": true}
+      ],
+      "props": {"lamps": [[-12.6, 2.6, 1.4, 0], [9, 2.6, 5.4, 0.65]], "tracks": [[[-12.4, 0, 0.6], [9.4, 0, 0.6]]]},
+      "offerings": [["EXP.N04S03.0", 0, 0.35, -5], ["EXP.N04S03.1", -6, 0.35, 1.5]],
+      "mechanisms": [{"type": "cart", "id": "CARRO_LUZ", "axis": "x", "z": 0.6, "min": -11.6, "max": 8.6, "start": -10.6, "plate": 8.0, "marked": true, "event": "Q09.CARRO_LUZ", "light": true}],
+      "npcs": [
+        {"id": "MINERO_REFUGIO", "label": "Minero del refugio", "pos": [10, 0.65, 4.4], "kind": "quest", "quest": "Q09", "start": "SEC.17", "end": "SEC.18", "requiredEvents": ["Q09.CARRO_LUZ"], "offerings": 2, "money": 0},
+        {"id": "CAPATAZ_HERRAMIENTAS", "label": "Capataz Huanca", "pos": [12.6, 0.65, 3.4], "kind": "quest", "quest": "Q10", "start": "SEC.19", "end": "SEC.20", "requiredCount": 4, "offerings": 2, "money": 12}
+      ],
+      "enemies": [
+        {"id": "N04.RESISTANCE.0", "type": "Resisworm", "pos": [-4, 0.05, -3]},
+        {"id": "N04.RESISTANCE.1", "type": "Resisworm", "pos": [2, 0.05, -2]},
+        {"id": "N04.RESISTANCE.2", "type": "Resisworm", "pos": [6, 0.05, -4]},
+        {"id": "N04.LIGHMET.1", "type": "Lighmet", "pos": [0, 0.05, -3.5]}
+      ]
+    },
+    {
+      "id": "N04S04", "name": "Grieta alta", "dark": true,
+      "lights": [[-4, 3.4, 0, 1.4], [0, 4.0, 1, 1.4], [4, 4.6, 2, 1.4], [8, 5.2, 3, 1.6]],
+      "function": "Ascenso en profundidad: peldaños de 0,65 m que retroceden en Z, con un farol en cada uno. Lighmet junto al segundo peldaño.",
+      "camera": {"focusX": [-6, 8], "focusZ": [-7, 6], "depthBlend": [-6, 5]},
+      "entry": [0, 0.05, -5.5],
+      "slabs": [
+        ["Floor", 0, -4, 16, 6, 0, "Dust"],
+        ["Step_1", -4, 0, 4, 3, 0.65, "SlateLight"],
+        ["Step_2", 0, 1, 4, 3, 1.3, "SlateLight"],
+        ["Step_3", 4, 2, 4, 3, 1.95, "SlateLight"],
+        ["Top", 8, 3, 4, 6, 2.6, "SlateLight"]
+      ],
+      "walls": [["Back_wall", 2, 6.6, 16, 1.2, 6]],
+      "doors": [
+        {"name": "Cruce oscuro", "to": "N04S03", "pos": [0, 0, -7], "trigger": [0, 0, -6.4], "arrival": [12, 0.7, 4.4], "portal": false},
+        {"name": "Estación de carga", "to": "N04S05", "pos": [8, 2.6, 6], "trigger": [8, 2.6, 5.2], "arrival": [0, 0.05, -5.5], "portal": true}
+      ],
+      "props": {"lamps": [[-5.4, 2.2, 1.2, 0.65], [-1.4, 2.2, 2.2, 1.3], [2.6, 2.2, 3.2, 1.95], [9.6, 2.2, 5, 2.6]]},
+      "offerings": [["EXP.N04S04.0", -4, 1.0, 0], ["EXP.N04S04.1", 4, 2.3, 2.8], ["EXP.N04S04.2", 9, 2.95, 5]],
+      "npcs": [],
+      "enemies": [{"id": "S04.LIGHMET.N4", "type": "Lighmet", "pos": [1, 1.35, -2.5]}]
+    },
+    {
+      "id": "N04S05", "name": "Estación de carga", "dark": true,
+      "lights": [[-5, 3.2, -1, 2.0], [5, 3.2, -1, 2.0], [0, 3.8, 4, 2.0]],
+      "function": "Final con más faroles (descanso). El minero junto a la vía registra la investigación y anuncia la vía suspendida (N4.04).",
+      "camera": {"focusX": [-6, 6], "focusZ": [-7, 4], "depthBlend": [-6, 3]},
+      "entry": [0, 0.05, -5.5],
+      "slabs": [["Floor", 0, -2, 16, 10, 0, "Dust"], ["Platform", 0, 4, 8, 2, 0.65, "SlateLight"]],
+      "walls": [["Derrumbe", 0, 5.6, 16, 1.2, 5.2]],
+      "doors": [{"name": "Grieta alta", "to": "N04S04", "pos": [0, 0, -7], "trigger": [0, 0, -6.4], "arrival": [8, 2.65, 4.6], "portal": false}],
+      "props": {"lamps": [[-6, 2.6, 2.4, 0], [6, 2.6, 2.4, 0]], "tracks": [[[-7.6, 0, 1.2], [7.6, 0, 1.2]]]},
+      "offerings": [["EXP.N04S05.0", 6, 0.35, -1]],
+      "npcs": [{"id": "MINERO_ESTACION", "label": "Minero de la estación", "pos": [0, 0.65, 4], "kind": "investigation", "index": 3, "lines": ["N4.04", "N4D.01"]}],
+      "enemies": [{"id": "S05.RESISTANCE.N4", "type": "Resisworm", "pos": [-4, 0.05, -1]}]
+    }
+  ]
+}

@@ -12,6 +12,8 @@ public class AfterglowPlayer : MonoBehaviour {
  public Vector3 Facing {get;private set;}=Vector3.right;
  public float VerticalSpeed=>velocityY; public bool Grounded=>controller.isGrounded;
  public string AnimationState {get;private set;}
+ /// <summary>Entrada de movimiento del último cuadro (para mecanismos como el carro).</summary>
+ public Vector2 MoveInput {get;private set;}
  public bool Dead {get;private set;}
  CharacterController controller; SpriteRenderer[] sprites; float velocityY,nextAttack,attackEnd,impactAt,invulnerableUntil; bool impactPending,jumpRequested,attackRequested;
  InputAction jumpAction,attackAction;
@@ -23,15 +25,16 @@ public class AfterglowPlayer : MonoBehaviour {
  void OnDisable(){jumpAction?.Dispose();attackAction?.Dispose();jumpRequested=attackRequested=false;}
  void Update(){
   if(Dead)return;
-  if(worldOne && worldOne.BlocksControl){jumpRequested=attackRequested=false;return;}
+  if(worldOne && worldOne.BlocksControl){jumpRequested=attackRequested=false;MoveInput=Vector2.zero;return;}
   var k=Keyboard.current; if(k!=null&&k.f9Key.wasPressedThisFrame)AfterglowHitbox.ShowVolumes=!AfterglowHitbox.ShowVolumes;
   Vector2 move=Vector2.zero; bool jump=false,attack=false;
   if(testControl){move=testMove;jump=testJump;attack=testAttack;testJump=testAttack=false;}
   else if(k!=null){move=new Vector2((k.rightArrowKey.isPressed?1:0)-(k.leftArrowKey.isPressed?1:0),(k.upArrowKey.isPressed?1:0)-(k.downArrowKey.isPressed?1:0));jump=jumpRequested;attack=attackRequested;}
   jumpRequested=attackRequested=false;
-  move=Vector2.ClampMagnitude(move,1); Vector3 horizontal=new Vector3(move.x,0,move.y);
-  if(worldOne && attack && Time.time>=nextAttack && worldOne.CanAttack(controller.isGrounded)){nextAttack=Time.time+worldOne.AttackInterval;attackEnd=Time.time+worldOne.AttackInterval;impactAt=Time.time+.15f;impactPending=true;Play("Attack");}
+  move=Vector2.ClampMagnitude(move,1); MoveInput=move; Vector3 horizontal=new Vector3(move.x,0,move.y);
+  if(worldOne && attack && Time.time>=nextAttack && worldOne.CanAttack(controller.isGrounded)){worldOne.RegisterAttack();nextAttack=Time.time+worldOne.AttackInterval;attackEnd=Time.time+worldOne.AttackInterval;impactAt=Time.time+.15f;impactPending=true;Play("Attack");}
   if(worldOne && Time.time<attackEnd && !worldOne.walkingAttackUnlocked){horizontal=Vector3.zero;move=Vector2.zero;jump=false;}
+  else if(worldOne && Time.time<attackEnd)horizontal*=.7f; // Pico en marcha: 70 % de velocidad
   if(horizontal.sqrMagnitude>.01f)Facing=horizontal.normalized;
   if(controller.isGrounded && velocityY<0)velocityY=-2;
   if(jump && controller.isGrounded)velocityY=Mathf.Sqrt(-2*gravity*jumpHeight);
@@ -53,7 +56,8 @@ public class AfterglowPlayer : MonoBehaviour {
     var rock=col.GetComponentInParent<Afterglow.M01.M01BreakableRock>();
     if(rock&&struck.Add(rock)){rock.Break();continue;}
     var enemy=col.GetComponentInParent<AfterglowEnemy>();
-    if(enemy&&!enemy.Defeated&&struck.Add(enemy)&&!Physics.Linecast(transform.position+Vector3.up*.8f,enemy.transform.position+Vector3.up*.8f,1<<0,QueryTriggerInteraction.Ignore))enemy.TakeDamage(damage);
+    // Línea de visión a 1,2 m: no la corta el canto de un desnivel de hasta 0,65 m entre atacante y objetivo.
+    if(enemy&&!enemy.Defeated&&struck.Add(enemy)&&!Physics.Linecast(transform.position+Vector3.up*1.2f,enemy.transform.position+Vector3.up*1.2f,1<<0,QueryTriggerInteraction.Ignore))enemy.TakeDamage(worldOne.StrikeDamage());
    }
    LastStrikeTargets=struck.Count;return;}
   foreach(var enemy in FindObjectsByType<AfterglowEnemy>()){

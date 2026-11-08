@@ -1,0 +1,1 @@
+{"boxes": [{"name": "Floor", "center": [0, -1.5, -3], "size": [22, 3, 8]}, {"name": "Back_terrace", "center": [0, -1.1749999999999998, 3], "size": [10, 3.65, 4]}, {"name": "Back_wall", "center": [0, 2.5, 5.6], "size": [22, 5, 1.2]}, {"name": "Back_left", "center": [-8, 2.0, 1.6], "size": [6, 4, 1.2]}, {"name": "Back_right", "center": [8, 2.0, 1.6], "size": [6, 4, 1.2]}]}

@@ -39,6 +39,8 @@ namespace Afterglow.M01
         static Vector3 savedFacing;
         static bool fading;
         public static bool Transitioning { get; private set; }
+        /// <summary>Líneas que se muestran al llegar a la sala (p. ej. aviso de puerta equivocada en N3).</summary>
+        public static string[] PendingLines;
         public static string ScenePath(string id) => "Assets/Afterglow/Scenes/M01/" + id + ".unity";
         public static readonly Vector3 MineEntrance = new Vector3(-1,.05f,-5.55f);
         public static readonly Vector3 PhoneReturn = new Vector3(3,.05f,-4.6f);
@@ -51,7 +53,13 @@ namespace Afterglow.M01
                 case "N01S02": return new Vector3(-8,.05f,-5.2f);
                 case "N01S03": return new Vector3(6,.05f,-6.7f);
                 case "N01S04": return new Vector3(5,.05f,-5.8f);
-                default: return new Vector3(4,.05f,0);
+                // N2 · Rieles cruzados (Docs/Diseno/Niveles/N2_Plano.json, campo entry)
+                case "N02S01": return new Vector3(-10,.05f,-4);
+                case "N02S02": return new Vector3(-9,.05f,-3);
+                case "N02S03": return new Vector3(-10,.05f,-5);
+                case "N02S04": return new Vector3(-8,.05f,-4);
+                case "N02S05": return new Vector3(-6,.05f,-5);
+                default: return M01LevelEntrances.Entries.TryGetValue(id, out var entry) ? entry : new Vector3(4,.05f,0);
             }
         }
 
@@ -97,6 +105,7 @@ namespace Afterglow.M01
                 fading=false;Time.timeScale=1;
             }
             Transitioning = false;
+            if (PendingLines != null) { var lines = PendingLines; PendingLines = null; var talk = FindAnyObjectByType<M01Dialogue>(); if (talk) { yield return null; talk.Begin(lines); } }
         }
         public void Capture()
         {

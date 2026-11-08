@@ -1,0 +1,1504 @@
+{
+  "level": 3,
+  "id": "M01N03",
+  "name": "Galerías de las señales",
+  "units": "metros Unity; mismas métricas que N1/N2.",
+  "slabFormat": "[nombre, x, z, ancho, fondo, cota_superior, material]",
+  "wallFormat": "[nombre, x, z, ancho, fondo, alto]",
+  "code": "Pista de cada cámara de cruce: la señal del cruce muestra N faroles; la continuación principal es la única puerta con N faroles sobre el dintel. Platicio y el tablero de la entrada la explican. Una puerta equivocada devuelve a la misma cámara lógica (N3.03, luego N3.04). Excepción explícita: la puerta baja izquierda de la cámara escalonada lleva al taller de placas (ramal especial), que regresa a su cámara de origen.",
+  "beats": [
+    [
+      "N03S01",
+      0.15,
+      "Entrada: Platicio explica el código de faroles; encargo Q05 (minero perdido)"
+    ],
+    [
+      "N03S02",
+      0.35,
+      "Primer cruce: tres bocas a la misma altura; señal de 2"
+    ],
+    [
+      "N03S03",
+      0.45,
+      "Confirmación: plataformas con huecos cortos, primer Gasplode evitable y marca del equipo"
+    ],
+    [
+      "N03S04",
+      0.6,
+      "Segundo cruce: puertas a tres alturas; Drilly sigue bajo tierra; señal de 3"
+    ],
+    [
+      "N03S05",
+      0.3,
+      "Ramal especial: taller de placas (Q06), tesoro y minero perdido"
+    ],
+    [
+      "N03S06",
+      0.7,
+      "Tercer cruce: pozo central con pasarela; Gasplodes junto a las puertas falsas; señal de 1"
+    ],
+    [
+      "N03S07",
+      0.2,
+      "Final: minero de la galería sin luz; investigación"
+    ]
+  ],
+  "gates": [
+    {
+      "from": "N03S01",
+      "to": "N03S02",
+      "needs": []
+    },
+    {
+      "from": "N03S02",
+      "to": "N03S03",
+      "needs": [
+        "puerta de 2 faroles"
+      ]
+    },
+    {
+      "from": "N03S03",
+      "to": "N03S04",
+      "needs": []
+    },
+    {
+      "from": "N03S04",
+      "to": "N03S06",
+      "needs": [
+        "puerta de 3 faroles (terraza alta)"
+      ]
+    },
+    {
+      "from": "N03S04",
+      "to": "N03S05",
+      "needs": [
+        "puerta baja izquierda (ramal especial)"
+      ]
+    },
+    {
+      "from": "N03S06",
+      "to": "N03S07",
+      "needs": [
+        "puerta de 1 farol (pasarela del pozo)"
+      ]
+    },
+    {
+      "from": "N03S07",
+      "to": "INVESTIGACION",
+      "needs": []
+    }
+  ],
+  "rooms": [
+    {
+      "id": "N03S01",
+      "name": "Bocamina de las señales",
+      "lights": [
+        [
+          -5,
+          3.2,
+          -2,
+          1.5
+        ],
+        [
+          5,
+          3.2,
+          -2,
+          1.5
+        ],
+        [
+          0,
+          3.6,
+          3,
+          1.4
+        ]
+      ],
+      "function": "Entrada. Tablero de práctica: una señal de 2 faroles. Platicio explica el código. El minero perdido de Q05 aparece aquí cuando se le trae caminando y entrega la recompensa.",
+      "camera": {
+        "focusX": [
+          -8,
+          8
+        ],
+        "focusZ": [
+          -7,
+          4
+        ],
+        "depthBlend": [
+          -6,
+          4
+        ]
+      },
+      "entry": [
+        -8,
+        0.05,
+        -4
+      ],
+      "slabs": [
+        [
+          "Floor",
+          0,
+          -3,
+          22,
+          8,
+          0,
+          "Dust"
+        ],
+        [
+          "Back_terrace",
+          0,
+          3,
+          10,
+          4,
+          0.65,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall",
+          0,
+          5.6,
+          22,
+          1.2,
+          5
+        ],
+        [
+          "Back_left",
+          -8,
+          1.6,
+          6,
+          1.2,
+          4
+        ],
+        [
+          "Back_right",
+          8,
+          1.6,
+          6,
+          1.2,
+          4
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Cámaras de cruce",
+          "to": "N03S02",
+          "pos": [
+            0,
+            0.65,
+            5
+          ],
+          "trigger": [
+            0,
+            0.65,
+            4.2
+          ],
+          "arrival": [
+            0,
+            0.05,
+            -5.5
+          ],
+          "portal": true
+        },
+        {
+          "name": "Salida al valle",
+          "to": "M01_MAPA",
+          "pos": [
+            -9,
+            0,
+            -7
+          ],
+          "trigger": [
+            -9,
+            0,
+            -6.3
+          ],
+          "arrival": [
+            0,
+            0,
+            0
+          ],
+          "portal": false
+        }
+      ],
+      "signs": [
+        [
+          4,
+          0,
+          0.3,
+          2,
+          "Señal de práctica · cuenta los faroles"
+        ]
+      ],
+      "props": {
+        "lamps": [
+          [
+            -7,
+            2.6,
+            0.6
+          ],
+          [
+            7,
+            2.6,
+            0.6
+          ]
+        ]
+      },
+      "offerings": [
+        [
+          "EXP.N03S01.0",
+          -4,
+          1.0,
+          3.5
+        ]
+      ],
+      "npcs": [
+        {
+          "id": "PLATICIO",
+          "label": "Platicio",
+          "pos": [
+            -4,
+            0,
+            -3
+          ],
+          "kind": "story",
+          "lines": [
+            "N3.01",
+            "N3.02"
+          ],
+          "event": "N3.INTRO",
+          "automatic": true,
+          "radius": 3.2,
+          "gift": "N3"
+        },
+        {
+          "id": "MINERO_RESCATADO",
+          "label": "Minero rescatado",
+          "pos": [
+            3.4,
+            0,
+            -5.2
+          ],
+          "kind": "quest",
+          "visibleEvent": "Q05.ENTREGADO",
+          "quest": "Q05",
+          "start": "SEC.09",
+          "end": "SEC.10",
+          "requiredEvents": [
+            "Q05.ENTREGADO"
+          ],
+          "offerings": 2,
+          "money": 10
+        },
+        {
+          "id": "MINERO_FAROL",
+          "label": "Minero Choque",
+          "pos": [
+            7,
+            0,
+            -4
+          ],
+          "kind": "talk",
+          "lines": [
+            "N3M.01",
+            "N3M.02"
+          ]
+        }
+      ],
+      "enemies": []
+    },
+    {
+      "id": "N03S02",
+      "name": "Cruce de las tres bocas",
+      "lights": [
+        [
+          -6,
+          3.4,
+          1,
+          1.4
+        ],
+        [
+          6,
+          3.4,
+          1,
+          1.4
+        ],
+        [
+          0,
+          3.4,
+          -3,
+          1.2
+        ]
+      ],
+      "function": "Primer cruce: tres bocas iguales a la misma altura. La señal muestra 2 faroles; la boca izquierda tiene 2.",
+      "camera": {
+        "focusX": [
+          -7,
+          7
+        ],
+        "focusZ": [
+          -7,
+          3
+        ],
+        "depthBlend": [
+          -6,
+          3
+        ]
+      },
+      "entry": [
+        0,
+        0.05,
+        -5.5
+      ],
+      "slabs": [
+        [
+          "Floor",
+          0,
+          -2,
+          20,
+          10,
+          0,
+          "Dust"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall",
+          0,
+          3.6,
+          20,
+          1.2,
+          5
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Regreso",
+          "to": "N03S01",
+          "pos": [
+            0,
+            0,
+            -7
+          ],
+          "trigger": [
+            0,
+            0,
+            -6.4
+          ],
+          "arrival": [
+            0,
+            0.7,
+            3.4
+          ],
+          "portal": false
+        },
+        {
+          "name": "Boca izquierda",
+          "to": "N03S03",
+          "pos": [
+            -6,
+            0,
+            3
+          ],
+          "trigger": [
+            -6,
+            0,
+            2.2
+          ],
+          "arrival": [
+            -7,
+            0.05,
+            -4
+          ],
+          "portal": true,
+          "lights": 2
+        },
+        {
+          "name": "Boca central",
+          "to": "N03S02",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "trigger": [
+            0,
+            0,
+            2.2
+          ],
+          "arrival": [
+            0,
+            0.05,
+            -5.5
+          ],
+          "portal": true,
+          "lights": 1,
+          "wrong": true
+        },
+        {
+          "name": "Boca derecha",
+          "to": "N03S02",
+          "pos": [
+            6,
+            0,
+            3
+          ],
+          "trigger": [
+            6,
+            0,
+            2.2
+          ],
+          "arrival": [
+            0,
+            0.05,
+            -5.5
+          ],
+          "portal": true,
+          "lights": 3,
+          "wrong": true
+        }
+      ],
+      "signs": [
+        [
+          0,
+          0,
+          -3.2,
+          2,
+          "Señal del cruce"
+        ]
+      ],
+      "offerings": [
+        [
+          "EXP.N03S02.0",
+          8,
+          0.35,
+          -5
+        ]
+      ],
+      "npcs": [],
+      "enemies": [
+        {
+          "id": "N03.RESISTANCE.0",
+          "type": "Resisworm",
+          "pos": [
+            4,
+            0.05,
+            -1.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N03S03",
+      "name": "Marca del equipo",
+      "lights": [
+        [
+          -7,
+          3,
+          -2,
+          1.4
+        ],
+        [
+          3,
+          4.2,
+          -1,
+          1.4
+        ],
+        [
+          8.5,
+          4.4,
+          2,
+          1.6
+        ]
+      ],
+      "function": "Confirmación: cambia la composición (plataformas con huecos cortos y un descanso alto). Primer Gasplode en una esquina evitable. La marca del equipo confirma el avance (N3.07).",
+      "camera": {
+        "focusX": [
+          -7,
+          9
+        ],
+        "focusZ": [
+          -6,
+          4
+        ],
+        "depthBlend": [
+          -5,
+          3
+        ]
+      },
+      "entry": [
+        -7,
+        0.05,
+        -4
+      ],
+      "slabs": [
+        [
+          "Start",
+          -7,
+          -3,
+          6,
+          6,
+          0,
+          "Dust"
+        ],
+        [
+          "Platform_1",
+          -1.5,
+          -2,
+          3,
+          4,
+          0.65,
+          "SlateLight"
+        ],
+        [
+          "Platform_2",
+          3,
+          -1,
+          4,
+          4,
+          1.3,
+          "SlateLight"
+        ],
+        [
+          "Rest_end",
+          8.5,
+          0,
+          5,
+          8,
+          1.3,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "End_back",
+          8.5,
+          4.6,
+          5,
+          1.2,
+          5
+        ]
+      ],
+      "gaps": [
+        {
+          "name": "Hueco 1",
+          "reason": "Salto corto de 1 m; caída intencional.",
+          "min": [
+            -4.0,
+            -6.0
+          ],
+          "max": [
+            -3.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Hueco 2",
+          "reason": "Salto corto de 1 m; caída intencional.",
+          "min": [
+            0.0,
+            -4.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "Hueco 3",
+          "reason": "Salto corto de 1 m; caída intencional.",
+          "min": [
+            5.0,
+            -4.0
+          ],
+          "max": [
+            6.0,
+            1.0
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "name": "Regreso",
+          "to": "N03S02",
+          "pos": [
+            -7,
+            0,
+            -6
+          ],
+          "trigger": [
+            -7,
+            0,
+            -5.4
+          ],
+          "arrival": [
+            -6,
+            0.05,
+            1.4
+          ],
+          "portal": false
+        },
+        {
+          "name": "Seguir",
+          "to": "N03S04",
+          "pos": [
+            8.5,
+            1.3,
+            4
+          ],
+          "trigger": [
+            8.5,
+            1.3,
+            3.2
+          ],
+          "arrival": [
+            0,
+            0.05,
+            -5.5
+          ],
+          "portal": true
+        }
+      ],
+      "props": {
+        "banner": [
+          8.5,
+          1.3,
+          3.6
+        ]
+      },
+      "offerings": [
+        [
+          "EXP.N03S03.0",
+          -1.5,
+          1.0,
+          -1
+        ],
+        [
+          "EXP.N03S03.1",
+          10,
+          1.65,
+          -3
+        ]
+      ],
+      "npcs": [
+        {
+          "id": "MARCA",
+          "label": "Marca del equipo",
+          "pos": [
+            7,
+            1.3,
+            2.4
+          ],
+          "kind": "story",
+          "lines": [
+            "N3.07"
+          ],
+          "event": "N3.CONFIRM1",
+          "automatic": true,
+          "radius": 2.6,
+          "hidden": true
+        }
+      ],
+      "enemies": [
+        {
+          "id": "N03.GASPLODE.0",
+          "type": "Gasplode",
+          "pos": [
+            4.4,
+            1.35,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N03S04",
+      "name": "Cruce escalonado",
+      "lights": [
+        [
+          -7,
+          3,
+          2,
+          1.4
+        ],
+        [
+          0,
+          3.6,
+          2,
+          1.3
+        ],
+        [
+          7,
+          4.2,
+          2,
+          1.4
+        ]
+      ],
+      "function": "Segundo cruce: tres puertas a tres alturas (0; 0,65; 1,3). Señal de 3: la puerta alta. La baja izquierda es el ramal especial (excepción explícita al bucle). Drilly sigue bajo el suelo del frente.",
+      "camera": {
+        "focusX": [
+          -7,
+          7
+        ],
+        "focusZ": [
+          -7,
+          4
+        ],
+        "depthBlend": [
+          -6,
+          4
+        ]
+      },
+      "entry": [
+        0,
+        0.05,
+        -5.5
+      ],
+      "slabs": [
+        [
+          "Floor",
+          0,
+          -3,
+          20,
+          8,
+          0,
+          "Dust"
+        ],
+        [
+          "Low_alcove",
+          -7,
+          3,
+          6,
+          4,
+          0,
+          "Dust"
+        ],
+        [
+          "Mid_terrace",
+          0,
+          3,
+          8,
+          4,
+          0.65,
+          "SlateLight"
+        ],
+        [
+          "High_terrace",
+          7,
+          3,
+          6,
+          4,
+          1.3,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall",
+          0,
+          5.6,
+          20,
+          1.2,
+          5
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Regreso",
+          "to": "N03S03",
+          "pos": [
+            0,
+            0,
+            -7
+          ],
+          "trigger": [
+            0,
+            0,
+            -6.4
+          ],
+          "arrival": [
+            8.5,
+            1.35,
+            2.6
+          ],
+          "portal": false
+        },
+        {
+          "name": "Puerta baja",
+          "to": "N03S05",
+          "pos": [
+            -7,
+            0,
+            5
+          ],
+          "trigger": [
+            -7,
+            0,
+            4.2
+          ],
+          "arrival": [
+            0,
+            0.05,
+            -5.5
+          ],
+          "portal": true,
+          "lights": 1
+        },
+        {
+          "name": "Puerta media",
+          "to": "N03S04",
+          "pos": [
+            0,
+            0.65,
+            5
+          ],
+          "trigger": [
+            0,
+            0.65,
+            4.2
+          ],
+          "arrival": [
+            0,
+            0.05,
+            -5.5
+          ],
+          "portal": true,
+          "lights": 2,
+          "wrong": true
+        },
+        {
+          "name": "Puerta alta",
+          "to": "N03S06",
+          "pos": [
+            7,
+            1.3,
+            5
+          ],
+          "trigger": [
+            7,
+            1.3,
+            4.2
+          ],
+          "arrival": [
+            -3,
+            0.05,
+            -5.5
+          ],
+          "portal": true,
+          "lights": 3
+        }
+      ],
+      "signs": [
+        [
+          -3,
+          0,
+          -2.6,
+          3,
+          "Señal del cruce"
+        ]
+      ],
+      "offerings": [
+        [
+          "EXP.N03S04.0",
+          9,
+          1.65,
+          3.8
+        ]
+      ],
+      "npcs": [],
+      "enemies": [
+        {
+          "id": "N03.DRILLY.0",
+          "type": "Drilly",
+          "pos": [
+            3,
+            0.05,
+            -3.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N03S05",
+      "name": "Taller de placas",
+      "lights": [
+        [
+          -5,
+          3,
+          -1,
+          1.4
+        ],
+        [
+          5,
+          3,
+          -1,
+          1.4
+        ]
+      ],
+      "function": "Ramal especial desde la puerta baja. Tres placas de señal torcidas (Q06), tesoro en la repisa y el minero perdido de Q05. Vuelve a la cámara escalonada.",
+      "camera": {
+        "focusX": [
+          -6,
+          6
+        ],
+        "focusZ": [
+          -7,
+          4
+        ],
+        "depthBlend": [
+          -6,
+          3
+        ]
+      },
+      "entry": [
+        0,
+        0.05,
+        -5.5
+      ],
+      "slabs": [
+        [
+          "Floor",
+          0,
+          -2,
+          16,
+          10,
+          0,
+          "Dust"
+        ],
+        [
+          "Shelf",
+          -5,
+          4,
+          6,
+          2,
+          0.65,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall",
+          0,
+          5.6,
+          16,
+          1.2,
+          5
+        ],
+        [
+          "Back_right",
+          3,
+          3.6,
+          10,
+          1.2,
+          4
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Regreso al cruce",
+          "to": "N03S04",
+          "pos": [
+            0,
+            0,
+            -7
+          ],
+          "trigger": [
+            0,
+            0,
+            -6.4
+          ],
+          "arrival": [
+            -7,
+            0.05,
+            3.2
+          ],
+          "portal": false
+        }
+      ],
+      "offerings": [
+        [
+          "EXP.N03S05.0",
+          -7,
+          1.0,
+          4.3
+        ],
+        [
+          "EXP.N03S05.1",
+          7,
+          0.35,
+          -6
+        ]
+      ],
+      "mechanisms": [
+        {
+          "type": "signPlate",
+          "id": "Q06.PLACA.0",
+          "pos": [
+            -5,
+            0,
+            1.2
+          ]
+        },
+        {
+          "type": "signPlate",
+          "id": "Q06.PLACA.1",
+          "pos": [
+            0,
+            0,
+            2.2
+          ]
+        },
+        {
+          "type": "signPlate",
+          "id": "Q06.PLACA.2",
+          "pos": [
+            5,
+            0,
+            2.2
+          ]
+        }
+      ],
+      "npcs": [
+        {
+          "id": "SENALERO_CONDORI",
+          "label": "Señalero Condori",
+          "pos": [
+            2,
+            0,
+            -4
+          ],
+          "kind": "quest",
+          "quest": "Q06",
+          "start": "SEC.11",
+          "end": "SEC.12",
+          "requiredEvents": [
+            "Q06.PLACA.0",
+            "Q06.PLACA.1",
+            "Q06.PLACA.2"
+          ],
+          "offerings": 1,
+          "money": 0
+        },
+        {
+          "id": "MINERO_PERDIDO",
+          "label": "Minero perdido",
+          "pos": [
+            -5,
+            0.65,
+            4
+          ],
+          "kind": "escort",
+          "quest": "Q05",
+          "deliverScene": "N03S01",
+          "event": "Q05.ENTREGADO",
+          "lines": [
+            "SEC.09"
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "N03.RESISTANCE.1",
+          "type": "Resisworm",
+          "pos": [
+            3,
+            0.05,
+            -1.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N03S06",
+      "name": "Galería del pozo",
+      "lights": [
+        [
+          -8,
+          3,
+          1,
+          1.4
+        ],
+        [
+          0,
+          3.4,
+          3,
+          1.5
+        ],
+        [
+          8,
+          3,
+          1,
+          1.4
+        ]
+      ],
+      "function": "Tercer cruce: un pozo central (hueco jugable) con pasarela. Señal de 1: la puerta del centro, tras la pasarela. Gasplodes custodian las puertas falsas laterales.",
+      "camera": {
+        "focusX": [
+          -8,
+          8
+        ],
+        "focusZ": [
+          -7,
+          4
+        ],
+        "depthBlend": [
+          -6,
+          3
+        ]
+      },
+      "entry": [
+        -3,
+        0.05,
+        -5.5
+      ],
+      "slabs": [
+        [
+          "Front",
+          0,
+          -4.5,
+          22,
+          5,
+          0,
+          "Dust"
+        ],
+        [
+          "Left_walk",
+          -8,
+          1,
+          6,
+          6,
+          0,
+          "Dust"
+        ],
+        [
+          "Right_walk",
+          8,
+          1,
+          6,
+          6,
+          0,
+          "Dust"
+        ],
+        [
+          "Back_walk",
+          0,
+          3.25,
+          10,
+          1.5,
+          0,
+          "Dust"
+        ],
+        [
+          "Plank_bridge",
+          0,
+          0.25,
+          2,
+          4.5,
+          0,
+          "Oak"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall",
+          0,
+          4.6,
+          22,
+          1.2,
+          5
+        ]
+      ],
+      "gaps": [
+        {
+          "name": "Pozo izquierdo",
+          "reason": "Pozo central; caída intencional.",
+          "min": [
+            -5.0,
+            -2.0
+          ],
+          "max": [
+            -1.0,
+            2.5
+          ]
+        },
+        {
+          "name": "Pozo derecho",
+          "reason": "Pozo central; caída intencional.",
+          "min": [
+            1.0,
+            -2.0
+          ],
+          "max": [
+            5.0,
+            2.5
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "name": "Regreso",
+          "to": "N03S04",
+          "pos": [
+            -3,
+            0,
+            -7
+          ],
+          "trigger": [
+            -3,
+            0,
+            -6.4
+          ],
+          "arrival": [
+            7,
+            1.35,
+            3.4
+          ],
+          "portal": false
+        },
+        {
+          "name": "Puerta izquierda",
+          "to": "N03S06",
+          "pos": [
+            -8,
+            0,
+            4
+          ],
+          "trigger": [
+            -8,
+            0,
+            3.2
+          ],
+          "arrival": [
+            -3,
+            0.05,
+            -5.5
+          ],
+          "portal": true,
+          "lights": 2,
+          "wrong": true
+        },
+        {
+          "name": "Puerta central",
+          "to": "N03S07",
+          "pos": [
+            0,
+            0,
+            4
+          ],
+          "trigger": [
+            0,
+            0,
+            3.2
+          ],
+          "arrival": [
+            0,
+            0.05,
+            -5.5
+          ],
+          "portal": true,
+          "lights": 1
+        },
+        {
+          "name": "Puerta derecha",
+          "to": "N03S06",
+          "pos": [
+            8,
+            0,
+            4
+          ],
+          "trigger": [
+            8,
+            0,
+            3.2
+          ],
+          "arrival": [
+            -3,
+            0.05,
+            -5.5
+          ],
+          "portal": true,
+          "lights": 3,
+          "wrong": true
+        }
+      ],
+      "signs": [
+        [
+          3,
+          0,
+          -5.3,
+          1,
+          "Señal del cruce"
+        ]
+      ],
+      "offerings": [
+        [
+          "EXP.N03S06.0",
+          10,
+          0.35,
+          -6
+        ]
+      ],
+      "npcs": [],
+      "enemies": [
+        {
+          "id": "N03.GASPLODE.1",
+          "type": "Gasplode",
+          "pos": [
+            -8,
+            0.05,
+            1.2
+          ]
+        },
+        {
+          "id": "N03.GASPLODE.2",
+          "type": "Gasplode",
+          "pos": [
+            8,
+            0.05,
+            1.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N03S07",
+      "name": "Fin de las señales",
+      "lights": [
+        [
+          -4,
+          3,
+          -1,
+          1.4
+        ],
+        [
+          4,
+          3,
+          -1,
+          1.4
+        ],
+        [
+          0,
+          3.6,
+          4,
+          1.4
+        ]
+      ],
+      "function": "Final: el minero junto a la galería sin luz registra la investigación (N3.05, N3D.01).",
+      "camera": {
+        "focusX": [
+          -6,
+          6
+        ],
+        "focusZ": [
+          -7,
+          4
+        ],
+        "depthBlend": [
+          -6,
+          3
+        ]
+      },
+      "entry": [
+        0,
+        0.05,
+        -5.5
+      ],
+      "slabs": [
+        [
+          "Floor",
+          0,
+          -2,
+          16,
+          10,
+          0,
+          "Dust"
+        ],
+        [
+          "Step",
+          0,
+          4,
+          8,
+          2,
+          0.65,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Derrumbe",
+          0,
+          5.6,
+          16,
+          1.2,
+          5.2
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Regreso",
+          "to": "N03S06",
+          "pos": [
+            0,
+            0,
+            -7
+          ],
+          "trigger": [
+            0,
+            0,
+            -6.4
+          ],
+          "arrival": [
+            0,
+            0.05,
+            2.6
+          ],
+          "portal": false
+        }
+      ],
+      "offerings": [
+        [
+          "EXP.N03S07.0",
+          6,
+          0.35,
+          0
+        ]
+      ],
+      "npcs": [
+        {
+          "id": "MINERO_FINAL",
+          "label": "Minero de la galería oscura",
+          "pos": [
+            0,
+            0.65,
+            4
+          ],
+          "kind": "investigation",
+          "index": 2,
+          "lines": [
+            "N3.05",
+            "N3D.01"
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "N03.RESISTANCE.2",
+          "type": "Resisworm",
+          "pos": [
+            -4,
+            0.05,
+            -1
+          ]
+        },
+        {
+          "id": "N03.DRILLY.1",
+          "type": "Drilly",
+          "pos": [
+            4,
+            0.05,
+            -2
+          ]
+        }
+      ]
+    }
+  ]
+}

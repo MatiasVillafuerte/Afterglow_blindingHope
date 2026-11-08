@@ -23,6 +23,12 @@ namespace Afterglow.M01
         M01Progress Data=>M01Session.Instance.data;
         public static bool Available(M01Progress data,int index)=>!data.worldClosed&&(index==0?data.events.Contains("P02.CAPTAIN")&&data.events.Contains("M01.WORLD_STARTED"):data.opened[index-1]);
         public static string Id(int index)=>"M01N"+(index+1).ToString("00");
+        /// <summary>Escena de entrada de cada nivel: N1 entra al refugio con altar; los demás a su primera sección.</summary>
+        public static string EntryScene(int index)=>"N"+(index+1).ToString("00")+"S01";
+        public static bool HasScene(int index)=>UnityEngine.SceneManagement.SceneUtility.GetBuildIndexByScenePath(M01Expedition.ScenePath(EntryScene(index)))>=0;
+        M01MapPresentation presentation;
+        M01MapPresentation Presentation{get{if(!presentation){presentation=GetComponent<M01MapPresentation>()??gameObject.AddComponent<M01MapPresentation>();presentation.Build();}return presentation;}}
+        bool CanReturn=>!standalone||Data.events.Contains("M01.N01_ENTERED");
         public static string Reason(M01Progress data,int index)
         {
             if(data.worldClosed)return "Mundo concluido. Continúa el viaje de cierre.";
@@ -52,7 +58,7 @@ namespace Afterglow.M01
         {
             if(IsOpen||M01Expedition.Transitioning||Data.worldClosed||Data.escortActive||!Available(Data,0)||!dialogue.AcquireModal())return false;
             IsOpen=true;Focused=Mathf.Clamp(Data.lastMapNode-1,0,5);openingFrame=Time.frameCount;
-            view.SetActive(true);view.transform.SetAsLastSibling();miniature.SetActive(true);Refresh();return true;
+            view.SetActive(false);miniature.SetActive(false);Presentation.Show(Data,Focused,CanReturn);Refresh();return true;
         }
         public void Close()
         {
@@ -61,11 +67,13 @@ namespace Afterglow.M01
             // Scene unloading can destroy the UI before this component is disabled.
             if(view)view.SetActive(false);
             if(miniature)miniature.SetActive(false);
+            if(presentation)presentation.Hide();
             if(dialogue)dialogue.ReleaseModal();
             confirm=back=false;direction=Vector2.zero;
         }
-        void Refresh()
+        void Refresh(string message=null)
         {
+            Presentation.Refresh(Data,Focused,CanReturn,message);
             for(int i=0;i<6;i++)
             {
                 bool available=Available(Data,i);bool investigated=i<5&&Data.investigated[i];
@@ -83,7 +91,7 @@ namespace Afterglow.M01
         {
             int best=-1;float score=float.PositiveInfinity;
             // Navigation follows the actual connected path, including locked neighbours.
-            foreach(int i in new[]{Focused-1,Focused+1})if(i>=0&&i<6){var delta=nodes[i].anchoredPosition-nodes[Focused].anchoredPosition;float forward=Vector2.Dot(delta.normalized,dir);if(forward>.2f){float cost=delta.magnitude/(forward*forward);if(cost<score){best=i;score=cost;}}}
+            foreach(int i in new[]{Focused-1,Focused+1})if(i>=0&&i<6){var delta=Presentation.NodePosition(i)-Presentation.NodePosition(Focused);float forward=Vector2.Dot(delta.normalized,dir);if(forward>.2f){float cost=delta.magnitude/(forward*forward);if(cost<score){best=i;score=cost;}}}
             if(best>=0){Focused=best;Data.lastMapNode=best+1;Refresh();}
         }
         void Update()
@@ -107,9 +115,10 @@ namespace Afterglow.M01
                 if(pressed)
                 {
                     if(!Available(Data,Focused)){Refresh();return;}
-                    if(Focused>0){instructions.text="Esta ruta aún no tiene escena jugable. [ Esc ] Volver";return;}
+                    if(!HasScene(Focused)){Refresh("<color=#8A5A1A>La entrada de este nivel todavía está en producción.</color>");return;}
                     if(!Data.events.Contains("M01.N01_ENTERED"))Data.events.Add("M01.N01_ENTERED");
-                    Close();M01Expedition.Travel("N01S01",M01Expedition.MineEntrance,leave:standalone,enter:true,fade:true);
+                    string entry=EntryScene(Focused);
+                    Close();M01Expedition.Travel(entry,M01Expedition.SectionEntrance(entry),leave:standalone,enter:true,fade:true);
                 }
                 return;
             }

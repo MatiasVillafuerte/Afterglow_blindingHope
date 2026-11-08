@@ -15,7 +15,7 @@ namespace Afterglow.M01
             if (remaining <= 0) { Destroy(gameObject); return; }
             foreach (var renderer in GetComponentsInChildren<Renderer>()) renderer.enabled = remaining > 3 || (int)(remaining * 10) % 2 == 0;
             var player = FindAnyObjectByType<AfterglowPlayer>();
-            if (!player || player.Dead || Vector3.Distance(transform.position, player.transform.position + Vector3.up * .35f) > .85f) return;
+            if (!player || player.Dead || Vector3.Distance(transform.position, player.transform.position + Vector3.up * .35f) > (kind == M01LootKind.Experience && M01SkillTree.Rank("AFINIDAD") > 0 ? 1.6f : .85f)) return;
             collected = true;
             var data = M01Session.Instance.data;
             if (kind == M01LootKind.Experience) { data.AddExperience(amount); M01Progress.Announce("EXP", amount); }

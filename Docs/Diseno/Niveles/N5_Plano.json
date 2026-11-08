@@ -1,0 +1,677 @@
+{
+  "level": 5,
+  "id": "M01N05",
+  "name": "La vía suspendida",
+  "units": "metros Unity. Vagoneta: 7 m/s, salto 1,6 m (g 25), freno al 70 % durante 1,5 s con 2 s de recuperación. Huecos de 3–4 m (vuelo ≈ 5 m). Umbral de minerales: 18 de 28 (parámetro de prueba; el GDD lo deja por definir).",
+  "slabFormat": "[nombre, x, z, ancho, fondo, cota_superior, material]",
+  "wallFormat": "[nombre, x, z, ancho, fondo, alto]",
+  "trackFormat": "[x_inicio, x_fin, cota]",
+  "beats": [
+    [
+      "N05S01",
+      0.2,
+      "Estación: Platicio avisa de los saltos; Q07 (rocas marcadas) y Q08 (paquete); el minero explica y pide subir"
+    ],
+    [
+      "N05S02",
+      0.85,
+      "Vía: aprendizaje seguro, hueco anunciado por minerales en arco, bajada, obstáculo aislado, descanso, doble obstáculo y llegada"
+    ],
+    [
+      "N05S03",
+      0.2,
+      "Andén: el minero cuenta el intento; recompensa única; Q08; minero del bloqueo (investigación)"
+    ]
+  ],
+  "gates": [
+    {
+      "from": "N05S01",
+      "to": "N05S02",
+      "needs": [
+        "aceptar al minero de la estación"
+      ]
+    },
+    {
+      "from": "N05S02",
+      "to": "N05S03",
+      "needs": [
+        "llegar al final sin caer"
+      ]
+    },
+    {
+      "from": "N05S03",
+      "to": "INVESTIGACION",
+      "needs": [
+        "minerales del intento ≥ umbral (recompensa) y hablar con el minero del bloqueo"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "N05S01",
+      "name": "Estación de la vía",
+      "lights": [
+        [
+          -6,
+          3.2,
+          -2,
+          1.6
+        ],
+        [
+          6,
+          3.6,
+          -1,
+          1.8
+        ]
+      ],
+      "function": "Aproximación breve y estación. Cuatro rocas marcadas (Q07, se renuevan con cada expedición). El minero de la estación explica la vía y pide subir.",
+      "camera": {
+        "focusX": [
+          -9,
+          9
+        ],
+        "focusZ": [
+          -7,
+          2
+        ],
+        "depthBlend": [
+          -6,
+          2
+        ]
+      },
+      "entry": [
+        -10,
+        0.05,
+        -4
+      ],
+      "slabs": [
+        [
+          "Approach",
+          -6,
+          -3,
+          12,
+          8,
+          0,
+          "Dust"
+        ],
+        [
+          "Station",
+          6,
+          -2,
+          12,
+          6,
+          0.65,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall",
+          0,
+          1.6,
+          24,
+          1.2,
+          4
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Salida al valle",
+          "to": "M01_MAPA",
+          "pos": [
+            -10,
+            0,
+            -7
+          ],
+          "trigger": [
+            -10,
+            0,
+            -6.3
+          ],
+          "arrival": [
+            0,
+            0,
+            0
+          ],
+          "portal": false
+        }
+      ],
+      "props": {
+        "lamps": [
+          [
+            -11,
+            2.6,
+            0.4,
+            0
+          ],
+          [
+            11,
+            2.6,
+            0.4,
+            0.65
+          ]
+        ],
+        "tracks": [
+          [
+            [
+              2,
+              0.65,
+              -0.2
+            ],
+            [
+              12,
+              0.65,
+              -0.2
+            ]
+          ]
+        ]
+      },
+      "breakables": [
+        [
+          "Q07.ROCA.0",
+          -8,
+          -5.8,
+          "Q07"
+        ],
+        [
+          "Q07.ROCA.1",
+          -5,
+          -6,
+          "Q07"
+        ],
+        [
+          "Q07.ROCA.2",
+          -2,
+          -5.6,
+          "Q07"
+        ],
+        [
+          "Q07.ROCA.3",
+          -4,
+          -1.2,
+          "Q07"
+        ]
+      ],
+      "offerings": [
+        [
+          "EXP.N05S01.0",
+          -11,
+          0.35,
+          -6
+        ],
+        [
+          "EXP.N05S01.1",
+          11,
+          1.0,
+          -4.5
+        ]
+      ],
+      "npcs": [
+        {
+          "id": "PLATICIO",
+          "label": "Platicio",
+          "pos": [
+            -7,
+            0,
+            -3
+          ],
+          "kind": "story",
+          "lines": [
+            "N5.01"
+          ],
+          "event": "N5.INTRO",
+          "automatic": true,
+          "radius": 3.2,
+          "gift": "N5"
+        },
+        {
+          "id": "MINERA_COLQUE",
+          "label": "Minera Colque",
+          "pos": [
+            -10,
+            0,
+            -1.5
+          ],
+          "kind": "quest",
+          "quest": "Q07",
+          "start": "SEC.13",
+          "end": "SEC.14",
+          "requiredCount": 4,
+          "offerings": 1,
+          "money": 10
+        },
+        {
+          "id": "DESPACHADOR_ROJAS",
+          "label": "Despachador Rojas",
+          "pos": [
+            3,
+            0.65,
+            -3.8
+          ],
+          "kind": "quest",
+          "quest": "Q08",
+          "start": "SEC.15",
+          "end": "SEC.16",
+          "requiredItem": "Q08.PAQUETE",
+          "offerings": 2,
+          "money": 0
+        },
+        {
+          "id": "MINERO_ESTACION",
+          "label": "Minero de la estación",
+          "pos": [
+            8,
+            0.65,
+            -2
+          ],
+          "kind": "cartStart",
+          "threshold": 18
+        }
+      ],
+      "enemies": []
+    },
+    {
+      "id": "N05S02",
+      "name": "La vía suspendida",
+      "lights": [
+        [
+          20,
+          6,
+          -2,
+          2.5
+        ],
+        [
+          60,
+          6,
+          -2,
+          2.5
+        ],
+        [
+          100,
+          6,
+          -2,
+          2.5
+        ],
+        [
+          140,
+          6,
+          -2,
+          2.5
+        ],
+        [
+          165,
+          6,
+          -2,
+          2.5
+        ]
+      ],
+      "function": "Recorrido de la vagoneta: secuencia propia de aprendizaje seguro, hueco anunciado, bajada, obstáculo aislado, descanso con minerales, doble obstáculo y llegada.",
+      "camera": {
+        "side": true,
+        "minX": 4,
+        "maxX": 168,
+        "offset": [
+          0,
+          3.2,
+          -15
+        ]
+      },
+      "entry": [
+        2,
+        0.6,
+        0
+      ],
+      "slabs": [],
+      "walls": [],
+      "track": [
+        [
+          -4,
+          28,
+          0
+        ],
+        [
+          31.5,
+          55,
+          0
+        ],
+        [
+          58,
+          80,
+          -1
+        ],
+        [
+          83,
+          120,
+          0
+        ],
+        [
+          124,
+          150,
+          0
+        ],
+        [
+          152.5,
+          174,
+          0
+        ]
+      ],
+      "obstacles": [
+        45,
+        98,
+        135,
+        142
+      ],
+      "minerals": [
+        [
+          10,
+          1
+        ],
+        [
+          12.5,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          17.5,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          28.5,
+          2
+        ],
+        [
+          29.8,
+          2.6
+        ],
+        [
+          31,
+          2
+        ],
+        [
+          40,
+          1
+        ],
+        [
+          42,
+          1
+        ],
+        [
+          55.5,
+          1.6
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          65,
+          0
+        ],
+        [
+          68,
+          0
+        ],
+        [
+          71,
+          0
+        ],
+        [
+          81,
+          1.8
+        ],
+        [
+          82.2,
+          1.8
+        ],
+        [
+          102,
+          1
+        ],
+        [
+          105,
+          1
+        ],
+        [
+          116,
+          1
+        ],
+        [
+          118,
+          1
+        ],
+        [
+          121,
+          2.4
+        ],
+        [
+          122.5,
+          2.6
+        ],
+        [
+          138.5,
+          2.2
+        ],
+        [
+          146,
+          1
+        ],
+        [
+          160,
+          1
+        ],
+        [
+          163,
+          1
+        ],
+        [
+          166,
+          1
+        ]
+      ],
+      "package": [
+        92,
+        1.3
+      ],
+      "doors": [],
+      "offerings": [],
+      "npcs": [],
+      "enemies": [],
+      "rideSettings": {
+        "endX": 168,
+        "arrivalScene": "N05S03",
+        "arrival": [
+          -5,
+          0.05,
+          -4
+        ]
+      },
+      "ride": true
+    },
+    {
+      "id": "N05S03",
+      "name": "Andén de llegada",
+      "lights": [
+        [
+          -4,
+          3.2,
+          -1,
+          1.8
+        ],
+        [
+          4,
+          3.2,
+          -1,
+          1.8
+        ],
+        [
+          0,
+          3.8,
+          4,
+          1.8
+        ]
+      ],
+      "function": "El minero cuenta los minerales del intento. El dueño del paquete recibe Q08. El minero junto al bloqueo registra la investigación (N5.05). El aporte 12 se entrega en el altar del refugio (teléfono).",
+      "camera": {
+        "focusX": [
+          -6,
+          6
+        ],
+        "focusZ": [
+          -7,
+          4
+        ],
+        "depthBlend": [
+          -6,
+          3
+        ]
+      },
+      "entry": [
+        -5,
+        0.05,
+        -4
+      ],
+      "slabs": [
+        [
+          "Platform",
+          0,
+          -2,
+          16,
+          8,
+          0,
+          "Dust"
+        ],
+        [
+          "Back_step",
+          0,
+          3.5,
+          8,
+          3,
+          0.65,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Derrumbe",
+          0,
+          5.6,
+          16,
+          1.2,
+          5.2
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Estación de la vía",
+          "to": "N05S01",
+          "pos": [
+            -6,
+            0,
+            -6
+          ],
+          "trigger": [
+            -6,
+            0,
+            -5.4
+          ],
+          "arrival": [
+            8,
+            0.7,
+            -3.2
+          ],
+          "portal": false
+        }
+      ],
+      "props": {
+        "lamps": [
+          [
+            -7,
+            2.6,
+            1.6,
+            0
+          ],
+          [
+            7,
+            2.6,
+            1.6,
+            0
+          ]
+        ],
+        "tracks": [
+          [
+            [
+              -8,
+              0,
+              -6.6
+            ],
+            [
+              8,
+              0,
+              -6.6
+            ]
+          ]
+        ]
+      },
+      "offerings": [
+        [
+          "EXP.N05S03.0",
+          6,
+          0.35,
+          0
+        ]
+      ],
+      "npcs": [
+        {
+          "id": "MINERO_ANDEN",
+          "label": "Minero del andén",
+          "pos": [
+            -3,
+            0,
+            -3
+          ],
+          "kind": "cartArrival",
+          "threshold": 18
+        },
+        {
+          "id": "DUENO_PAQUETE",
+          "label": "Dueña del paquete",
+          "pos": [
+            3,
+            0,
+            -4
+          ],
+          "kind": "quest",
+          "quest": "Q08",
+          "start": "SEC.15",
+          "end": "SEC.16",
+          "requiredItem": "Q08.PAQUETE",
+          "offerings": 2,
+          "money": 0
+        },
+        {
+          "id": "MINERO_BLOQUEO",
+          "label": "Minero del bloqueo",
+          "pos": [
+            0,
+            0.65,
+            4
+          ],
+          "kind": "investigation",
+          "index": 4,
+          "lines": [
+            "N5.05"
+          ],
+          "requiredEvent": "N5.PREMIO"
+        }
+      ],
+      "enemies": []
+    }
+  ]
+}

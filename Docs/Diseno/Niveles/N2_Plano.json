@@ -1,0 +1,1317 @@
+{
+  "level": 2,
+  "id": "M01N02",
+  "name": "Rieles cruzados",
+  "units": "metros Unity: X lateral, Y altura, Z profundidad. Métricas N1: velocidad 5 m/s, salto 1,70 m de alto y 3,89 m de alcance, cápsula de 2 m de alto y radio 0,33. Saltos obligatorios ≤ 2 m de hueco y ≤ 0,8 m de subida por salto.",
+  "slabFormat": "[nombre, x, z, ancho, fondo, cota_superior, material]",
+  "wallFormat": "[nombre, x, z, ancho, fondo, alto]",
+  "beats": [
+    [
+      "N02S01",
+      0.15,
+      "Orientación: la torre de poleas al fondo marca el destino; Platicio aconseja; encargo Q03"
+    ],
+    [
+      "N02S04",
+      0.35,
+      "Ramal opcional: subir terrazas, hueco jugable y rocas agrietadas de Q04"
+    ],
+    [
+      "N02S02",
+      0.45,
+      "Aprender el carro: empujar hasta la placa abre la reja; carro marcado de Q03 en el apartadero"
+    ],
+    [
+      "N02S03",
+      0.75,
+      "Hangzzer baja del farol y silba; los refuerzos salen del túnel. Segundo carro de Q03"
+    ],
+    [
+      "N02S05",
+      0.55,
+      "Combinar: puente de contrapeso conocido + ascenso a la cornisa final; investigar el bloqueo"
+    ]
+  ],
+  "gates": [
+    {
+      "from": "N02S01",
+      "to": "N02S02",
+      "needs": []
+    },
+    {
+      "from": "N02S01",
+      "to": "N02S04",
+      "needs": [
+        "salto a la cornisa por cajas"
+      ]
+    },
+    {
+      "from": "N02S02",
+      "to": "N02S03",
+      "needs": [
+        "carro sobre la placa (abre la reja de forma permanente)"
+      ]
+    },
+    {
+      "from": "N02S03",
+      "to": "N02S05",
+      "needs": []
+    },
+    {
+      "from": "N02S05",
+      "to": "INVESTIGACION",
+      "needs": [
+        "palanca del puente"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "N02S01",
+      "name": "Andén de los rieles",
+      "lights": [
+        [
+          -6,
+          3.2,
+          -1,
+          1.6
+        ],
+        [
+          7,
+          3.2,
+          -1,
+          1.4
+        ]
+      ],
+      "function": "Centro del nivel. Al entrar se ve la torre de poleas sobre el muro del fondo (objetivo). Dos salidas: la puerta del cruce (ruta principal, al este) y la puerta alta del desvío (ramal, al oeste, sobre cajas).",
+      "camera": {
+        "focusX": [
+          -9,
+          9
+        ],
+        "focusZ": [
+          -7,
+          3
+        ],
+        "depthBlend": [
+          -6,
+          3
+        ]
+      },
+      "entry": [
+        -10,
+        0.05,
+        -4
+      ],
+      "slabs": [
+        [
+          "Platform_main",
+          -2,
+          -3,
+          20,
+          8,
+          0,
+          "Dust"
+        ],
+        [
+          "East_apron",
+          10,
+          -2,
+          4,
+          10,
+          0,
+          "Dust"
+        ],
+        [
+          "West_shelf",
+          -7,
+          3,
+          10,
+          4,
+          1.3,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall_mid",
+          3,
+          1.6,
+          10,
+          1.2,
+          4
+        ],
+        [
+          "Shelf_back",
+          -7,
+          5.6,
+          10,
+          1.2,
+          5.5
+        ],
+        [
+          "Apron_back",
+          10,
+          3.6,
+          4,
+          1.2,
+          5
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Cámara del cruce",
+          "to": "N02S02",
+          "pos": [
+            10,
+            0,
+            3
+          ],
+          "trigger": [
+            10,
+            0,
+            2.2
+          ],
+          "arrival": [
+            -9,
+            0.05,
+            -3
+          ],
+          "portal": true
+        },
+        {
+          "name": "Desvío alto",
+          "to": "N02S04",
+          "pos": [
+            -10,
+            1.3,
+            5
+          ],
+          "trigger": [
+            -10,
+            1.3,
+            4.2
+          ],
+          "arrival": [
+            -8,
+            0.05,
+            -4
+          ],
+          "portal": true
+        },
+        {
+          "name": "Salida al valle",
+          "to": "M01_MAPA",
+          "pos": [
+            -10,
+            0,
+            -7
+          ],
+          "trigger": [
+            -10,
+            0,
+            -6.3
+          ],
+          "arrival": [
+            0,
+            0,
+            0
+          ],
+          "portal": false
+        }
+      ],
+      "props": {
+        "crates": [
+          [
+            -2.8,
+            0.4,
+            0
+          ]
+        ],
+        "lamps": [
+          [
+            -6,
+            2.6,
+            0.6
+          ],
+          [
+            7,
+            2.6,
+            0.4
+          ]
+        ],
+        "tracks": [
+          [
+            [
+              -12,
+              0,
+              -1.5
+            ],
+            [
+              12,
+              0,
+              -1.5
+            ]
+          ],
+          [
+            [
+              10,
+              0,
+              -7
+            ],
+            [
+              10,
+              0,
+              2.6
+            ]
+          ]
+        ],
+        "landmark": [
+          4,
+          0,
+          6.8
+        ]
+      },
+      "offerings": [
+        [
+          "EXP.N02S01.0",
+          -9.5,
+          1.65,
+          3.2
+        ]
+      ],
+      "npcs": [
+        {
+          "id": "PLATICIO",
+          "label": "Platicio",
+          "pos": [
+            -6,
+            0,
+            -2.5
+          ],
+          "kind": "story",
+          "lines": [
+            "N2.01",
+            "N2P.01",
+            "N2P.02"
+          ],
+          "event": "N2.INTRO",
+          "automatic": true,
+          "radius": 3.2,
+          "gift": "N2"
+        },
+        {
+          "id": "CAPATAZ_RAMOS",
+          "label": "Capataz Ramos",
+          "pos": [
+            6,
+            0,
+            -3.5
+          ],
+          "kind": "quest",
+          "quest": "Q03",
+          "start": "SEC.05",
+          "end": "SEC.06",
+          "requiredEvents": [
+            "Q03.CARRO1",
+            "Q03.CARRO2"
+          ],
+          "offerings": 2,
+          "money": 0
+        },
+        {
+          "id": "MINERO_TICONA",
+          "label": "Minero Ticona",
+          "pos": [
+            -11,
+            0,
+            -1.2
+          ],
+          "kind": "talk",
+          "lines": [
+            "N2M.01",
+            "N2M.02"
+          ]
+        },
+        {
+          "id": "MINERA_QUISPE",
+          "label": "Minera Quispe",
+          "pos": [
+            -0.5,
+            0,
+            -5.5
+          ],
+          "kind": "quest",
+          "quest": "Q04",
+          "start": "SEC.07",
+          "end": "SEC.08",
+          "requiredItem": "Q04.CAJA",
+          "offerings": 1,
+          "money": 10
+        }
+      ],
+      "enemies": []
+    },
+    {
+      "id": "N02S02",
+      "name": "Cruce de rieles",
+      "lights": [
+        [
+          -7,
+          3.2,
+          -1,
+          1.5
+        ],
+        [
+          7,
+          3.2,
+          -1,
+          1.5
+        ]
+      ],
+      "function": "Enseña el carro: empujarlo por el riel hasta la placa abre la reja del pasaje este (queda abierta). La palanca devuelve los carros a sus topes. Un segundo riel lleva el carro marcado de Q03 a su apartadero. Cornisa con ofrenda sobre cajas.",
+      "camera": {
+        "focusX": [
+          -8,
+          11
+        ],
+        "focusZ": [
+          -6,
+          3
+        ],
+        "depthBlend": [
+          -6,
+          3
+        ]
+      },
+      "entry": [
+        -9,
+        0.05,
+        -3
+      ],
+      "slabs": [
+        [
+          "Floor_main",
+          0,
+          -2,
+          22,
+          8,
+          0,
+          "Dust"
+        ],
+        [
+          "East_passage",
+          12.5,
+          -2,
+          3,
+          4,
+          0,
+          "Dust"
+        ],
+        [
+          "Back_ledge",
+          -6,
+          3.5,
+          8,
+          3,
+          1.3,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall",
+          4.5,
+          2.6,
+          13,
+          1.2,
+          4
+        ],
+        [
+          "Ledge_back",
+          -6,
+          5.6,
+          8,
+          1.2,
+          5.5
+        ],
+        [
+          "Passage_north",
+          12.5,
+          0.6,
+          3,
+          1.2,
+          4
+        ],
+        [
+          "Passage_south",
+          12.5,
+          -4.6,
+          3,
+          1.2,
+          4
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Andén",
+          "to": "N02S01",
+          "pos": [
+            -10.5,
+            0,
+            -6
+          ],
+          "trigger": [
+            -10.5,
+            0,
+            -5.4
+          ],
+          "arrival": [
+            9.6,
+            0.05,
+            1.2
+          ],
+          "portal": false
+        },
+        {
+          "name": "Patio del farol",
+          "to": "N02S03",
+          "pos": [
+            13,
+            0,
+            0
+          ],
+          "trigger": [
+            13,
+            0,
+            -0.8
+          ],
+          "arrival": [
+            -10,
+            0.05,
+            -5
+          ],
+          "portal": true
+        }
+      ],
+      "props": {
+        "crates": [
+          [
+            -3,
+            1.4,
+            0
+          ]
+        ],
+        "lamps": [
+          [
+            -9,
+            2.6,
+            1.6
+          ],
+          [
+            9,
+            2.6,
+            1.6
+          ]
+        ],
+        "tracks": [
+          [
+            [
+              -8.4,
+              0,
+              0.5
+            ],
+            [
+              7.4,
+              0,
+              0.5
+            ]
+          ],
+          [
+            [
+              -4.4,
+              0,
+              -4.5
+            ],
+            [
+              9.4,
+              0,
+              -4.5
+            ]
+          ]
+        ]
+      },
+      "offerings": [
+        [
+          "EXP.N02S02.0",
+          -8.5,
+          1.65,
+          4
+        ]
+      ],
+      "npcs": [
+        {
+          "id": "MINERO_CRUCE",
+          "label": "Minero del cruce",
+          "pos": [
+            2.5,
+            0,
+            -1.6
+          ],
+          "kind": "story",
+          "lines": [
+            "N2.02"
+          ],
+          "event": "N2.CART_HINT",
+          "automatic": true,
+          "radius": 2.8
+        }
+      ],
+      "mechanisms": [
+        {
+          "type": "cart",
+          "id": "CARRO_REJA",
+          "axis": "x",
+          "z": 0.5,
+          "min": -7.6,
+          "max": 6.6,
+          "start": -6.2,
+          "plate": 4.6,
+          "opens": "Reja del pasaje",
+          "event": "N02.S02.REJA_ABIERTA"
+        },
+        {
+          "type": "cart",
+          "id": "CARRO_Q03_1",
+          "axis": "x",
+          "z": -4.5,
+          "min": -3.6,
+          "max": 8.6,
+          "start": -2.4,
+          "plate": 8.0,
+          "marked": true,
+          "event": "Q03.CARRO1"
+        },
+        {
+          "type": "gate",
+          "id": "Reja del pasaje",
+          "pos": [
+            11.3,
+            0,
+            -2
+          ],
+          "size": [
+            0.25,
+            3,
+            4
+          ],
+          "event": "N02.S02.REJA_ABIERTA"
+        },
+        {
+          "type": "resetLever",
+          "pos": [
+            -9,
+            0,
+            -1.4
+          ],
+          "carts": [
+            "CARRO_REJA",
+            "CARRO_Q03_1"
+          ],
+          "line": "N2.03"
+        }
+      ],
+      "enemies": [
+        {
+          "id": "N02.RESISTANCE.0",
+          "type": "Resisworm",
+          "pos": [
+            1.5,
+            0.05,
+            -3.4
+          ]
+        },
+        {
+          "id": "N02.RESISTANCE.1",
+          "type": "Resisworm",
+          "pos": [
+            6.5,
+            0.05,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N02S03",
+      "name": "Patio del farol",
+      "lights": [
+        [
+          -6,
+          3.4,
+          -2,
+          1.5
+        ],
+        [
+          6,
+          3.4,
+          -2,
+          1.5
+        ],
+        [
+          1.9,
+          4.2,
+          -0.6,
+          1.2
+        ]
+      ],
+      "function": "Patio ancho de dos carriles en profundidad. Hangzzer cuelga del farol central: baja, silba y llama Resisworm desde la boca del túnel del fondo. En el carril alto, el segundo carro de Q03. Torre de cajas con ofrenda.",
+      "camera": {
+        "focusX": [
+          -10,
+          10
+        ],
+        "focusZ": [
+          -7,
+          4
+        ],
+        "depthBlend": [
+          -6,
+          4
+        ]
+      },
+      "entry": [
+        -10,
+        0.05,
+        -5
+      ],
+      "slabs": [
+        [
+          "Front_lane",
+          0,
+          -3,
+          24,
+          8,
+          0,
+          "Dust"
+        ],
+        [
+          "Back_lane",
+          0,
+          3,
+          24,
+          4,
+          0.65,
+          "SlateLight"
+        ],
+        [
+          "Crate_tower",
+          11,
+          -5.5,
+          2,
+          2,
+          1.3,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Back_wall",
+          0,
+          5.6,
+          24,
+          1.2,
+          5
+        ]
+      ],
+      "doors": [
+        {
+          "name": "Cruce de rieles",
+          "to": "N02S02",
+          "pos": [
+            -11,
+            0,
+            -7.2
+          ],
+          "trigger": [
+            -11,
+            0,
+            -6.5
+          ],
+          "arrival": [
+            12.2,
+            0.05,
+            -2
+          ],
+          "portal": false
+        },
+        {
+          "name": "Galería de la polea",
+          "to": "N02S05",
+          "pos": [
+            10,
+            0.65,
+            5
+          ],
+          "trigger": [
+            10,
+            0.65,
+            4.2
+          ],
+          "arrival": [
+            -6,
+            0.05,
+            -5
+          ],
+          "portal": true
+        }
+      ],
+      "props": {
+        "crates": [
+          [
+            9.2,
+            -5.5,
+            0
+          ]
+        ],
+        "lamps": [
+          [
+            -9,
+            2.6,
+            -0.8
+          ]
+        ],
+        "tracks": [
+          [
+            [
+              -10.4,
+              0.65,
+              3
+            ],
+            [
+              -0.6,
+              0.65,
+              3
+            ]
+          ]
+        ],
+        "hangPost": [
+          1,
+          0,
+          -0.4
+        ],
+        "tunnel": [
+          -5,
+          0.65,
+          5
+        ]
+      },
+      "offerings": [
+        [
+          "EXP.N02S03.0",
+          -11,
+          1.0,
+          3.8
+        ],
+        [
+          "EXP.N02S03.1",
+          11,
+          1.65,
+          -5.5
+        ]
+      ],
+      "npcs": [],
+      "mechanisms": [
+        {
+          "type": "cart",
+          "id": "CARRO_Q03_2",
+          "axis": "x",
+          "z": 3,
+          "y": 0.65,
+          "min": -9.6,
+          "max": -1.2,
+          "start": -8.6,
+          "plate": -1.8,
+          "marked": true,
+          "event": "Q03.CARRO2"
+        },
+        {
+          "type": "hangzzer",
+          "id": "N02.HANGZZER.0",
+          "anchor": [
+            1.9,
+            3.7,
+            -0.4
+          ],
+          "ground": [
+            1.9,
+            0.05,
+            -0.4
+          ],
+          "tunnel": [
+            -5,
+            0.65,
+            4.3
+          ],
+          "detect": 6.5,
+          "interval": 6,
+          "maxAlive": 2,
+          "maxPerCycle": 2
+        }
+      ],
+      "enemies": []
+    },
+    {
+      "id": "N02S04",
+      "name": "Desvío alto",
+      "lights": [
+        [
+          -4,
+          3.2,
+          -2,
+          1.4
+        ],
+        [
+          7.5,
+          4,
+          1,
+          1.6
+        ]
+      ],
+      "function": "Ramal opcional. Terrazas de 0,65 y un hueco jugable de 1,5 m (la caída resta 2 y devuelve a la entrada). En la cornisa lejana, tres rocas agrietadas tapan el nicho de la caja de Q04; las columnas lisas no se rompen.",
+      "camera": {
+        "focusX": [
+          -8,
+          8
+        ],
+        "focusZ": [
+          -6,
+          3
+        ],
+        "depthBlend": [
+          -6,
+          3
+        ]
+      },
+      "entry": [
+        -8,
+        0.05,
+        -4
+      ],
+      "slabs": [
+        [
+          "Entry_ledge",
+          -7.5,
+          -4,
+          5,
+          4,
+          0,
+          "Dust"
+        ],
+        [
+          "Step_1",
+          -3,
+          -3.5,
+          4,
+          5,
+          0.65,
+          "SlateLight"
+        ],
+        [
+          "Step_2",
+          1,
+          -1.5,
+          4,
+          5,
+          1.3,
+          "SlateLight"
+        ],
+        [
+          "Far_shelf",
+          7,
+          -1,
+          5,
+          6,
+          1.3,
+          "SlateLight"
+        ],
+        [
+          "Niche",
+          7.5,
+          3,
+          4,
+          2,
+          1.3,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Niche_back",
+          7.5,
+          4.6,
+          5,
+          1.2,
+          5
+        ],
+        [
+          "Column_left",
+          5.1,
+          3,
+          0.8,
+          2,
+          4.5
+        ],
+        [
+          "Column_right",
+          9.9,
+          3,
+          0.8,
+          2,
+          4.5
+        ],
+        [
+          "Step_back",
+          -1,
+          1.6,
+          8,
+          1.2,
+          4
+        ]
+      ],
+      "gaps": [
+        {
+          "name": "Hueco del desvío",
+          "reason": "Salto obligatorio de 1,5 m al ramal; caída intencional legible: −2 y regreso a la entrada de la sección.",
+          "min": [
+            3.0,
+            -4.0
+          ],
+          "max": [
+            4.5,
+            1.0
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "name": "Andén",
+          "to": "N02S01",
+          "pos": [
+            -8.5,
+            0,
+            -6
+          ],
+          "trigger": [
+            -8.5,
+            0,
+            -5.4
+          ],
+          "arrival": [
+            -10,
+            1.35,
+            3.4
+          ],
+          "portal": false
+        }
+      ],
+      "props": {
+        "lamps": [
+          [
+            -6,
+            2.6,
+            -2.4
+          ],
+          [
+            9,
+            4.0,
+            0.2
+          ]
+        ]
+      },
+      "offerings": [
+        [
+          "EXP.N02S04.0",
+          6.3,
+          1.65,
+          3.5
+        ]
+      ],
+      "questItems": [
+        [
+          "Q04.CAJA",
+          "Caja de herramientas",
+          8.4,
+          1.65,
+          3.4
+        ]
+      ],
+      "breakables": [
+        [
+          "N02.S04.ROCA.0",
+          6.3,
+          2.2
+        ],
+        [
+          "N02.S04.ROCA.1",
+          7.5,
+          2.2
+        ],
+        [
+          "N02.S04.ROCA.2",
+          8.7,
+          2.2
+        ]
+      ],
+      "npcs": [],
+      "enemies": [
+        {
+          "id": "N02.RESISTANCE.2",
+          "type": "Resisworm",
+          "pos": [
+            7,
+            1.35,
+            -2.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N02S05",
+      "name": "Galería de la polea",
+      "lights": [
+        [
+          -2,
+          3.4,
+          -4,
+          1.4
+        ],
+        [
+          2,
+          4.6,
+          8,
+          1.6
+        ],
+        [
+          7,
+          7.6,
+          10,
+          1.4
+        ]
+      ],
+      "function": "Final. Combina el puente de contrapeso conocido con un ascenso por peldaños hasta la cornisa del derrumbe. El minero de la puerta bloqueada registra la investigación. La torre de poleas, visible desde el andén, está aquí.",
+      "camera": {
+        "focusX": [
+          -6,
+          9
+        ],
+        "focusZ": [
+          -7,
+          12
+        ],
+        "depthBlend": [
+          -5,
+          10
+        ]
+      },
+      "entry": [
+        -6,
+        0.05,
+        -5
+      ],
+      "slabs": [
+        [
+          "South_bank",
+          1,
+          -4.5,
+          18,
+          5,
+          0,
+          "Dust"
+        ],
+        [
+          "North_bank",
+          1,
+          5,
+          18,
+          4,
+          0,
+          "Dust"
+        ],
+        [
+          "Step_A",
+          -4,
+          8,
+          4,
+          2,
+          0.65,
+          "SlateLight"
+        ],
+        [
+          "Step_B",
+          -4,
+          10,
+          4,
+          2,
+          1.3,
+          "SlateLight"
+        ],
+        [
+          "Final_ledge",
+          -1,
+          12,
+          10,
+          2,
+          1.95,
+          "SlateLight"
+        ]
+      ],
+      "walls": [
+        [
+          "Derrumbe",
+          -1,
+          13.6,
+          10,
+          1.2,
+          5.2
+        ],
+        [
+          "North_back",
+          6,
+          7.6,
+          8,
+          1.2,
+          4
+        ]
+      ],
+      "gaps": [
+        {
+          "name": "Garganta de la polea",
+          "reason": "Desnivel que salva el puente de contrapeso; caída intencional.",
+          "min": [
+            -8.0,
+            -2.0
+          ],
+          "max": [
+            10.0,
+            3.0
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "name": "Patio del farol",
+          "to": "N02S03",
+          "pos": [
+            -6,
+            0,
+            -7.2
+          ],
+          "trigger": [
+            -6,
+            0,
+            -6.5
+          ],
+          "arrival": [
+            9.4,
+            0.7,
+            3.4
+          ],
+          "portal": false
+        }
+      ],
+      "props": {
+        "lamps": [
+          [
+            -7,
+            2.6,
+            -2.6
+          ],
+          [
+            8,
+            2.6,
+            3.4
+          ],
+          [
+            3,
+            4.6,
+            11.2
+          ]
+        ],
+        "landmark": [
+          7,
+          0,
+          9.6
+        ]
+      },
+      "offerings": [
+        [
+          "EXP.N02S05.0",
+          8.5,
+          0.35,
+          5.5
+        ]
+      ],
+      "mechanisms": [
+        {
+          "type": "bridge",
+          "pivot": [
+            2,
+            0,
+            -2
+          ],
+          "deckCenter": [
+            0,
+            -0.12,
+            2.6
+          ],
+          "deckSize": [
+            3,
+            0.24,
+            5.2
+          ],
+          "lever": [
+            4,
+            0,
+            -3.2
+          ],
+          "counterweight": [
+            4,
+            2,
+            -2
+          ],
+          "event": "N02.S05.PUENTE"
+        }
+      ],
+      "npcs": [
+        {
+          "id": "MINERO_DERRUMBE",
+          "label": "Minero del derrumbe",
+          "pos": [
+            -1,
+            1.95,
+            11.9
+          ],
+          "kind": "investigation",
+          "index": 1,
+          "lines": [
+            "N2.04",
+            "N2D.01",
+            "N2D.02"
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "N02.RESISTANCE.3",
+          "type": "Resisworm",
+          "pos": [
+            4,
+            0.05,
+            5.2
+          ]
+        }
+      ]
+    }
+  ]
+}

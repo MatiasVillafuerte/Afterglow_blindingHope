@@ -9,6 +9,8 @@ namespace Afterglow.M01
     {
         public M01Dialogue dialogue;
         public int quotaIndex;
+        /// <summary>Altar compartido del refugio: acredita la cuota del nivel de la expedición actual.</summary>
+        public bool shared = true;
         public float interactionRadius = 2;
         InputAction interact;
         bool requested, opening;
@@ -17,6 +19,7 @@ namespace Afterglow.M01
         void Update()
         {
             var data = M01Session.Instance.data;
+            if (shared && !opening) quotaIndex = Mathf.Clamp(data.currentLevel - 1, 0, 4);
             if (!data.worldClosed && !opening && data.investigated[quotaIndex] && data.contributions[quotaIndex] >= M01Progress.Quotas[quotaIndex] && !data.opened[quotaIndex]) StartCoroutine(Open());
             if (!requested) return; requested = false;
             var player = FindAnyObjectByType<AfterglowPlayer>();

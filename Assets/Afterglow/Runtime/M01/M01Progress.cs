@@ -15,6 +15,8 @@ namespace Afterglow.M01
         public string id;
         public bool unlocked;
         public int health, maxHealth, gems;
+        /// <summary>Árbol de habilidades: "ID:rango" (M01SkillTree).</summary>
+        public List<string> skills = new List<string>();
     }
     [Serializable] public sealed class M01QuestState
     {
@@ -53,7 +55,7 @@ namespace Afterglow.M01
         public static event Action<string, int, bool> Acquired;
         public static void Announce(string displayName, int count = 1, bool keyItem = false) { if (count > 0) Acquired?.Invoke(displayName, count, keyItem); }
         public static string OfferingName(string kind) => kind == "Coca" ? "Hoja de coca" : kind;
-        public static string KeyItemName(string id) => id == "PICO" ? "Pico" : id == "TELEFONO" ? "Teléfono de minas" : id;
+        public static string KeyItemName(string id) => id == "PICO" ? "Pico" : id == "TELEFONO" ? "Teléfono de minas" : id == "PIEZA" ? "Pieza dorada del taladro" : id;
         /// <summary>Entrega única de un objeto clave. Devuelve false si ya se poseía (no repite la presentación).</summary>
         public bool GrantKeyItem(string id)
         {

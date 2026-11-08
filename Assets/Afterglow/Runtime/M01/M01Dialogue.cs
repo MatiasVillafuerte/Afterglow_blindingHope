@@ -55,9 +55,16 @@ namespace Afterglow.M01
         void UpdateChoicePresentation()
         {
             bool hasChoices=choices!=null;
+            // Con más opciones que botones, la lista se desplaza alrededor de la elegida (▲/▼ indican que hay más).
+            int slots=choiceLabels!=null?choiceLabels.Length:0;
+            int first=hasChoices&&choices.Length>slots?Mathf.Clamp(choiceIndex-slots/2,0,choices.Length-slots):0;
             if(choiceLabels!=null)for(int i=0;i<choiceLabels.Length;i++){
-                bool active=hasChoices&&i<choices.Length;choiceLabels[i].transform.parent.gameObject.SetActive(active);
-                if(active){choiceLabels[i].text=choices[i];choiceBackgrounds[i].color=i==choiceIndex?new Color(1,.79f,.32f):new Color(.89f,.88f,.81f);}
+                int option=first+i;
+                bool active=hasChoices&&option<choices.Length;choiceLabels[i].transform.parent.gameObject.SetActive(active);
+                if(active){
+                    string mark=i==0&&first>0?"▲ ":i==slots-1&&option<choices.Length-1?"▼ ":"";
+                    choiceLabels[i].text=mark+choices[option];choiceBackgrounds[i].color=option==choiceIndex?new Color(1,.79f,.32f):new Color(.89f,.88f,.81f);
+                }
             }
             body.rectTransform.offsetMax=new Vector2(hasChoices?-350:-34,-58);
             body.ForceMeshUpdate();

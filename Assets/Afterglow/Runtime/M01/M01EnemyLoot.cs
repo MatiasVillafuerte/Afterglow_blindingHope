@@ -14,7 +14,7 @@ namespace Afterglow.M01
             var data = M01Session.Instance.data;
             int experience = Mathf.Max(0, baseExperience - Mathf.Max(0, data.teamLevel - referenceLevel));
             if (experience > 0) Spawn(M01LootKind.Experience, experience, -.5f);
-            Spawn(M01LootKind.Money, money, .5f);
+            Spawn(M01LootKind.Money, Mathf.RoundToInt(money * (1 + .1f * M01SkillTree.Rank("BOLSILLOS"))), .5f);
             if (firstTutorialOffering || Random.value < .25f) Spawn(M01LootKind.Offering, 1, 0);
             if (Random.value < .1f) Spawn(M01LootKind.Healing, 2, 1);
         }

@@ -1,0 +1,22 @@
+[
+  {
+    "room": "N05S01",
+    "triangles": 12536,
+    "pieces": [
+      "Export_Rock_Q07.ROCA.0",
+      "Export_Rock_Q07.ROCA.1",
+      "Export_Rock_Q07.ROCA.2",
+      "Export_Rock_Q07.ROCA.3"
+    ]
+  },
+  {
+    "room": "N05S02",
+    "triangles": 54830,
+    "pieces": []
+  },
+  {
+    "room": "N05S03",
+    "triangles": 9164,
+    "pieces": []
+  }
+]

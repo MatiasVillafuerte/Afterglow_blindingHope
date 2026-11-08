@@ -1,0 +1,1 @@
+{"gaps": [{"name": "Pozo izquierdo", "reason": "Pozo central; caída intencional.", "min": [-5.0, -2.0], "max": [-1.0, 2.5]}, {"name": "Pozo derecho", "reason": "Pozo central; caída intencional.", "min": [1.0, -2.0], "max": [5.0, 2.5]}]}

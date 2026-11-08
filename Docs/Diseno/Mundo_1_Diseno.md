@@ -43,6 +43,16 @@ Exploración semejante a N1 en su base, mucho más amplia y diversa. Combina des
 
 Introducir un problema, variarlo y combinarlo con otro ya conocido. Ejemplos disponibles: carro que mantiene una placa, palanca que mueve un puente o plataforma que conecta alturas. Elegir solo los que aporten decisiones al recorrido. Los rieles tienen topes; el reinicio restablece el puzle, no recompensas ni enemigos. Una reja no encierra al jugador en su collider. Hay al menos seis ofrendas legítimas garantizadas; investigación y aporte 5 abren N3.
 
+**Construcción del 8 de noviembre.** El plano editable es `Docs/Diseno/Niveles/N2_Plano.json`, fuente única para Blender (`build_level.py`) y Unity (`M01LevelBuilder`). Tiene cinco secciones:
+
+- **N02S01 · Andén de los rieles.** Centro del nivel. La torre de poleas que se ve sobre el muro marca el destino final. Platicio orienta y entrega su regalo único. Q03 lo da el Capataz Ramos y Q04 la Minera Quispe; el Minero Ticona conversa por humor. Unas cajas suben a la cornisa del desvío.
+- **N02S02 · Cruce de rieles.** El carro empujado hasta su placa abre la reja del pasaje, que queda abierta para siempre. El carro marcado de Q03 se engancha en su apartadero. La palanca de topes devuelve los carros. Hay dos Resisworm y una cornisa con ofrenda.
+- **N02S03 · Patio del farol.** Dos carriles en profundidad. Hangzzer cuelga del farol central, baja, silba y llama hasta 2 Resisworm sin botín desde el túnel del fondo; solo es vulnerable abajo. El segundo carro de Q03 está en el carril alto y una torre de cajas guarda una ofrenda.
+- **N02S04 · Desvío alto (opcional).** Terrazas de 0,65 m y un hueco jugable de 1,5 m. Tres rocas agrietadas (las columnas lisas no se rompen) tapan la caja de Q04 y una ofrenda.
+- **N02S05 · Galería de la polea.** Un puente de contrapeso (mecánica conocida) cruza la garganta. Peldaños de 0,65 m llevan a la cornisa del derrumbe, donde el minero registra la investigación (N2.04, N2D.01–02).
+
+Hay seis ofrendas estáticas garantizadas, más 2 de Q03, 1 de Q04, el regalo eventual de Platicio y el botín. El grafo de puertas y las pulsaciones del ritmo están en el mismo JSON.
+
 ### M01N03 Galerías de las señales
 
 Laberinto con cámaras de acertijo de cuatro puertas: regreso, continuación principal y dos alternativas. La pista de cada acertijo identifica una continuación principal de forma fiable. Puede usar una relación entre señales, lámparas o rieles que se explique en el propio nivel, sin adivinación ni información externa.

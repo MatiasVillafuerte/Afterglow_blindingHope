@@ -15,6 +15,8 @@ namespace Afterglow.M01
         public AfterglowEnemy[] wakeEnemies;
         public string prerequisiteEvent;
         public AfterglowEnemy defeatedEnemy;
+        /// <summary>Si no está vacío, al terminar la conversación se evalúa el regalo único de Platicio de ese nivel.</summary>
+        public string giftLevel;
         InputAction interact;
         bool requested, running;
         void OnEnable()
@@ -42,6 +44,7 @@ namespace Afterglow.M01
                 if(eventId=="P02.CAPTAIN"&&!data.events.Contains("M01.WORLD_STARTED"))data.events.Add("M01.WORLD_STARTED");
                 if(givePickaxe){data.GrantKeyItem("PICO");player.GetComponent<M01PlayerRules>().hasPickaxe=true;}
                 if(givePhone)data.GrantKeyItem("TELEFONO");
+                if(!string.IsNullOrEmpty(giftLevel))M01PlaticioGift.Roll(giftLevel);
                 if(wakeEnemies!=null)foreach(var enemy in wakeEnemies)if(enemy)enemy.enabled=true;
                 running=false;
                 if(!string.IsNullOrEmpty(destination))M01Expedition.Travel(destination,arrival,fade:eventId=="P02.CAPTAIN");

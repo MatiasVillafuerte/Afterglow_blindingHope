@@ -1,0 +1,41 @@
+[
+  {
+    "room": "N03S01",
+    "triangles": 11364,
+    "pieces": []
+  },
+  {
+    "room": "N03S02",
+    "triangles": 15436,
+    "pieces": []
+  },
+  {
+    "room": "N03S03",
+    "triangles": 7960,
+    "pieces": []
+  },
+  {
+    "room": "N03S04",
+    "triangles": 17658,
+    "pieces": []
+  },
+  {
+    "room": "N03S05",
+    "triangles": 7846,
+    "pieces": [
+      "Export_SignBoard_Q06.PLACA.0",
+      "Export_SignBoard_Q06.PLACA.1",
+      "Export_SignBoard_Q06.PLACA.2"
+    ]
+  },
+  {
+    "room": "N03S06",
+    "triangles": 17620,
+    "pieces": []
+  },
+  {
+    "room": "N03S07",
+    "triangles": 5054,
+    "pieces": []
+  }
+]

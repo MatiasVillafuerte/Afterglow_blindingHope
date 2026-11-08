@@ -6,6 +6,9 @@ namespace Afterglow.M01
     {
         public M01Dialogue dialogue;
         public int index;
+        public string[] lineIds = { "N1D.01", "N1D.02", "N1D.03" };
+        /// <summary>Si no está vacío, la investigación solo se registra con este evento (N5: tras el viaje con éxito).</summary>
+        public string requiredEvent, pendingText = "Primero termina el viaje de la vagoneta con los minerales necesarios.";
         InputAction interact;
         bool requested;
         void OnEnable(){interact=new InputAction("Investigate",InputActionType.Button,"<Keyboard>/e");interact.performed+=_=>{if(!dialogue.IsOpen)requested=true;};interact.Enable();}
@@ -14,7 +17,8 @@ namespace Afterglow.M01
         {
             if(!requested)return;requested=false;var player=FindAnyObjectByType<AfterglowPlayer>();
             if(!player||player.Dead||dialogue.IsOpen||Vector3.Distance(player.transform.position,transform.position)>2)return;
-            dialogue.Begin(new[]{"N1D.01","N1D.02","N1D.03"},()=>M01Session.Instance.data.investigated[index]=true);
+            if(!string.IsNullOrEmpty(requiredEvent)&&!M01Session.Instance.data.events.Contains(requiredEvent)){dialogue.BeginText(name,pendingText);return;}
+            dialogue.Begin(lineIds,()=>M01Session.Instance.data.investigated[index]=true);
         }
     }
 }
