@@ -32,16 +32,16 @@ public sealed class N2PlayChecks : MonoBehaviour
     bool Check(string label, bool ok) { if (!ok) failures++; report += $"- {(ok ? "PASS" : "FAIL")} {label}\n"; SafeWrite(Evidence + "/Pruebas.md", report); return ok; }
     void Keys(params Key[] keys) => InputSystem.QueueStateEvent(Keyboard.current, new KeyboardState(keys.Where(k => k != Key.None).ToArray()));
     IEnumerator Tap(Key key) { Keys(key); yield return new WaitForSecondsRealtime(.1f); Keys(); yield return new WaitForSecondsRealtime(.14f); }
-    IEnumerator Arrival(string id) { float end = Time.realtimeSinceStartup + 12; while ((SceneId != id || M01Expedition.Transitioning) && Time.realtimeSinceStartup < end) yield return null; yield return new WaitForSecondsRealtime(.45f); Check("Llegada a " + id, SceneId == id && !M01Expedition.Transitioning); }
+    IEnumerator Arrival(string id) { float end = Now + 12; while ((SceneId != id || M01Expedition.Transitioning) && Now < end) yield return null; yield return new WaitForSecondsRealtime(.45f); Check("Llegada a " + id, SceneId == id && !M01Expedition.Transitioning); }
     IEnumerator Speak() { int presses = 0; while (Dialogue && Dialogue.IsOpen && presses++ < 80) yield return Tap(Key.E); for (float t = 0; t < .25f || M01KeyItemCelebration.Playing; t += Time.unscaledDeltaTime) { if (t > 8) break; yield return null; } }
     IEnumerator Capture(string name) { yield return new WaitForSecondsRealtime(.6f); yield return new WaitForEndOfFrame(); ScreenCapture.CaptureScreenshot(Evidence + "/" + name + ".png"); yield return null; }
 
     IEnumerator Walk(float x, float z, bool jump = false, float timeout = 12)
     {
-        float end = Time.realtimeSinceStartup + timeout; bool reached = false, jumpSent = !jump;
-        while (Time.realtimeSinceStartup < end && !Player.Dead)
+        float end = Now + timeout; bool reached = false, jumpSent = !jump;
+        while (Now < end && !Player.Dead)
         {
-            if (Dialogue && Dialogue.IsOpen) { Keys(); yield return Speak(); end = Time.realtimeSinceStartup + timeout; }
+            if (Dialogue && Dialogue.IsOpen) { Keys(); yield return Speak(); end = Now + timeout; }
             var p = Player.transform.position; var d = new Vector2(x - p.x, z - p.z);
             if (d.magnitude < .25f) { reached = true; break; }
             Key h = Mathf.Abs(d.x) < .15f ? Key.None : d.x > 0 ? Key.RightArrow : Key.LeftArrow;
@@ -49,17 +49,17 @@ public sealed class N2PlayChecks : MonoBehaviour
             if (!jumpSent && Player.Grounded) { Keys(h, v, Key.Space); jumpSent = true; } else Keys(h, v);
             yield return null;
         }
-        Keys(); float settle = Time.realtimeSinceStartup + 2.5f; while (!Player.Grounded && Time.realtimeSinceStartup < settle) yield return null;
+        Keys(); float settle = Now + 2.5f; while (!Player.Grounded && Now < settle) yield return null;
         yield return new WaitForSecondsRealtime(.08f);
-        Check($"Paso {SceneId} ({x}, {z}) a altura {Player.transform.position.y:F2}", reached);
+        Check($"Paso {SceneId} ({x}, {z}) a altura {Player.transform.position.y:F2}" + (reached ? "" : $" · quedó en {Player.transform.position} · escala {Time.timeScale} · bloqueo {(Player.GetComponent<M01PlayerRules>() ? Player.GetComponent<M01PlayerRules>().BlocksControl : false)} · diálogo {(Dialogue && Dialogue.IsOpen)}"), reached);
     }
 
     IEnumerator Face(Key direction) { Keys(direction); yield return new WaitForSecondsRealtime(.06f); Keys(); yield return new WaitForSecondsRealtime(.05f); }
 
     IEnumerator Fight(AfterglowEnemy enemy, float seconds = 20, bool record = true)
     {
-        float end = Time.realtimeSinceStartup + seconds;
-        while (enemy && !enemy.Defeated && !Player.Dead && Time.realtimeSinceStartup < end)
+        float end = Now + seconds;
+        while (enemy && !enemy.Defeated && !Player.Dead && Now < end)
         {
             if (Dialogue && Dialogue.IsOpen) { Keys(); yield return Speak(); continue; }
             var d = enemy.transform.position - Player.transform.position; var flat = new Vector2(d.x, d.z);
@@ -69,28 +69,36 @@ public sealed class N2PlayChecks : MonoBehaviour
                 Key v = Mathf.Abs(flat.y) < .2f ? Key.None : flat.y > 0 ? Key.UpArrow : Key.DownArrow;
                 Keys(h, v); yield return null; continue;
             }
-            Keys(Mathf.Abs(flat.x) >= Mathf.Abs(flat.y) ? (flat.x > 0 ? Key.RightArrow : Key.LeftArrow) : (flat.y > 0 ? Key.UpArrow : Key.DownArrow), Key.X);
+            // Apunta con una o dos flechas según el ángulo: el volumen mide 0,8 m de ancho.
+            var aim = flat.normalized; Key ah = Mathf.Abs(aim.x) < .38f ? Key.None : aim.x > 0 ? Key.RightArrow : Key.LeftArrow, av = Mathf.Abs(aim.y) < .38f ? Key.None : aim.y > 0 ? Key.UpArrow : Key.DownArrow;
+            Keys(ah, av, Key.X);
             yield return new WaitForSecondsRealtime(.06f); Keys(); yield return new WaitForSecondsRealtime(.6f);
         }
         Keys();
-        if (record) Check("Enemigo derrotado con el pico: " + (enemy ? enemy.name : "?"), enemy && enemy.Defeated);
+        if (record) Check("Enemigo derrotado con el pico: " + (enemy ? enemy.name : "?") + $" (vida del jugador {Player.Health}/{Player.maxHealth})", enemy && enemy.Defeated);
     }
 
     IEnumerator PushCart(M01RailCart cart, bool right, float seconds = 16)
     {
-        float end = Time.realtimeSinceStartup + seconds;
-        while (cart && !cart.OnPlate && Time.realtimeSinceStartup < end) { if (Dialogue && Dialogue.IsOpen) { Keys(); yield return Speak(); end = Time.realtimeSinceStartup + seconds; } Keys(right ? Key.RightArrow : Key.LeftArrow); yield return null; }
+        float end = Now + seconds;
+        while (cart && !cart.OnPlate && Now < end) { if (Dialogue && Dialogue.IsOpen) { Keys(); yield return Speak(); end = Now + seconds; } Keys(right ? Key.RightArrow : Key.LeftArrow); yield return null; }
         Keys(); yield return new WaitForSecondsRealtime(.2f);
     }
 
     M01RailCart Cart(string id) => FindObjectsByType<M01RailCart>().FirstOrDefault(c => c.cartId == id);
     AfterglowEnemy Enemy(string id) => FindObjectsByType<AfterglowEnemy>().FirstOrDefault(e => e.name == id);
 
+    // Reloj de juego para los plazos: un fotograma lento del editor cuenta como un paso de simulación, no como segundos reales.
+    float clock; protected float Now => clock;
+    void LateUpdate() { clock += Time.timeScale > 0 ? Time.deltaTime / Time.timeScale : Mathf.Min(Time.unscaledDeltaTime, Time.maximumDeltaTime); }
+    float previousMaxDelta = .3333f;
     IEnumerator Start()
     {
         Directory.CreateDirectory(Evidence);
         previousBackground = InputSystem.settings.backgroundBehavior; previousFocus = InputSystem.settings.editorInputBehaviorInPlayMode;
         InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
+        // Ayuda de prueba: pasos de simulación cortos para que un fotograma lento del editor no arrastre al jugador más allá del punto de parada.
+        previousMaxDelta = Time.maximumDeltaTime; Time.maximumDeltaTime = 1f / 30f;
         InputSystem.settings.editorInputBehaviorInPlayMode = InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;
         string previousSave = File.Exists(M01Save.Path) ? File.ReadAllText(M01Save.Path) : null;
 
@@ -108,7 +116,7 @@ public sealed class N2PlayChecks : MonoBehaviour
         yield return Capture("00_Selector_N2");
         yield return Tap(Key.E);
         yield return Arrival("N02S01"); if (SceneId != "N02S01") yield break;
-        started = Time.realtimeSinceStartup;
+        started = Now;
         Check("Nivel actual 2 y expedición activa", d.currentLevel == 2 && d.expeditionActive);
         yield return Capture("01_Anden_entrada");
 
@@ -128,7 +136,7 @@ public sealed class N2PlayChecks : MonoBehaviour
         yield return Walk(-10, 4.0f); yield return Tap(Key.E);
         yield return Arrival("N02S04"); if (SceneId != "N02S04") yield break;
         yield return Capture("02_Desvio_entrada");
-        yield return Walk(-4.2f, -3.5f, true); yield return Walk(-0.4f, -1.8f, true); yield return Walk(2.6f, -1.6f);
+        yield return Walk(-5.6f, -3.5f); yield return Walk(-3.8f, -3.5f, true); yield return Walk(-1.5f, -2.4f); yield return Walk(0.4f, -1.8f, true); yield return Walk(2.3f, -1.6f);
         yield return Walk(5.6f, -1.6f, true);
         Check("Salto del hueco de 1,5 m hasta la cornisa lejana", Player.transform.position.y > 1.2f && Player.transform.position.x > 4.5f);
         var rival = Enemy("N02.RESISTANCE.2"); if (rival) yield return Fight(rival);
@@ -172,9 +180,9 @@ public sealed class N2PlayChecks : MonoBehaviour
 
         // Patio del farol: Hangzzer.
         var hang = FindAnyObjectByType<M01Hangzzer>(); var hangEnemy = hang.GetComponent<AfterglowEnemy>();
-        float until = Time.realtimeSinceStartup + 70; bool sawDescent = false, sawCall = false, captured = false;
+        float until = Now + 70; bool sawDescent = false, sawCall = false, captured = false;
         yield return Walk(-2, -3);
-        while (!hangEnemy.Defeated && !Player.Dead && Time.realtimeSinceStartup < until)
+        while (!hangEnemy.Defeated && !Player.Dead && Now < until)
         {
             sawDescent |= hang.State == "Bajando" || hang.State == "Silbando"; sawCall |= hang.Summoned > 0;
             if (sawCall && !captured && hang.State == "Expuesto") { captured = true; StartCoroutine(Capture("07_Patio_Hangzzer_refuerzos")); }
@@ -212,7 +220,7 @@ public sealed class N2PlayChecks : MonoBehaviour
         yield return Capture("09_Galeria_derrumbe");
         yield return Walk(-1.6f, 11.8f); yield return Tap(Key.E); yield return Speak();
         Check("Investigación de N2 registrada", d.investigated[1]);
-        report += $"\nRuta N2 automatizada hasta investigar: {Time.realtimeSinceStartup - started:F1} s (incluye diálogos, capturas y combates).\n";
+        report += $"\nRuta N2 automatizada hasta investigar: {Now - started:F1} s (incluye diálogos, capturas y combates).\n";
 
         // Teléfono, altar compartido y apertura de N3.
         int before = d.offerings.Count(o => !o.stolen);
@@ -221,13 +229,14 @@ public sealed class N2PlayChecks : MonoBehaviour
         yield return Arrival("N01S01"); if (SceneId != "N01S01") yield break;
         Check("El teléfono vuelve al refugio sin cambiar el nivel de la expedición", d.currentLevel == 2);
         yield return Walk(4, -4.4f); yield return Tap(Key.E); yield return Speak();
-        float deadline = Time.realtimeSinceStartup + 10; while (!d.opened[1] && Time.realtimeSinceStartup < deadline) { if (Dialogue && Dialogue.IsOpen) yield return Speak(); yield return null; }
+        float deadline = Now + 10; while (!d.opened[1] && Now < deadline) { if (Dialogue && Dialogue.IsOpen) yield return Speak(); yield return null; }
         yield return Speak();
         Check("Altar compartido acredita 5 en la cuota de N2 y abre N3", d.contributions[1] == 5 && d.opened[1]);
         yield return Walk(-1, -6.6f); yield return Tap(Key.E);
         yield return Arrival("M01_MAPA");
         map = FindAnyObjectByType<M01RouteMap>();
-        yield return new WaitForSecondsRealtime(.5f); if (map && map.Focused < 2) yield return Tap(Key.RightArrow);
+        yield return new WaitForSecondsRealtime(.5f);
+        foreach (var k in new[] { Key.RightArrow, Key.DownArrow, Key.UpArrow, Key.LeftArrow }) { if (!map || map.Focused == 2) break; yield return Tap(k); if (map.Focused != 2 && map.Focused != 1) yield return Tap(k == Key.RightArrow ? Key.LeftArrow : k == Key.LeftArrow ? Key.RightArrow : k == Key.UpArrow ? Key.DownArrow : Key.UpArrow); }
         Check("Selector: N3 disponible y enfocado", map && map.IsOpen && map.Focused == 2 && M01RouteMap.Available(d, 2));
         yield return Capture("10_Selector_N3_abierto");
         Check("Guardado personal intacto", previousSave == (File.Exists(M01Save.Path) ? File.ReadAllText(M01Save.Path) : null));
@@ -235,5 +244,5 @@ public sealed class N2PlayChecks : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void OnDestroy() { if (Keyboard.current != null) Keys(); InputSystem.settings.backgroundBehavior = previousBackground; InputSystem.settings.editorInputBehaviorInPlayMode = previousFocus; }
+    void OnDestroy() { if (Keyboard.current != null) Keys(); InputSystem.settings.backgroundBehavior = previousBackground; InputSystem.settings.editorInputBehaviorInPlayMode = previousFocus; Time.maximumDeltaTime = previousMaxDelta; }
 }

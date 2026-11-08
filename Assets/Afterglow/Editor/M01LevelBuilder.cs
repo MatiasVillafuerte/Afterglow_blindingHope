@@ -80,6 +80,9 @@ namespace Afterglow.M01.EditorTools
             foreach (var box in layout["boxes"]) { var go = new GameObject((string)box["name"]); go.transform.SetParent(colliders, false); go.transform.position = V(box["center"]); go.AddComponent<BoxCollider>().size = V(box["size"]); }
             if (!((bool?)room["ride"] ?? false) && room["arena"] == null) M01PerimeterBuilder.Apply(id, data + id + ".json", data + id + "_huecos.json", "Docs/Diseno/Perimetro_" + level + "/" + id + "_perimetro.svg");
 
+            // Luz principal de la mina (la plantilla la pierde al vaciar el escenario). M01DarkRoom la atenúa en N4.
+            var sun = new GameObject("Luz principal").AddComponent<Light>(); sun.transform.SetParent(stage.transform, false);
+            sun.type = LightType.Directional; sun.transform.rotation = Quaternion.Euler(48, -28, 0); sun.intensity = 1.05f; sun.color = new Color(1f, .9f, .78f); sun.shadows = LightShadows.Soft;
             // Luces cálidas de farol.
             foreach (var l in room["lights"] ?? new JArray())
             {
@@ -185,12 +188,19 @@ namespace Afterglow.M01.EditorTools
                     var pivot = new GameObject("Puente · pivote").transform; pivot.SetParent(stage.transform, false); pivot.position = V(m["pivot"]);
                     var deck = Piece("BridgeDeck"); if (deck) deck.SetParent(pivot, true);
                     var crossing = pivot.gameObject.AddComponent<BoxCollider>(); crossing.center = V(m["deckCenter"]); crossing.size = V(m["deckSize"]);
+                    var railList = new List<Collider>(); var dc = V(m["deckCenter"]); var ds = V(m["deckSize"]);
+                    foreach (var side in new[] { -1f, 1f })
+                    {
+                        var rail = new GameObject("Baranda").AddComponent<BoxCollider>(); rail.transform.SetParent(pivot, false); rail.center = new Vector3(dc.x + side * (ds.x / 2 + .08f), 1.3f, dc.z); rail.size = new Vector3(.16f, 2.6f, ds.z); railList.Add(rail);
+                        for (int k = 0; k <= 4; k++) { var post = GameObject.CreatePrimitive(PrimitiveType.Cube); Object.DestroyImmediate(post.GetComponent<Collider>()); post.name = "Poste de baranda"; post.transform.SetParent(pivot, false); post.transform.localPosition = new Vector3(dc.x + side * (ds.x / 2 + .06f), .45f, dc.z - ds.z / 2 + .3f + k * (ds.z - .6f) / 4); post.transform.localScale = new Vector3(.1f, .9f, .1f); post.GetComponent<MeshRenderer>().sharedMaterial = Material("Oak"); }
+                        var bar = GameObject.CreatePrimitive(PrimitiveType.Cube); Object.DestroyImmediate(bar.GetComponent<Collider>()); bar.name = "Pasamanos"; bar.transform.SetParent(pivot, false); bar.transform.localPosition = new Vector3(dc.x + side * (ds.x / 2 + .06f), .88f, dc.z); bar.transform.localScale = new Vector3(.08f, .08f, ds.z - .4f); bar.GetComponent<MeshRenderer>().sharedMaterial = Material("Oak");
+                    }
                     var leverGo = new GameObject("Palanca del contrapeso"); leverGo.transform.SetParent(stage.transform, false); leverGo.transform.position = V(m["lever"]);
                     var armPivot = new GameObject("Pivote palanca").transform; armPivot.SetParent(stage.transform, false); armPivot.position = V(m["lever"]) + Vector3.up * .55f;
                     var arm = Piece("LeverArm"); if (arm) arm.SetParent(armPivot, true);
                     var weight = Piece("Counterweight");
                     var bridge = leverGo.AddComponent<M01CounterweightBridge>(); bridge.deck = pivot; bridge.crossing = crossing; bridge.leverArm = armPivot; bridge.counterweight = weight; bridge.dialogue = dialogue;
-                    bridge.openEvent = (string)m["event"]; bridge.hintEvent = "";
+                    bridge.openEvent = (string)m["event"]; bridge.hintEvent = ""; bridge.rails = railList.ToArray();
                     bridge.prompt = Label("Bajar puente  [E]", V(m["lever"]) + new Vector3(-1.4f, 1.9f, -.6f)).gameObject;
                 }
                 else if (type == "hangzzer")

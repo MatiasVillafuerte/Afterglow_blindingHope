@@ -8,6 +8,8 @@ namespace Afterglow.M01
         public string openEvent=OpenEvent,hintEvent="N1E.BRIDGE_HINT";
         public Transform deck,leverArm,counterweight;
         public BoxCollider crossing;
+        /// <summary>Barandas laterales: solo bloquean con el puente bajado (la garganta sigue siendo una caída intencional).</summary>
+        public Collider[] rails;
         public M01Dialogue dialogue;
         public GameObject prompt;
         public float duration=1;
@@ -22,6 +24,7 @@ namespace Afterglow.M01
             leverArm.localRotation=leverStart*Quaternion.Euler(Mathf.Lerp(0,50,t),0,0);
             counterweight.localPosition=weightStart+Vector3.down*(1.1f*t);
             crossing.enabled=t>=1;
+            if(rails!=null)foreach(var r in rails)if(r)r.enabled=t>=1;
             if(prompt)prompt.SetActive(t<=0);
         }
         void Update()

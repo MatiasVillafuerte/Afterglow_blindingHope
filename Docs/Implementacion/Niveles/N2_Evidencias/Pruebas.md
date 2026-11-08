@@ -19,13 +19,98 @@ Teclado simulado (Input System). Fixture: N1 completado, pico y teléfono.
 - PASS Ofrenda de la cornisa del andén
 - PASS Paso N02S01 (-10, 4) a altura 1,34
 - PASS Llegada a N02S04
-- PASS Paso N02S04 (-4,2, -3,5) a altura 0,69
-- FAIL Paso N02S04 (-0,4, -1,8) a altura 0,69
-- FAIL Paso N02S04 (2,6, -1,6) a altura 0,69
-- FAIL Paso N02S04 (5,6, -1,6) a altura 0,04
-- FAIL Salto del hueco de 1,5 m hasta la cornisa lejana
-- FAIL Enemigo derrotado con el pico: N02.RESISTANCE.2
-- FAIL Paso N02S04 (6,3, 1,1) a altura 0,04
-- FAIL Paso N02S04 (7,5, 1,1) a altura 0,04
-- FAIL Paso N02S04 (8,7, 1,1) a altura 0,04
-- FAIL Tres rocas agrietadas rotas
+- PASS Paso N02S04 (-5,6, -3,5) a altura 0,04
+- PASS Paso N02S04 (-3,8, -3,5) a altura 0,69
+- PASS Paso N02S04 (-1,5, -2,4) a altura 0,69
+- PASS Paso N02S04 (0,4, -1,8) a altura 1,34
+- PASS Paso N02S04 (2,3, -1,6) a altura 1,34
+- PASS Paso N02S04 (5,6, -1,6) a altura 1,34
+- PASS Salto del hueco de 1,5 m hasta la cornisa lejana
+- PASS Enemigo derrotado con el pico: N02.RESISTANCE.2 (vida del jugador 9/10)
+- PASS Paso N02S04 (6,3, 1,1) a altura 1,34
+- PASS Paso N02S04 (7,5, 1,1) a altura 1,34
+- PASS Paso N02S04 (8,7, 1,1) a altura 1,34
+- PASS Tres rocas agrietadas rotas
+- PASS Paso N02S04 (6,4, 3,3) a altura 1,34
+- PASS Paso N02S04 (8,3, 3,3) a altura 1,34
+- PASS Caja de herramientas y ofrenda del nicho
+- PASS Paso N02S04 (5,2, -1,6) a altura 1,34
+- PASS Paso N02S04 (2,2, -1,6) a altura 1,34
+- PASS Paso N02S04 (-2,8, -3,5) a altura 0,69
+- PASS Paso N02S04 (-7,5, -4,5) a altura 0,04
+- PASS Paso N02S04 (-8,5, -5,2) a altura 0,04
+- PASS Llegada a N02S01
+- PASS Regreso del desvío a la cornisa del andén
+- PASS Paso N02S01 (-6, 0,4) a altura 0,04
+- PASS Paso N02S01 (-0,5, -4,4) a altura 0,04
+- PASS Q04 entregado: 1 ofrenda y 10 de dinero
+- PASS Paso N02S01 (9,8, 0) a altura 0,04
+- PASS Paso N02S01 (9,8, 2,2) a altura 0,04
+- PASS Llegada a N02S02
+- PASS Enemigo derrotado con el pico: N02.RESISTANCE.0 (vida del jugador 8/10)
+- PASS Enemigo derrotado con el pico: N02.RESISTANCE.1 (vida del jugador 7/10)
+- PASS Paso N02S02 (-8,2, -1) a altura 0,04
+- PASS Paso N02S02 (-8,2, 0,5) a altura 0,04
+- PASS Carro sobre la placa abre la reja
+- PASS Paso N02S02 (-4, -2,5) a altura 0,04
+- PASS Paso N02S02 (-4, -4,5) a altura 0,04
+- PASS Carro marcado enganchado en su apartadero (Q03 1/2)
+- PASS Paso N02S02 (-8,4, -1,4) a altura 0,04
+- PASS Palanca de topes: aviso N2.03 y la reja sigue abierta
+- PASS Paso N02S02 (-3, 0,3) a altura 0,04
+- PASS Paso N02S02 (-3, 1,4) a altura 0,88
+- PASS Paso N02S02 (-3, 2,8) a altura 1,34
+- PASS Paso N02S02 (-8,5, 4) a altura 1,34
+- PASS Ofrenda de la cornisa del cruce
+- PASS Paso N02S02 (-8,5, 1,2) a altura 0,04
+- PASS Paso N02S02 (9, -2) a altura 0,04
+- PASS Paso N02S02 (12,4, -2) a altura 0,04
+- PASS Paso N02S02 (13, -0,9) a altura 0,04
+- PASS Llegada a N02S03
+- PASS Paso N02S03 (-2, -3) a altura 0,04
+- PASS Hangzzer baja del farol y silba
+- PASS Hangzzer llama refuerzos desde el túnel
+- PASS Hangzzer derrotado (4 de vida) al golpearlo abajo
+- PASS Enemigo derrotado con el pico: N02.REFUERZO.3 (vida del jugador 4/10)
+- PASS Paso N02S03 (-10,4, -0,2) a altura 0,04
+- PASS Paso N02S03 (-10,4, 2,6) a altura 0,69
+- PASS Paso N02S03 (-11, 3,8) a altura 0,69
+- PASS Ofrenda del extremo del carril alto
+- PASS Paso N02S03 (-9,9, 3) a altura 0,69
+- PASS Segundo carro marcado en su apartadero (Q03 2/2)
+- PASS Paso N02S03 (-0,3, 0,6) a altura 0,54
+- PASS Paso N02S03 (8,4, -5,5) a altura 0,04
+- PASS Paso N02S03 (9,2, -5,5) a altura 0,88
+- PASS Paso N02S03 (11, -5,5) a altura 1,34
+- PASS Ofrenda de la torre de cajas
+- PASS Paso N02S03 (9,8, -3,5) a altura 0,04
+- PASS Paso N02S03 (10, -0,3) a altura 0,04
+- PASS Paso N02S03 (10, 2,4) a altura 0,69
+- PASS Paso N02S03 (10, 4,1) a altura 0,69
+- PASS Llegada a N02S05
+- PASS Paso N02S05 (3,2, -3,6) a altura 0,04
+- PASS Palanca baja el puente
+- PASS Paso N02S05 (2, -1,6) a altura 0,04
+- PASS Paso N02S05 (2, 4,2) a altura 0,04
+- PASS Enemigo derrotado con el pico: N02.RESISTANCE.3 (vida del jugador 3/10)
+- PASS Paso N02S05 (8,5, 5,5) a altura 0,04
+- PASS Ofrenda de la orilla norte
+- PASS Paso N02S05 (-4, 6,4) a altura 0,04
+- PASS Paso N02S05 (-4, 8) a altura 0,69
+- PASS Paso N02S05 (-4, 10) a altura 1,34
+- PASS Paso N02S05 (-2,5, 11,8) a altura 1,99
+- PASS Paso N02S05 (-1,6, 11,8) a altura 1,99
+- PASS Investigación de N2 registrada
+
+Ruta N2 automatizada hasta investigar: 118,7 s (incluye diálogos, capturas y combates).
+- PASS Ofrendas legítimas suficientes para la cuota 5: 9
+- PASS Llegada a N01S01
+- PASS El teléfono vuelve al refugio sin cambiar el nivel de la expedición
+- PASS Paso N01S01 (4, -4,4) a altura 0,04
+- PASS Altar compartido acredita 5 en la cuota de N2 y abre N3
+- PASS Paso N01S01 (-1, -6,6) a altura 0,04
+- PASS Llegada a M01_MAPA
+- PASS Selector: N3 disponible y enfocado
+- PASS Guardado personal intacto
+
+Finalizado. Fallos: 0

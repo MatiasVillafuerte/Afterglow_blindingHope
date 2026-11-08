@@ -32,6 +32,8 @@ public class AfterglowPlayer : MonoBehaviour {
   else if(k!=null){move=new Vector2((k.rightArrowKey.isPressed?1:0)-(k.leftArrowKey.isPressed?1:0),(k.upArrowKey.isPressed?1:0)-(k.downArrowKey.isPressed?1:0));jump=jumpRequested;attack=attackRequested;}
   jumpRequested=attackRequested=false;
   move=Vector2.ClampMagnitude(move,1); MoveInput=move; Vector3 horizontal=new Vector3(move.x,0,move.y);
+  // La dirección pulsada orienta el golpe aunque el ataque detenga el paso en ese mismo fotograma.
+  if(worldOne && attack && horizontal.sqrMagnitude>.01f && Time.time>=nextAttack){Facing=horizontal.normalized;if(Mathf.Abs(move.x)>.01f){var vs=visual.localScale;vs.x=Mathf.Abs(vs.x)*Mathf.Sign(move.x);visual.localScale=vs;}}
   if(worldOne && attack && Time.time>=nextAttack && worldOne.CanAttack(controller.isGrounded)){worldOne.RegisterAttack();nextAttack=Time.time+worldOne.AttackInterval;attackEnd=Time.time+worldOne.AttackInterval;impactAt=Time.time+.15f;impactPending=true;Play("Attack");}
   if(worldOne && Time.time<attackEnd && !worldOne.walkingAttackUnlocked){horizontal=Vector3.zero;move=Vector2.zero;jump=false;}
   else if(worldOne && Time.time<attackEnd)horizontal*=.7f; // Pico en marcha: 70 % de velocidad
