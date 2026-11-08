@@ -146,7 +146,7 @@ PM00–PM20 y el pase espacial/artístico permanecen verificados en su alcance h
 
 ## Ampliación del 7 de noviembre · pruebas pendientes
 
-- [ ] Daño de combate visible en ambos sentidos, con cifra efectiva y animación según DañoCausado.png. Comprobar invulnerabilidad, fallo y derrota. *2026-11-08: implementado y verificado en Game con teclado real en ambos sentidos, fallo fuera de alcance, golpe en profundidad, dos impactos seguidos y derrota (Evidencias_2026_11_08/08a–08d). Falta observar el golpe absorbido por invulnerabilidad y el daño mayor que la vida restante.*
+- [x] Daño de combate visible en ambos sentidos, con cifra efectiva y animación según DañoCausado.png. Comprobar invulnerabilidad, fallo y derrota. *2026-11-08: verificado con teclado real en ambos sentidos, fallo, profundidad, dos impactos y derrota (Evidencias_2026_11_08/08a–08d). La prueba dirigida `Pruebas_Dano_Dirigidas.md` (6 PASS) cubre el golpe absorbido por invulnerabilidad (sin cifra) y el daño mayor que la vida restante (cifra = vida perdida).*
 - [ ] Comparar dormitorio, casa/jardín y mina con sus conceptos desde Game y registrar los modelos y materiales pulidos.
 
 - [x] Verificar timbre con mensaje único, teléfono y pico con gesto, brillo y restauración del control y cámara. *2026-11-08: verificado desde Nueva partida. La carga no repite la entrega. Evidencias_2026_11_08/02, 03, 05, 06–06c y 11. La captura intermedia del teléfono se descartó; la fase se registró por estado.*

@@ -16,6 +16,9 @@ namespace Afterglow
         Transform target; Vector3 offset; RectTransform rect; CanvasGroup group; float born; float lift;
 
         public static int Active { get; private set; }
+        /// <summary>Diagnóstico de pruebas: total de cifras creadas y último valor mostrado.</summary>
+        public static int Spawned { get; private set; }
+        public static int LastAmount { get; private set; }
 
         /// <summary>Muestra la vida efectivamente perdida. Ignora cantidades nulas.</summary>
         public static void Spawn(Transform target, int amount)
@@ -51,7 +54,7 @@ namespace Afterglow
             text.raycastTarget = false;
             text.outlineWidth = .32f;
             text.outlineColor = new Color32(24, 27, 42, 255);
-            Active++;
+            Active++; Spawned++; LastAmount = amount;
             popup.Place(1);
         }
 

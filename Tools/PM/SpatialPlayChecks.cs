@@ -11,6 +11,9 @@ using UnityEngine.SceneManagement;
 
 public sealed class SpatialPlayChecks : MonoBehaviour
 {
+    // 2026-11-08: otro proceso puede mapear el informe (error Win32 1224); se reintenta sin abortar la prueba.
+    static void SafeWrite(string path,string text){for(int i=0;i<8;i++){try{System.IO.File.WriteAllText(path,text);return;}catch(System.IO.IOException){System.Threading.Thread.Sleep(40);}}}
+
     const string Evidence = "Docs/Implementacion/Camara_Espacial";
     string report = "# Recorrido espacial en Play Mode\n\n";
     int failures;
@@ -33,7 +36,7 @@ public sealed class SpatialPlayChecks : MonoBehaviour
     {
         if (!result) failures++;
         report += $"- {(result?"PASS":"FAIL")} {label}\n";
-        File.WriteAllText(Evidence+"/Pruebas.md", report);
+        SafeWrite(Evidence+"/Pruebas.md", report);
         return result;
     }
 
@@ -220,7 +223,7 @@ public sealed class SpatialPlayChecks : MonoBehaviour
         Check("Altar acredita 3 y abre N2 tras investigar",Data.contributions[0]==3&&Data.opened[0]);
         Check("Guardado personal intacto",previousSave==(File.Exists(M01Save.Path)?File.ReadAllText(M01Save.Path):null));
         report+=$"\nFinalizado. Fallos: {failures}\n";
-        File.WriteAllText(Evidence+"/Pruebas.md",report);
+        SafeWrite(Evidence+"/Pruebas.md",report);
         Destroy(gameObject);
     }
 

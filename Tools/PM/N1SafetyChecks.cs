@@ -10,6 +10,10 @@ using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.SceneManagement;
 public sealed class N1SafetyChecks:MonoBehaviour
 {
+
+    // 2026-11-08: otro proceso puede mapear el informe (error Win32 1224); se reintenta sin abortar la prueba.
+    static void SafeWrite(string path,string text){for(int i=0;i<8;i++){try{System.IO.File.WriteAllText(path,text);return;}catch(System.IO.IOException){System.Threading.Thread.Sleep(40);}}}
+
     const string Dir="Tools/PM/TestData/N1Safety/";
     const string Report="Docs/Implementacion/Nivel1/Pruebas_Seguridad.md";
     string log="# Seguridad y persistencia N1\n\nFixture aislado: estado inicial sembrado, desplazamiento y E/T reales. No sustituye Pruebas.md desde Nueva partida.\n\n";int failures;
@@ -18,7 +22,7 @@ public sealed class N1SafetyChecks:MonoBehaviour
     M01Progress D=>M01Session.Instance.data;M01Dialogue Talk=>FindAnyObjectByType<M01Dialogue>();
     M01CounterweightBridge Bridge=>FindAnyObjectByType<M01CounterweightBridge>();
     public static string Main(){var g=new GameObject("N1 safety fixture");DontDestroyOnLoad(g);g.AddComponent<N1SafetyChecks>();return "Pruebas de seguridad iniciadas";}
-    void Check(string name,bool ok){if(!ok)failures++;log+=$"- {(ok?"PASS":"FAIL")} {name}\n";File.WriteAllText(Report,log);}
+    void Check(string name,bool ok){if(!ok)failures++;log+=$"- {(ok?"PASS":"FAIL")} {name}\n";SafeWrite(Report,log);}
     void Keys(params Key[] k)=>InputSystem.QueueStateEvent(Keyboard.current,new KeyboardState(k));
     IEnumerator Tap(Key k){Keys(k);yield return new WaitForSecondsRealtime(.08f);Keys();yield return new WaitForSecondsRealtime(.1f);}
     IEnumerator Speak(){for(int i=0;Talk&&Talk.IsOpen&&i<55;i++)yield return Tap(Key.E);    // 2026-11-08: la presentación de objetos clave pausa tras el diálogo; esperar a que devuelva el control.
@@ -78,14 +82,14 @@ public sealed class N1SafetyChecks:MonoBehaviour
         Check("Cargar cerrado",M01Save.Continue(out error,Dir+"closed.json"));yield return Ready("N01S04");
         Check("Guardado anterior restaura cerrado sin perder recursos",!Bridge.crossing.enabled&&D.money==19&&D.offerings.Count==1&&D.Quest("Q02").paid);
         var legacy=new M01SaveFile{schema=4,scene=M01Expedition.ScenePath("N01S04"),position=new Vector3(-4,2.2f,9.4f),progress=D,facing=Vector3.forward};
-        File.WriteAllText(Dir+"legacy.json",JsonUtility.ToJson(legacy));
+        SafeWrite(Dir+"legacy.json",JsonUtility.ToJson(legacy));
         Check("Esquema 4 recoloca sobre entrada nueva",M01Save.ReadFile(Dir+"legacy.json",out var migrated,out error)&&migrated.schema==5&&migrated.position==M01Expedition.SectionEntrance("N01S04")&&migrated.progress.money==19&&migrated.progress.Quest("Q02").paid);
         P.testControl=true;P.testJump=true;yield return new WaitForSecondsRealtime(.15f);yield return Tap(Key.T);
         Check("Teléfono bloqueado en salto",!Talk.IsOpen&&SceneManager.GetActiveScene().name=="N01S04");
         yield return new WaitForSecondsRealtime(1);yield return Tap(Key.T);yield return Speak();yield return Ready("N01S01");
         Check("Teléfono conserva recursos y no aporta",D.offerings.Count==1&&D.contributions[0]==0&&D.money==19);
         Check("Guardado personal intacto",personal==(File.Exists(M01Save.Path)?File.ReadAllText(M01Save.Path):null));
-        log+=$"\nFinalizado. Fallos: {failures}\n";File.WriteAllText(Report,log);Destroy(gameObject);
+        log+=$"\nFinalizado. Fallos: {failures}\n";SafeWrite(Report,log);Destroy(gameObject);
     }
     void OnDestroy(){Keys();InputSystem.settings.backgroundBehavior=background;InputSystem.settings.editorInputBehaviorInPlayMode=focus;}
 }

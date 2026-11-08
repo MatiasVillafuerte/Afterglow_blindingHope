@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="918" height="780" font-family="sans-serif" font-size="11">
+<rect width="100%" height="100%" fill="#f6f1e7"/><text x="8" y="18" font-size="15" font-weight="bold">N01S03 · perímetro protegido y huecos jugables (vista superior, +Z arriba)</text>
+<g transform="translate(0,30)">
+<rect x="420.0" y="495.6" width="140.0" height="168.0" fill="rgb(215,203,185)" stroke="#6b5a45" stroke-width=".6"/>
+<text x="424.2" y="508.2">Arrival_lane y=0.00</text>
+<rect x="154.0" y="310.8" width="448.0" height="224.0" fill="rgb(215,203,185)" stroke="#6b5a45" stroke-width=".6"/>
+<text x="158.2" y="323.4">Combat_fan y=0.00</text>
+<rect x="84.0" y="154.0" width="196.0" height="224.0" fill="rgb(215,203,185)" stroke="#6b5a45" stroke-width=".6"/>
+<text x="88.2" y="166.6">Optional_work_bay y=0.00</text>
+<rect x="112.0" y="67.2" width="84.0" height="100.8" fill="rgb(215,203,185)" stroke="#6b5a45" stroke-width=".6"/>
+<text x="116.2" y="79.8">Exit_neck y=0.00</text>
+<rect x="305.2" y="196.0" width="112.0" height="112.0" fill="#5c534b" opacity=".75"/>
+<rect x="56.0" y="56.0" width="56.0" height="112.0" fill="#5c534b" opacity=".75"/>
+<rect x="196.0" y="56.0" width="56.0" height="112.0" fill="#5c534b" opacity=".75"/>
+<rect x="97.7" y="276.9" width="23.0" height="23.0" fill="#5c534b" opacity=".75"/>
+<rect x="506.5" y="498.1" width="23.0" height="23.0" fill="#5c534b" opacity=".75"/>
+<line x1="420.0" y1="663.6" x2="560.0" y2="663.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="420.0" y1="663.6" x2="420.0" y2="537.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="560.0" y1="663.6" x2="560.0" y2="537.6" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="154.0" y1="534.8" x2="413.0" y2="534.8" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="567.0" y1="534.8" x2="602.0" y2="534.8" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="287.0" y1="310.8" x2="301.0" y2="310.8" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="420.0" y1="310.8" x2="602.0" y2="310.8" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="154.0" y1="534.8" x2="154.0" y2="380.8" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="602.0" y1="534.8" x2="602.0" y2="310.8" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="84.0" y1="378.0" x2="147.0" y2="378.0" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="259.0" y1="154.0" x2="280.0" y2="154.0" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="84.0" y1="378.0" x2="84.0" y2="175.0" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="280.0" y1="308.0" x2="280.0" y2="154.0" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="119.0" y1="67.2" x2="189.0" y2="67.2" stroke="#c0262d" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(678,50)"><rect width="16" height="10" fill="#c8bba3"/><text x="22" y="9">Superficie (más oscura = más alta)</text>
+<line x1="0" y1="28" x2="16" y2="28" stroke="#c0262d" stroke-width="3.5"/><text x="22" y="32">Perímetro protegido: barrera + estacas</text>
+<rect y="44" width="16" height="10" fill="#f0a030"/><text x="22" y="53">Hueco jugable: caída −2, vuelta a la entrada</text>
+<rect y="66" width="16" height="10" fill="#5c534b"/><text x="22" y="75">Masa sólida o pared</text></g>
+</svg>
