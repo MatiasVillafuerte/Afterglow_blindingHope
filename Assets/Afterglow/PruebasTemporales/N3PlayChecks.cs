@@ -80,7 +80,7 @@ public sealed class N3PlayChecks : M01RouteRunner
         Check("Ofrenda de la terraza alta", Data.collectedStaticIds.Contains("EXP.N03S04.0"));
         yield return Walk(7, 4.0f); yield return Door("N03S06"); if (SceneId != "N03S06") yield break;
         yield return Capture("06_Galeria_pozo");
-        yield return Walk(0, -3.4f); yield return Walk(0, 0); yield return Walk(0, 3.0f);
+        yield return Walk(0, -3.4f); yield return Walk(0, 0); yield return Walk(0, 2.1f);
         Check("Pasarela del pozo sin caer y sin activar los Gasplode", Player.transform.position.y > -0.2f && FindObjectsByType<M01Gasplode>(FindObjectsSortMode.None).All(g => g.State == "Quieto"));
         yield return Door("N03S07"); if (SceneId != "N03S07") yield break;
         yield return Capture("07_Fin_senales");

@@ -42,6 +42,9 @@ public abstract class M01RouteRunner : MonoBehaviour
             if (Dialogue && Dialogue.IsOpen) { Keys(); yield return Speak(); end = Now + timeout; }
             var p = Player.transform.position; var d = new Vector2(x - p.x, z - p.z);
             if (d.magnitude < .25f) { reached = true; break; }
+            // Como un jugador: si un enemigo al mismo nivel corta el paso, primero se le hace frente.
+            var near = FindObjectsByType<AfterglowEnemy>(FindObjectsSortMode.None).Where(e => !e.Defeated && !e.stationary && Mathf.Abs(e.transform.position.y - p.y) < .8f && Vector3.Distance(e.transform.position, p) < 1.5f).OrderBy(e => Vector3.Distance(e.transform.position, p)).FirstOrDefault();
+            if (near) { Keys(); yield return Fight(near, 8, false); end = Now + timeout; continue; }
             Key h = Mathf.Abs(d.x) < .15f ? Key.None : d.x > 0 ? Key.RightArrow : Key.LeftArrow;
             Key v = Mathf.Abs(d.y) < .15f ? Key.None : d.y > 0 ? Key.UpArrow : Key.DownArrow;
             if (!jumpSent && Player.Grounded) { Keys(h, v, Key.Space); jumpSent = true; } else Keys(h, v);
@@ -73,7 +76,41 @@ public abstract class M01RouteRunner : MonoBehaviour
             yield return new WaitForSecondsRealtime(.06f); Keys(); yield return new WaitForSecondsRealtime(.6f);
         }
         Keys();
+        if (enemy && enemy.Defeated) yield return CollectLoot(enemy.transform.position);
+        yield return HealIfLow();
         if (record) Check("Enemigo derrotado con el pico: " + (enemy ? enemy.name : "?") + $" (vida del jugador {Player.Health}/{Player.maxHealth})", enemy && enemy.Defeated);
+    }
+
+    /// <summary>
+    /// Con 4 de vida o menos usa un consumible desde el inventario (I → Consumibles → Núcleo o Fragmento), como haría un
+    /// jugador que compró en la tienda del pueblo antes de la expedición.
+    /// </summary>
+    protected IEnumerator HealIfLow()
+    {
+        var d = Data;
+        if (Player.Dead || Player.Health > 4 || (d.restorers <= 0 && d.fragments <= 0) || (Dialogue && Dialogue.IsOpen)) yield break;
+        int before = Player.Health; bool core = d.restorers > 0;
+        yield return Tap(Key.I); yield return new WaitForSecondsRealtime(.2f);
+        yield return Tap(Key.DownArrow); yield return Tap(Key.E); yield return new WaitForSecondsRealtime(.2f);
+        if (core) yield return Tap(Key.DownArrow);
+        yield return Tap(Key.E); yield return Speak();
+        Note($"- Consumible usado ({(core ? "Núcleo +5" : "Fragmento +2")}): vida {before} → {Player.Health}");
+    }
+
+    /// <summary>Recoge el botín soltado cerca (curativos incluidos), como haría un jugador tras el combate.</summary>
+    protected IEnumerator CollectLoot(Vector3 around)
+    {
+        yield return new WaitForSecondsRealtime(.5f);
+        float end = Now + 5;
+        while (Now < end && !Player.Dead)
+        {
+            var loot = FindObjectsByType<M01Loot>(FindObjectsSortMode.None).Where(l => l && Vector3.Distance(l.transform.position, around) < 3.5f && Mathf.Abs(l.transform.position.y - Player.transform.position.y) < 1.2f).OrderBy(l => Vector3.Distance(l.transform.position, Player.transform.position)).FirstOrDefault();
+            if (!loot) break;
+            var d = loot.transform.position - Player.transform.position;
+            Keys(Mathf.Abs(d.x) < .15f ? Key.None : d.x > 0 ? Key.RightArrow : Key.LeftArrow, Mathf.Abs(d.z) < .15f ? Key.None : d.z > 0 ? Key.UpArrow : Key.DownArrow);
+            yield return null;
+        }
+        Keys();
     }
 
     protected AfterglowEnemy Enemy(string id) => FindObjectsByType<AfterglowEnemy>(FindObjectsSortMode.None).FirstOrDefault(e => e.name == id);
@@ -107,6 +144,8 @@ public abstract class M01RouteRunner : MonoBehaviour
         d.pickaxeOwned = d.phoneOwned = true;
         for (int i = 0; i < level - 1; i++) { d.investigated[i] = true; d.contributions[i] = M01Progress.Quotas[i]; d.opened[i] = true; }
         d.lastMapNode = level;
+        // Compras previstas en la tienda del pueblo con el dinero de los niveles anteriores: un Núcleo (12) por nivel completado.
+        if (d.restorers < level - 1) d.restorers = level - 1;
     }
 
     protected IEnumerator EnterFromMap(int level)

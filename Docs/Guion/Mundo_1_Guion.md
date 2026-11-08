@@ -273,6 +273,12 @@ N4.03 · Minero junto al refugio: «Con la luz de ese carro podremos ver el cruc
 
 N4.04 · Minero al final: «Hemos abierto hasta la estación de carga. La vía cruza un corte de la mina; completa el aporte y podrás llegar hasta allí.»
 
+N4D.01 · Minero de la estación, investigación: «La vagoneta espera en la estación, pero el corte de la vía todavía no es seguro. Vuelve al altar con el aporte y abriremos el paso.» Al terminar se registra la investigación de N4.
+
+N4M.01 · Minero Apaza, ambiental en el andén oscuro: «Aquí abajo uno aprende a escuchar la piedra. La que cruje avisa; la que calla, sorprende.»
+
+N4M.02 · Minero Apaza: «Si ves una luz verde flotando, no es una lámpara. Por si te lo preguntabas.»
+
 ### Escena N5 Vagoneta
 
 N5.01 · Platicio: «La vía cruza un corte de la mina. La vagoneta puede pasar, pero hay piedras y tramos sin riel. Revisa bien dónde saltar.»

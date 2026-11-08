@@ -824,6 +824,21 @@
       "id": "N3D.01",
       "speaker": "Minero de la galería oscura",
       "text": "Desde aquí ya no se ve el fondo. Necesitaremos luz para seguir; vuelve al altar con el aporte y prepararemos el paso."
+    },
+    {
+      "id": "N4M.01",
+      "speaker": "Minero Apaza",
+      "text": "Aquí abajo uno aprende a escuchar la piedra. La que cruje avisa; la que calla, sorprende."
+    },
+    {
+      "id": "N4M.02",
+      "speaker": "Minero Apaza",
+      "text": "Si ves una luz verde flotando, no es una lámpara. Por si te lo preguntabas."
+    },
+    {
+      "id": "N4D.01",
+      "speaker": "Minero de la estación",
+      "text": "La vagoneta espera en la estación, pero el corte de la vía todavía no es seguro. Vuelve al altar con el aporte y abriremos el paso."
     }
   ]
 }

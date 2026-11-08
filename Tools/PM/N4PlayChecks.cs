@@ -47,13 +47,15 @@ public sealed class N4PlayChecks : M01RouteRunner
         Keys(); yield return new WaitForSecondsRealtime(.3f);
         Check("Q09: el carro de luz llega al refugio y lo ilumina", Data.events.Contains("Q09.CARRO_LUZ"));
         yield return Capture("05_Carro_de_luz");
-        yield return Walk(9.6f, 1.2f); yield return Walk(9.6f, 3.4f, true); yield return Walk(10, 3.6f); yield return Tap(Key.E); yield return Speak();
+        // El carro de luz queda en la placa (x 8, z 0,6): se rodea por el sur.
+        yield return Walk(9.6f, -0.8f); yield return Walk(9.6f, 1.2f); yield return Walk(9.6f, 3.4f, true); yield return Walk(10, 3.6f); yield return Tap(Key.E); yield return Speak();
         yield return Walk(12, 3.2f); yield return Tap(Key.E); yield return Speak();
         Check("Q09 y Q10 entregados", Data.Quest("Q09").paid && Data.Quest("Q10").paid);
         yield return Walk(12, 5.0f); yield return Door("N04S04"); if (SceneId != "N04S04") yield break;
         yield return Walk(-4, -2.2f); yield return Walk(-4, 0, true);
         var l2 = Enemy("S04.LIGHMET.N4"); if (l2) yield return Fight(l2, 25);
-        yield return Walk(-4, 0); yield return Walk(-2.6f, 0.6f); yield return Walk(0, 1, true); yield return Walk(1.4f, 1.6f); yield return Walk(4, 2.2f, true); yield return Walk(4, 2.8f);
+        // El combate desplaza al jugador: vuelve al pie del primer peldaño antes de saltar.
+        yield return Walk(-4, -2.2f); yield return Walk(-4, 0, true); yield return Walk(-2.6f, 0.6f); yield return Walk(0, 1, true); yield return Walk(1.4f, 1.6f); yield return Walk(4, 2.2f, true); yield return Walk(4, 2.8f);
         yield return Walk(5.4f, 3); yield return Walk(8, 3.2f, true); yield return Walk(9, 5);
         Check("Ofrendas de la grieta alta", new[] { "EXP.N04S04.0", "EXP.N04S04.1", "EXP.N04S04.2" }.All(Data.collectedStaticIds.Contains));
         yield return Walk(8, 5.0f); yield return Door("N04S05"); if (SceneId != "N04S05") yield break;

@@ -90,8 +90,9 @@ namespace Afterglow.M01
         void Move(Vector2 dir)
         {
             int best=-1;float score=float.PositiveInfinity;
-            // Navigation follows the actual connected path, including locked neighbours.
-            foreach(int i in new[]{Focused-1,Focused+1})if(i>=0&&i<6){var delta=Presentation.NodePosition(i)-Presentation.NodePosition(Focused);float forward=Vector2.Dot(delta.normalized,dir);if(forward>.2f){float cost=delta.magnitude/(forward*forward);if(cost<score){best=i;score=cost;}}}
+            // Navigation follows the actual connected path, including locked neighbours. Gana el vecino mejor alineado con
+            // la flecha (no el más cercano): desde N4, Derecha debe llevar a N5 aunque N3 quede más cerca.
+            foreach(int i in new[]{Focused-1,Focused+1})if(i>=0&&i<6){var delta=Presentation.NodePosition(i)-Presentation.NodePosition(Focused);float forward=Vector2.Dot(delta.normalized,dir);if(forward>.2f){float cost=-forward;if(cost<score){best=i;score=cost;}}}
             if(best>=0){Focused=best;Data.lastMapNode=best+1;Refresh();}
         }
         void Update()

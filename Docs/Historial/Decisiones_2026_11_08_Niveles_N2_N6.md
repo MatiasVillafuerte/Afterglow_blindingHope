@@ -24,7 +24,7 @@ Sesión de Claude. Se distingue la decisión del diseñador, el parámetro inici
 | Refuerzos del Hangzzer | intervalo 6 s, 2 vivos como máximo, 2 por ciclo, 4 por vida del Hangzzer; sin botín |
 | Gasplode | 1 de vida, aviso a 2,6 m, mecha de 0,9 s, explosión de 1,9 m y daño 2 |
 | Drilly | 3 de vida, sigue 2,4 s, aviso de 0,6 s, fuera 1,6 s, golpe a 1,25 m y daño 1 |
-| Lighmet | 4 de vida, disparo cada 2,4 s a 5 m/s, daño 1; espíritu y proyectil con luz |
+| Lighmet | 4 de vida, disparo cada 2,4 s a 5 m/s, daño 1; espíritu y proyectil con luz. Aviso de 0,45 s con el sprite de lanzamiento; un golpe durante el aviso cancela el disparo (antes disparaba sin aviso y a quemarropa era inevitable: 3–4 de vida por Lighmet) |
 | Vagoneta | 7 m/s, salto de 1,6 m, freno al 70 % durante 1,5 s; umbral de 18 de 28 minerales |
 | Lámpara del casco en N4 | 4,2 m |
 | PerforAudora | escala ×4; los valores de fase, atasco, piedras, altar y Tío siguen el GDD 9 |
@@ -43,6 +43,9 @@ Sesión de Claude. Se distingue la decisión del diseñador, el parámetro inici
 
 ## Propuestas pendientes de decisión del diseñador
 
+- Exigencia de N4. Sin consumibles, cinco Resisworm y tres Lighmet consumen los 10 de vida: el recorrido automatizado moría en el último Resisworm con 1 de vida. Solo el 10 % de las bajas suelta un curativo (+2). El diseño ya prevé la tienda del pueblo (Fragmento +2 por 5, Núcleo +5 por 12, usados desde el inventario). Por eso no se añadió ningún punto de descanso: el recorrido compra un Núcleo por nivel completado (fixture) y lo usa con 4 de vida o menos. Decidir si conviene que Platicio o un cartel recuerde la tienda antes de N4.
+- Líneas ausentes. N4D.01, N4M.01 y N4M.02 no existían en `Guion_M01.json`: la investigación de N4 lanzaba una excepción y no se registraba. Se redactaron las tres líneas (pendientes de revisión de tono) y se añadió `Tools/Documentacion/Validar_Lineas.py`.
+- Lighmet de N04S04. El plano lo situaba a 1,35 m sobre el suelo, fuera del alcance del pico. Bajado a 0,05.
 - Confirmar o ajustar el umbral de 18 minerales y los valores de prueba de Gasplode y Drilly.
 - Nombre definitivo del consumible recogido como «Curativo» (el GDD nombra «Fragmento pulido»).
 - Sustituir el icono provisional del teléfono, el emblema y las siglas `[SIGLAS]` de la pieza dorada.

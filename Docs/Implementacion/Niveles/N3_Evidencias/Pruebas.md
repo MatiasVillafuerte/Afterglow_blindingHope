@@ -1,0 +1,118 @@
+# Recorrido N3 en Play Mode
+
+Teclado simulado (Input System). Fixture: niveles anteriores completados por sus pruebas.
+
+- PASS Selector abierto con N3 enfocado y escena disponible
+- PASS Llegada a N03S01
+- PASS Paso N03S01 (-4,5, -3,2) a altura 0,04
+- PASS Platicio explica el código de faroles (N3.01–02) y evalúa su regalo
+- PASS Paso N03S01 (-4, 0,4) a altura 0,04
+- PASS Paso N03S01 (-4, 2) a altura 0,69
+- PASS Paso N03S01 (-4, 3,5) a altura 0,69
+- PASS Ofrenda de la terraza de la bocamina
+- PASS Paso N03S01 (0, 4) a altura 0,69
+- PASS Llegada a N03S02
+- PASS Enemigo derrotado con el pico: N03.RESISTANCE.0 (vida del jugador 9/10)
+- PASS Paso N03S02 (8, -5) a altura 0,04
+- PASS Paso N03S02 (0, 2) a altura 0,04
+- PASS Llegada a N03S02
+- PASS Puerta equivocada: misma cámara lógica y aviso N3.03
+- PASS El error conserva lo encontrado (ofrenda recogida y enemigo derrotado)
+- PASS Paso N03S02 (-6, 2) a altura 0,04
+- PASS Llegada a N03S03
+- PASS Paso N03S03 (-4,6, -1,6) a altura 0,04
+- PASS Paso N03S03 (-1,5, -1,4) a altura 0,69
+- PASS Paso N03S03 (-1,5, -1) a altura 0,69
+- PASS Paso N03S03 (-0,4, -2,4) a altura 0,69
+- PASS Paso N03S03 (2,4, -2,4) a altura 1,34
+- PASS Paso N03S03 (4,6, -2,6) a altura 1,34
+- PASS Paso N03S03 (7, -2,6) a altura 1,34
+- PASS Paso N03S03 (8,5, 2,4) a altura 1,34
+- PASS Marca del equipo confirma el avance (N3.07)
+- PASS Ofrendas de la confirmación
+- PASS Paso N03S03 (8,5, 3,2) a altura 1,34
+- PASS Llegada a N03S04
+- PASS Paso N03S04 (-7, 4) a altura 0,04
+- PASS Llegada a N03S05
+- PASS Enemigo derrotado con el pico: N03.RESISTANCE.1 (vida del jugador 8/10)
+- PASS Paso N03S05 (2, -3,2) a altura 0,04
+- PASS Q06 aceptado
+- PASS Paso N03S05 (-5, 0,4) a altura 0,04
+- PASS Paso N03S05 (0, 1,4) a altura 0,04
+- PASS Paso N03S05 (5, 1,4) a altura 0,04
+- PASS Tres placas enderezadas
+- PASS Paso N03S05 (2, -3,2) a altura 0,04
+- PASS Q06 entregado
+- PASS Paso N03S05 (7, -6) a altura 0,04
+- PASS Paso N03S05 (-7, 2,4) a altura 0,04
+- PASS Paso N03S05 (-7, 4) a altura 0,69
+- PASS Paso N03S05 (-7, 4,3) a altura 0,69
+- PASS Ofrendas del taller
+- PASS Paso N03S05 (-5,6, 4) a altura 0,69
+- PASS Escolta Q05 activa: el minero perdido sigue al jugador
+- PASS Paso N03S05 (-5, 1,5) a altura 0,04
+- PASS Paso N03S05 (0, -6,2) a altura 0,04
+- PASS Llegada a N03S04
+- PASS El minero cruza la puerta con el jugador
+- PASS Paso N03S04 (0, -6,2) a altura 0,04
+- PASS Llegada a N03S03
+- PASS Paso N03S03 (6,4, -2,6) a altura 1,34
+- PASS Paso N03S03 (4,2, -2,6) a altura 1,34
+- PASS Paso N03S03 (1,4, -2,4) a altura 1,34
+- PASS Paso N03S03 (-1, -2) a altura 0,69
+- PASS Paso N03S03 (-3,4, -2) a altura 0,63
+- PASS Paso N03S03 (-6, -3) a altura 0,04
+- PASS Paso N03S03 (-7, -5,2) a altura 0,04
+- PASS Llegada a N03S02
+- PASS Paso N03S02 (0, -6,2) a altura 0,04
+- PASS Llegada a N03S01
+- PASS Q05: el minero llega caminando a la entrada
+- PASS Paso N03S01 (3,4, -4,4) a altura 0,04
+- PASS Q05 entregado: 2 ofrendas y 10 de dinero
+- PASS Paso N03S01 (0, 0,3) a altura 0,04
+- PASS Paso N03S01 (0, 2) a altura 0,69
+- PASS Paso N03S01 (0, 4) a altura 0,69
+- PASS Llegada a N03S02
+- PASS Paso N03S02 (-6, 2) a altura 0,04
+- PASS Llegada a N03S03
+- PASS Paso N03S03 (-4,6, -1,6) a altura 0,04
+- PASS Paso N03S03 (-1,5, -1,4) a altura 0,69
+- PASS Paso N03S03 (-1,5, -1) a altura 0,69
+- PASS Paso N03S03 (-0,4, -2,4) a altura 0,69
+- PASS Paso N03S03 (2,4, -2,4) a altura 1,34
+- PASS Paso N03S03 (4,6, -2,6) a altura 1,34
+- PASS Paso N03S03 (7, -2,6) a altura 1,34
+- PASS Paso N03S03 (8,5, 2,4) a altura 1,34
+- PASS Paso N03S03 (8,5, 3,2) a altura 1,34
+- PASS Llegada a N03S04
+- PASS Paso N03S04 (-1, 0,4) a altura 0,04
+- PASS Paso N03S04 (-1, 2,2) a altura 0,69
+- PASS Paso N03S04 (3,4, 2,6) a altura 0,69
+- PASS Paso N03S04 (5,2, 2,6) a altura 1,34
+- PASS Paso N03S04 (9, 3,8) a altura 1,34
+- PASS Ofrenda de la terraza alta
+- PASS Paso N03S04 (7, 4) a altura 1,34
+- PASS Llegada a N03S06
+- PASS Paso N03S06 (0, -3,4) a altura 0,04
+- PASS Paso N03S06 (0, 0) a altura 0,04
+- FAIL Paso N03S06 (0, 3) a altura 0,04 · quedó en (-0.14, 0.04, 2.15) · escala 1 · bloqueo False · diálogo False
+- PASS Pasarela del pozo sin caer y sin activar los Gasplode
+- PASS Llegada a N03S07
+- PASS Enemigo derrotado con el pico: N03.RESISTANCE.2 (vida del jugador 7/10)
+- PASS Paso N03S07 (6, 0,2) a altura 0,04
+- PASS Paso N03S07 (0, 2,4) a altura 0,04
+- PASS Paso N03S07 (0, 3,4) a altura 0,69
+- PASS Investigación de N3 registrada
+
+Ruta N3 automatizada hasta investigar: 105,7 s.
+- PASS Ofrendas legítimas para la cuota 7: 10
+- PASS Llegada a N01S01
+- PASS El teléfono conserva el nivel de la expedición
+- PASS Paso N01S01 (4, -4,4) a altura 0,04
+- PASS Altar compartido: cuota 7 cubierta y nivel siguiente abierto
+- PASS Paso N01S01 (-1, -6,6) a altura 0,04
+- PASS Llegada a M01_MAPA
+- PASS Selector: N4 disponible y enfocado
+- PASS Guardado personal intacto
+
+Finalizado. Fallos: 1
