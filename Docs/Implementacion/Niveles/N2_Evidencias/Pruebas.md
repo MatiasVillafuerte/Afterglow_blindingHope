@@ -2,7 +2,8 @@
 
 Teclado simulado (Input System). Fixture: N1 completado, pico y teléfono.
 
-- PASS Selector abierto con N1 enfocado y N2 disponible
+Encadenado: sin fixture; estado heredado de N1PlayChecks.
+- PASS Selector abierto con N2 disponible
 - PASS Foco pasa a N2
 - PASS Llegada a N02S01
 - PASS Nivel actual 2 y expedición activa
@@ -26,7 +27,7 @@ Teclado simulado (Input System). Fixture: N1 completado, pico y teléfono.
 - PASS Paso N02S04 (2,3, -1,6) a altura 1,34
 - PASS Paso N02S04 (5,6, -1,6) a altura 1,34
 - PASS Salto del hueco de 1,5 m hasta la cornisa lejana
-- PASS Enemigo derrotado con el pico: N02.RESISTANCE.2 (vida del jugador 9/10)
+- PASS Enemigo derrotado con el pico: N02.RESISTANCE.2 (vida del jugador 7/10)
 - PASS Paso N02S04 (6,3, 1,1) a altura 1,34
 - PASS Paso N02S04 (7,5, 1,1) a altura 1,34
 - PASS Paso N02S04 (8,7, 1,1) a altura 1,34
@@ -47,11 +48,11 @@ Teclado simulado (Input System). Fixture: N1 completado, pico y teléfono.
 - PASS Paso N02S01 (9,8, 0) a altura 0,04
 - PASS Paso N02S01 (9,8, 2,2) a altura 0,04
 - PASS Llegada a N02S02
-- PASS Enemigo derrotado con el pico: N02.RESISTANCE.0 (vida del jugador 8/10)
+- PASS Enemigo derrotado con el pico: N02.RESISTANCE.0 (vida del jugador 6/10)
 - PASS Enemigo derrotado con el pico: N02.RESISTANCE.1 (vida del jugador 7/10)
 - PASS Paso N02S02 (-8,2, -1) a altura 0,04
 - PASS Paso N02S02 (-8,2, 0,5) a altura 0,04
-- PASS Carro sobre la placa abre la reja
+- PASS Carro sobre la placa abre la reja · carro en placa True · jugador (3.21, 0.04, 0.34)
 - PASS Paso N02S02 (-4, -2,5) a altura 0,04
 - PASS Paso N02S02 (-4, -4,5) a altura 0,04
 - PASS Carro marcado enganchado en su apartadero (Q03 1/2)
@@ -71,14 +72,16 @@ Teclado simulado (Input System). Fixture: N1 completado, pico y teléfono.
 - PASS Hangzzer baja del farol y silba
 - PASS Hangzzer llama refuerzos desde el túnel
 - PASS Hangzzer derrotado (4 de vida) al golpearlo abajo
-- PASS Enemigo derrotado con el pico: N02.REFUERZO.3 (vida del jugador 4/10)
+- Consumible usado (Núcleo +5): vida 4 → 9
+- PASS Enemigo derrotado con el pico: N02.REFUERZO.4 (vida del jugador 9/10)
+- PASS Enemigo derrotado con el pico: N02.REFUERZO.3 (vida del jugador 8/10)
 - PASS Paso N02S03 (-10,4, -0,2) a altura 0,04
 - PASS Paso N02S03 (-10,4, 2,6) a altura 0,69
 - PASS Paso N02S03 (-11, 3,8) a altura 0,69
 - PASS Ofrenda del extremo del carril alto
 - PASS Paso N02S03 (-9,9, 3) a altura 0,69
 - PASS Segundo carro marcado en su apartadero (Q03 2/2)
-- PASS Paso N02S03 (-0,3, 0,6) a altura 0,54
+- PASS Paso N02S03 (-0,3, 0,6) a altura 0,43
 - PASS Paso N02S03 (8,4, -5,5) a altura 0,04
 - PASS Paso N02S03 (9,2, -5,5) a altura 0,88
 - PASS Paso N02S03 (11, -5,5) a altura 1,34
@@ -92,7 +95,7 @@ Teclado simulado (Input System). Fixture: N1 completado, pico y teléfono.
 - PASS Palanca baja el puente
 - PASS Paso N02S05 (2, -1,6) a altura 0,04
 - PASS Paso N02S05 (2, 4,2) a altura 0,04
-- PASS Enemigo derrotado con el pico: N02.RESISTANCE.3 (vida del jugador 3/10)
+- PASS Enemigo derrotado con el pico: N02.RESISTANCE.3 (vida del jugador 7/10)
 - PASS Paso N02S05 (8,5, 5,5) a altura 0,04
 - PASS Ofrenda de la orilla norte
 - PASS Paso N02S05 (-4, 6,4) a altura 0,04
@@ -102,8 +105,8 @@ Teclado simulado (Input System). Fixture: N1 completado, pico y teléfono.
 - PASS Paso N02S05 (-1,6, 11,8) a altura 1,99
 - PASS Investigación de N2 registrada
 
-Ruta N2 automatizada hasta investigar: 118,7 s (incluye diálogos, capturas y combates).
-- PASS Ofrendas legítimas suficientes para la cuota 5: 9
+Ruta N2 automatizada hasta investigar: 128,2 s (incluye diálogos, capturas y combates).
+- PASS Ofrendas legítimas suficientes para la cuota 5: 12
 - PASS Llegada a N01S01
 - PASS El teléfono vuelve al refugio sin cambiar el nivel de la expedición
 - PASS Paso N01S01 (4, -4,4) a altura 0,04

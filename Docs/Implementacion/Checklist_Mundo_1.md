@@ -122,7 +122,8 @@ Salida: el mundo tiene un cierre completo y un guardado verificable.
 
 ## Hito 8 Validación de entrega
 
-- [ ] C56 Recorrido completo desde partida nueva hasta Continuará con arte provisional, sin comandos de depuración para saltar cuotas o investigaciones.
+- [x] C56 Recorrido completo desde partida nueva hasta Continuará con arte provisional, sin comandos de depuración para saltar cuotas o investigaciones.
+  Evidencia 2026-11-09: `Recorrido_Completo/Pruebas.md`, vuelta 6 encadenada sin fixture (M01FullRun): N1 93 · tienda 17 · N2 109 · N3 120 · N4 90 · N5 51 · N6 17 PASS, 0 fallos, 11,3 min de juego. Teclado simulado en Play Mode del Editor, no build standalone.
 - [ ] C57 Recorrido de casos límite C14, muerte en escolta, fallos de vagoneta, reintento de jefe, pausa de relojes y carga de partida. Registrar evidencia por prueba.
 - [ ] C58 Revisar consola y compilación. Distinguir errores propios y previos; no ocultar advertencias relevantes ni afirmar pruebas que no se ejecutaron.
 - [ ] C59 Revisar legibilidad con cámara distante y sin depender solo del color. Documentar ajustes de parámetros que hayan sido necesarios.

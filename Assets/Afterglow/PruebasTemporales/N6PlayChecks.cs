@@ -42,7 +42,18 @@ public sealed class N6PlayChecks : M01RouteRunner
             // Esquivar la embestida: salir lateralmente de la trayectoria del taladro, hacia el centro.
             var toPlayer = p - drill.transform.position; toPlayer.y = 0; var fwd = drill.transform.forward;
             float along = Vector3.Dot(toPlayer, fwd); float lateral = Vector3.Dot(toPlayer, drill.transform.right);
-            bool threat = drill.State == "Aviso" || drill.State == "Embistiendo";
+            // Desde la fase 2 el taladro sigue al jugador durante el aviso: moverse de lado entonces no sirve. Mientras
+            // apunta o avisa, el jugador se aleja hacia el lado opuesto de la arena para que la embestida empiece lejos.
+            if (drill.State == "Apuntando" || drill.State == "Aviso" || drill.State == "Retrocediendo")
+            {
+                dodge = Vector3.zero;
+                var away = toPlayer.sqrMagnitude > .01f ? toPlayer.normalized : (p - arena.center).normalized;
+                var spot = drill.transform.position + away * 30; var fromCenter = spot - arena.center; fromCenter.y = 0;
+                spot = arena.center + Vector3.ClampMagnitude(fromCenter, arena.radius - 2.2f);
+                if (Vector3.Distance(new Vector3(p.x, 0, p.z), new Vector3(spot.x, 0, spot.z)) > .5f) { MoveTowards(spot); yield return null; continue; }
+                Keys(); yield return null; continue;
+            }
+            bool threat = drill.State == "Embistiendo";
             if (!threat) dodge = Vector3.zero;
             if (threat && (dodge != Vector3.zero || (along > -1 && Mathf.Abs(lateral) < 2.6f)))
             {
@@ -82,7 +93,7 @@ public sealed class N6PlayChecks : M01RouteRunner
         yield return Capture("02_Arena_fase1");
         yield return Battle(420);
         var arena = FindAnyObjectByType<M01BossArena>();
-        if (Player.Dead || SceneId != "N06S02")
+        if (Player.Dead || SceneId != "N06S02" || !arena || !arena.Won)
         {
             Check("Victoria contra PerforAudora", false);
             yield return Arrival("N06S01");
@@ -91,8 +102,10 @@ public sealed class N6PlayChecks : M01RouteRunner
         }
         Check("Victoria contra PerforAudora tras tres grupos", arena.Won && Data.events.Contains("N6.VICTORIA"));
         yield return Capture("03_Victoria");
-        yield return Speak();
+        // Won se marca al inicio de la explosión; la pieza se coloca 1,2 s después (M01Ending.Begin). Esperar a que exista.
         var ending = FindAnyObjectByType<M01Ending>();
+        for (float pieceWait = Now + 5; ending.Step != "Pieza" && Now < pieceWait;) yield return null;
+        yield return Speak();
         yield return Walk(ending.piece.transform.position.x, ending.piece.transform.position.z - 1.2f);
         yield return Tap(Key.E); yield return Speak(); yield return Speak();
         Check("Pieza dorada registrada como objeto clave una sola vez", Data.events.Contains("KEY.PIEZA"));

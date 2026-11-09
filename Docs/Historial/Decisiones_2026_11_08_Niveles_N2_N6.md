@@ -51,3 +51,17 @@ Sesión de Claude. Se distingue la decisión del diseñador, el parámetro inici
 - Confirmar o ajustar el umbral de 18 minerales y los valores de prueba de Gasplode y Drilly.
 - Nombre definitivo del consumible recogido como «Curativo» (el GDD nombra «Fragmento pulido»).
 - Sustituir el icono provisional del teléfono, el emblema y las siglas `[SIGLAS]` de la pieza dorada.
+
+
+## 2026-11-09 · Recorrido completo C56 (agente)
+
+- Se verificó C56 con el recorrido encadenado `M01FullRun` (vuelta 6, 0 fallos). Evidencia en `Docs/Implementacion/Recorrido_Completo/`.
+- **Decisión de prueba.** Entre N1 y N2 el recorrido vuelve al pueblo y compra un Núcleo con el dinero ganado, en vez de recibirlo del fixture. Sin esa compra, la vuelta 1 murió en N2.
+- **Correcciones del recorrido, no del juego:**
+  - espera de texto escrito antes de elegir en menús;
+  - ruta de la tienda que evita al vendedor;
+  - puerta del pueblo pisada en su centro;
+  - reintento de la palanca de N1;
+  - táctica de N6 contra el reapuntado del taladro;
+  - espera a que la pieza dorada aparezca tras la explosión.
+- **Observación para el diseñador.** La vida no se regenera entre niveles. En la vuelta 6 se llegó a N4 con 6/10 y a N5 con 5/10, y solo los Núcleos comprados la repusieron. Se suma a la propuesta pendiente sobre la exigencia de N4.

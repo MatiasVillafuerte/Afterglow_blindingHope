@@ -1,6 +1,6 @@
 # Estado de trabajo — 2026-11-06
 
-Última sesión: ver «2026-11-08 · Segunda sesión Claude» al final.
+Última sesión: ver «2026-11-09 · C56 recorrido completo» al final.
 
 Raíz activa: este proyecto Unity; documentación vigente en Docs e INDICE_DOCUMENTACION.md. N2–N6 pendientes de producción. Avance previo C00–C60 y PM00–PM20 conservado.
 
@@ -150,3 +150,53 @@ Las pruebas N2–N6 parten de un fixture declarado (niveles anteriores completad
 ### Siguiente tarea concreta
 
 Escribir un recorrido encadenado que juegue de una sola vez desde Nueva partida hasta «Continuará» sin fixture, reutilizando las rutas N1–N6. Registrar vida, dinero, ofrendas y tiempo por nivel. Después, probar el altar de la arena y guardar y cargar en cada nivel.
+
+
+## 2026-11-09 · C56 recorrido completo
+
+### Estado observado
+
+Vuelta 6 de `M01FullRun` (Play Mode del Editor, teclado simulado por el Input System): Nueva partida → N1 → tienda del pueblo → N2 → N3 → N4 → N5 → N6 → PerforAudora → pieza dorada → capitán → Platicio → vagoneta → «Continuará» → menú principal. Sin fixture: `M01RouteRunner.Chained` desactiva la cuota, los Núcleos y las investigaciones sembradas; cada nivel hereda el estado del anterior. Informe: `Recorrido_Completo/Pruebas.md` y `Recorrido_Completo/Tienda_N2.md`.
+
+| Etapa | PASS | Fallos | Vida al terminar | Dinero | Núcleos |
+| --- | --- | --- | --- | --- | --- |
+| N1 desde Nueva partida | 93 | 0 | 8/10 | 15 | 0 |
+| Tienda antes de N2 | 17 | 0 | 8/10 | 3 | 1 |
+| N2 | 109 | 0 | 7/10 | 30 | 0 |
+| N3 | 120 | 0 | 6/10 | 10 | 3 |
+| N4 | 90 | 0 | 5/10 | 2 | 4 |
+| N5 | 51 | 0 | 10/10 (Núcleo usado) | 0 | 4 |
+| N6 · jefe y «Continuará» | 17 | 0 | 10/14 (Platicio activo) | 0 | 4 |
+
+Total: 11,3 min de reloj de juego (unas 2 h reales en el Editor). Niveles con fallos: 0. Guardado personal intacto.
+
+### Vueltas anteriores (conservadas en el historial)
+
+- Vuelta 1: muerte en N2 sin Núcleos (no había compra antes de N2).
+- Vuelta 3: fallo de la reja en N2 y consumibles sin efecto (E pulsada con el texto aún escribiéndose).
+- Vueltas 2 y 4: derrota en N6 (el taladro reapunta durante el aviso desde la fase 2).
+- Vuelta 5: N1–N5 y la victoria con 0 fallos; 5 fallos tras la victoria porque el recorrido buscó la pieza antes de que apareciera (se coloca 1,2 s después de `Won`).
+
+### Ayudas de prueba añadidas (no forman parte del juego)
+
+- `Tools/PM/M01FullRun.cs`: encadena las etapas con un tope de 20 min de juego por etapa. `M01ShopVisit` vuelve a N1 y compra un Núcleo antes de N2.
+- `M01RouteRunner`: ruta de la tienda por z = −2,5 (evita al vendedor), comprobación del servicio más cercano, puerta de vuelta pisada en (40, 0). `WaitTyped` antes de cada E en menús, y uso de consumibles desde el inventario. En modo encadenado se usan Núcleos al entrar con 5 de vida o menos de lo máximo.
+- N1: reintento de la palanca del contrapeso. N2: botín y curación entre peleas, espera de la reja con el carro en la placa, llamada del Hangzzer observada tras el bucle.
+- N6: táctica de alejarse durante Apuntando, Aviso y Retroceso, y esquiva lateral en la embestida. Espera a que la pieza esté colocada.
+- Ningún cambio de runtime en esta tarea.
+
+### Sin verificar o pendiente
+
+- C44: entrega en el altar de la arena (5 ofrendas); el jefe se venció sin ella (efecto Neutral).
+- Insuficiencia de minerales en N5, guardado y carga en mitad de N2–N6, y árbol de habilidades.
+- Build standalone: no se ha probado; C56 se verificó en el Editor.
+- En N5 el primer uso del Núcleo no aplicó (vida 5 → 5) y el segundo sí (5 → 10). Es fragilidad del recorrido, no se reprodujo con jugador real.
+- Decisiones del diseñador:
+  - Exigencia de N4 y la vida, que no se regenera entre niveles (se llega a N5–N6 con 5–6 de 10 si no se compran Núcleos).
+  - Umbral de 18 minerales.
+  - Tono de N4D.01, N4M.01 y N4M.02.
+  - Nombre «Curativo».
+
+### Siguiente tarea concreta
+
+C44: recorrido de N6 que entregue las 5 ofrendas de arena en el altar dentro de los 40 s y compruebe el efecto del Tío. Después, guardar y cargar en mitad de cada nivel N2–N6 (C57).

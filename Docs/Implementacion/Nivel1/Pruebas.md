@@ -46,7 +46,7 @@
 - PASS Pico recibido en cámara de trabajo
 - PASS Resistencia derrotada mediante ataque básico
 - PASS Secuencia de diálogo termina
-- PASS Paso N01S03 (1,763372, -0,5729186) a altura 0,04
+- PASS Paso N01S03 (1,749938, -0,5549163) a altura 0,04
 - PASS Paso N01S03 (8, 1,6) a altura 0,04
 - PASS Tres ofrendas reales disponibles
 - PASS Resistencia derrotada mediante ataque básico
@@ -59,6 +59,7 @@
 - PASS Paso N01S04 (4, -3,7) a altura 0,04
 - PASS Secuencia de diálogo termina
 - PASS Paso N01S04 (4, -2,2) a altura 0,04
+- PASS Secuencia de diálogo termina
 - PASS Palanca baja paso y habilita collider
 - PASS Paso N01S04 (2, -0,8) a altura 0,04
 - PASS Paso N01S04 (2, 6) a altura 0,04
@@ -77,7 +78,7 @@
 - PASS Secuencia de diálogo termina
 - PASS Altar acredita 3 y abre N2 tras investigar
 
-Ruta N1 automatizada hasta apertura: 51,5 segundos, incluye diálogos/capturas y combate opcional; no es duración estimada para jugadores.
+Ruta N1 automatizada hasta apertura: 53,5 segundos, incluye diálogos/capturas y combate opcional; no es duración estimada para jugadores.
 - PASS Secuencia de diálogo termina
 - PASS Paso N01S01 (1, 1) a altura 0,04
 - PASS Paso N01S01 (6, 3,7) a altura 0,04

@@ -219,9 +219,11 @@ public sealed class N1PlayChecks : MonoBehaviour
         yield return Enter("N01S04");
         if(SceneId!="N01S04")yield break;
         yield return Walk(4,-3.7f);yield return Speak();
-        yield return Walk(4,-2.2f);yield return Tap(Key.E);
-        yield return new WaitForSecondsRealtime(1.3f);
+        yield return Walk(4,-2.2f);
         var bridge=FindAnyObjectByType<M01CounterweightBridge>();
+        // Un jugador vuelve a pulsar si la palanca no respondió (la E justo después de un diálogo puede caer en su espera).
+        for(int attempt=0;attempt<3&&!Data.events.Contains(M01CounterweightBridge.OpenEvent);attempt++){yield return Tap(Key.E);yield return Speak();float until=Now+1.5f;while(Now<until&&!Data.events.Contains(M01CounterweightBridge.OpenEvent))yield return null;}
+        float lowered=Now+2f;while(Now<lowered&&!bridge.crossing.enabled)yield return null;
         Check("Palanca baja paso y habilita collider",Data.events.Contains(M01CounterweightBridge.OpenEvent)&&bridge.crossing.enabled);
         yield return Capture("10a_Puente");
         yield return Walk(2,-.8f);yield return Walk(2,6);yield return Walk(8,8);

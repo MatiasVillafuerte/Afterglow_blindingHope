@@ -14,8 +14,11 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public abstract class M01RouteRunner : MonoBehaviour
 {
+    /// <summary>Recorrido encadenado (M01FullRun): sin fixture; el estado viene del nivel anterior jugado.</summary>
+    public static bool Chained;
     protected abstract string Evidence { get; }
     protected abstract string Title { get; }
+    protected virtual string ReportFile => "Pruebas.md";
     protected abstract IEnumerator Route();
     protected string report; protected int failures; protected float started;
     InputSettings.BackgroundBehavior previousBackground; InputSettings.EditorInputBehaviorInPlayMode previousFocus; string previousSave;
@@ -25,8 +28,8 @@ public abstract class M01RouteRunner : MonoBehaviour
     protected string SceneId => SceneManager.GetActiveScene().name;
 
     static void SafeWrite(string path, string text) { for (int i = 0; i < 8; i++) { try { File.WriteAllText(path, text); return; } catch (IOException) { System.Threading.Thread.Sleep(40); } } }
-    protected bool Check(string label, bool ok) { if (!ok) failures++; report += $"- {(ok ? "PASS" : "FAIL")} {label}\n"; SafeWrite(Evidence + "/Pruebas.md", report); return ok; }
-    protected void Note(string text) { report += text + "\n"; SafeWrite(Evidence + "/Pruebas.md", report); }
+    protected bool Check(string label, bool ok) { if (!ok) failures++; report += $"- {(ok ? "PASS" : "FAIL")} {label}\n"; SafeWrite(Evidence + "/" + ReportFile, report); return ok; }
+    protected void Note(string text) { report += text + "\n"; SafeWrite(Evidence + "/" + ReportFile, report); }
     protected void Keys(params Key[] keys) => InputSystem.QueueStateEvent(Keyboard.current, new KeyboardState(keys.Where(k => k != Key.None).ToArray()));
     protected IEnumerator Tap(Key key) { Keys(key); yield return new WaitForSecondsRealtime(.1f); Keys(); yield return new WaitForSecondsRealtime(.14f); }
     protected IEnumerator Arrival(string id) { float end = Now + 12; while ((SceneId != id || M01Expedition.Transitioning) && Now < end) yield return null; yield return new WaitForSecondsRealtime(.45f); Check("Llegada a " + id, SceneId == id && !M01Expedition.Transitioning); }
@@ -96,9 +99,28 @@ public abstract class M01RouteRunner : MonoBehaviour
     {
         var d = Data;
         if (Player.Dead || Player.Health > 4 || (d.restorers <= 0 && d.fragments <= 0) || (Dialogue && Dialogue.IsOpen)) yield break;
-        int before = Player.Health; bool core = d.restorers > 0;
-        yield return Tap(Key.I); yield return new WaitForSecondsRealtime(.2f);
-        yield return Tap(Key.DownArrow); yield return Tap(Key.E); yield return new WaitForSecondsRealtime(.2f);
+        yield return UseConsumable(d.restorers > 0);
+    }
+
+    /// <summary>
+    /// Espera a que el texto del diálogo termine de escribirse: la primera E sobre un texto a medias solo lo completa, y el
+    /// texto avanza en tiempo real, así que con el editor lento una espera fija deja la E sin elegir la opción.
+    /// </summary>
+    protected IEnumerator WaitTyped(float timeout = 5)
+    {
+        yield return null;
+        for (float end = Now + timeout; Now < end && Dialogue && Dialogue.IsOpen && Dialogue.body.maxVisibleCharacters < Dialogue.body.textInfo.characterCount;) yield return null;
+        yield return new WaitForSecondsRealtime(.05f);
+    }
+
+    protected IEnumerator UseConsumable(bool core)
+    {
+        int before = Player.Health;
+        // Abre el inventario cuando el control está libre (no durante el retroceso de un golpe ni una transición).
+        for (float end = Now + 3; Now < end && (Dialogue && Dialogue.IsOpen || Player.GetComponent<M01PlayerRules>().BlocksControl);) yield return null;
+        yield return Tap(Key.I); yield return WaitTyped();
+        if (!(Dialogue && Dialogue.IsOpen)) { Note($"- Inventario no se abrió (vida {before})"); yield break; }
+        yield return Tap(Key.DownArrow); yield return Tap(Key.E); yield return WaitTyped();
         if (core) yield return Tap(Key.DownArrow);
         yield return Tap(Key.E); yield return Speak();
         Note($"- Consumible usado ({(core ? "Núcleo +5" : "Fragmento +2")}): vida {before} → {Player.Health}");
@@ -134,6 +156,7 @@ public abstract class M01RouteRunner : MonoBehaviour
         float deadline = Now + 10; while (!Data.opened[index] && Now < deadline) { if (Dialogue && Dialogue.IsOpen) yield return Speak(); yield return null; }
         yield return Speak();
         Check($"Altar compartido: cuota {quota} cubierta y nivel siguiente abierto", Data.contributions[index] >= quota && Data.opened[index]);
+        if (Chained) yield return Shop();
         yield return Walk(-1, -6.6f); yield return Tap(Key.E);
         yield return Arrival("M01_MAPA");
         var map = FindAnyObjectByType<M01RouteMap>(); yield return new WaitForSecondsRealtime(.5f);
@@ -143,9 +166,42 @@ public abstract class M01RouteRunner : MonoBehaviour
         yield return Capture("99_Selector_siguiente");
     }
 
+    /// <summary>
+    /// Tienda del pueblo (M01_PUEBLO): con dinero ganado en la partida compra Núcleos (12, +5) hasta tener dos, como
+    /// preparación de un jugador antes de la siguiente expedición. Vuelve a N01S01, junto al altar.
+    /// </summary>
+    /// <summary>Núcleos que el recorrido encadenado lleva como máximo: los que compraría un jugador prudente antes del jefe.</summary>
+    const int ShopCores = 4;
+    protected IEnumerator Shop()
+    {
+        var d = Data;
+        if (d.money < 12 || d.restorers >= ShopCores) { Note($"- Tienda: sin compra (dinero {d.money}, núcleos {d.restorers})"); yield break; }
+        int money = d.money, cores = d.restorers;
+        yield return Walk(-10, -3.4f); yield return Tap(Key.E); yield return Arrival("M01_PUEBLO"); if (SceneId != "M01_PUEBLO") yield break;
+        // Los tres servicios están en fila (x 9, 19, 29; z 1): se rodean por z −2,5 para no chocar ni hablar con el vendedor de ofrendas robadas.
+        yield return Walk(36, -2.5f); yield return Walk(9, -2.5f); yield return Walk(9, -0.3f);
+        var shop = FindObjectsByType<M01ServiceNPC>().OrderBy(n => Vector3.Distance(n.transform.position, Player.transform.position)).FirstOrDefault();
+        if (!Check("Frente a la tienda (servicio más cercano)", shop && shop.service == M01Service.Shop)) yield break;
+        while (d.money >= 12 && d.restorers < ShopCores)
+        {
+            int before = d.restorers;
+            yield return Tap(Key.E); if (!(Dialogue && Dialogue.IsOpen && Dialogue.CurrentId == "PUE.12")) { yield return Speak(); break; }
+            while (Dialogue && Dialogue.IsOpen && Dialogue.CurrentId == "PUE.12") yield return Tap(Key.E);
+            yield return WaitTyped(); yield return Tap(Key.DownArrow); yield return Tap(Key.E); yield return Speak();
+            if (d.restorers == before) break;
+        }
+        Check($"Tienda del pueblo: núcleos {cores} → {d.restorers}, dinero {money} → {d.money}", d.restorers > cores);
+        yield return Walk(9, -2.5f); yield return Walk(38.6f, -2.5f); 
+        // Puerta de paso (radio plano 1,05 m, sin E) en (40, 0): camina hacia su centro solo hasta que empieza la transición.
+        for (float end = Now + 6; SceneId == "M01_PUEBLO" && !M01Expedition.Transitioning && Now < end;)
+        { var p = Player.transform.position; Keys(Mathf.Abs(40 - p.x) < .15f ? Key.None : p.x < 40 ? Key.RightArrow : Key.LeftArrow, Mathf.Abs(p.z) < .15f ? Key.None : p.z < 0 ? Key.UpArrow : Key.DownArrow); yield return null; }
+        Keys(); yield return Arrival("N01S01");
+    }
+
     /// <summary>Fixture declarado: niveles anteriores completados por sus propias pruebas.</summary>
     protected void CompleteBefore(int level)
     {
+        if (Chained) { Note("Encadenado: sin fixture; estado heredado del nivel anterior."); return; }
         var d = Data;
         foreach (var e in new[] { "P01.LETTER", "P01.BELL", "P02.CAPTAIN", "M01.WORLD_STARTED", "M01.N01_ENTERED", "N1A.INTRO", "N1C.PHONE", "N1B.PICKAXE" }) if (!d.events.Contains(e)) d.events.Add(e);
         d.pickaxeOwned = d.phoneOwned = true;
@@ -164,6 +220,8 @@ public abstract class M01RouteRunner : MonoBehaviour
         yield return Capture("00_Selector");
         yield return Tap(Key.E);
         yield return Arrival(M01RouteMap.EntryScene(level - 1));
+        // Encadenado: la vida no se recupera entre niveles; al entrar, un jugador prudente usa Núcleos si le faltan 5 o más.
+        if (Chained) for (int guard = 0; guard < 3 && Player.Health <= Player.maxHealth - 5 && Data.restorers > 0; guard++) yield return UseConsumable(true);
         started = Now;
     }
 
@@ -182,7 +240,7 @@ public abstract class M01RouteRunner : MonoBehaviour
         previousSave = File.Exists(M01Save.Path) ? File.ReadAllText(M01Save.Path) : null;
         yield return Route();
         Check("Guardado personal intacto", previousSave == (File.Exists(M01Save.Path) ? File.ReadAllText(M01Save.Path) : null));
-        report += $"\nFinalizado. Fallos: {failures}\n"; SafeWrite(Evidence + "/Pruebas.md", report);
+        report += $"\nFinalizado. Fallos: {failures}\n"; SafeWrite(Evidence + "/" + ReportFile, report);
         Destroy(gameObject);
     }
 

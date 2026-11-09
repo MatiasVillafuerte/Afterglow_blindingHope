@@ -75,7 +75,52 @@ public sealed class N2PlayChecks : MonoBehaviour
             yield return new WaitForSecondsRealtime(.06f); Keys(); yield return new WaitForSecondsRealtime(.6f);
         }
         Keys();
+        if (enemy && enemy.Defeated) yield return CollectLoot(enemy.transform.position);
+        yield return HealIfLow();
         if (record) Check("Enemigo derrotado con el pico: " + (enemy ? enemy.name : "?") + $" (vida del jugador {Player.Health}/{Player.maxHealth})", enemy && enemy.Defeated);
+    }
+
+    // Igual que M01RouteRunner: consumible desde el inventario con 4 de vida o menos y botín cercano tras el combate.
+    /// <summary>
+    /// Espera a que el texto del diálogo termine de escribirse: la primera E sobre un texto a medias solo lo completa, y el
+    /// texto avanza en tiempo real, así que con el editor lento una espera fija deja la E sin elegir la opción.
+    /// </summary>
+    IEnumerator WaitTyped(float timeout = 5)
+    {
+        yield return null;
+        for (float end = Now + timeout; Now < end && Dialogue && Dialogue.IsOpen && Dialogue.body.maxVisibleCharacters < Dialogue.body.textInfo.characterCount;) yield return null;
+        yield return new WaitForSecondsRealtime(.05f);
+    }
+
+    IEnumerator HealIfLow()
+    {
+        var d = Data;
+        if (Player.Dead || Player.Health > 4 || (d.restorers <= 0 && d.fragments <= 0) || (Dialogue && Dialogue.IsOpen)) yield break;
+        bool core = d.restorers > 0;
+        int before = Player.Health;
+        // Abre el inventario cuando el control está libre (no durante el retroceso de un golpe ni una transición).
+        for (float end = Now + 3; Now < end && (Dialogue && Dialogue.IsOpen || Player.GetComponent<M01PlayerRules>().BlocksControl);) yield return null;
+        yield return Tap(Key.I); yield return WaitTyped();
+        if (!(Dialogue && Dialogue.IsOpen)) { report += $"- Inventario no se abrió (vida {before})\n"; yield break; }
+        yield return Tap(Key.DownArrow); yield return Tap(Key.E); yield return WaitTyped();
+        if (core) yield return Tap(Key.DownArrow);
+        yield return Tap(Key.E); yield return Speak();
+        report += $"- Consumible usado ({(core ? "Núcleo +5" : "Fragmento +2")}): vida {before} → {Player.Health}\n";
+    }
+
+    IEnumerator CollectLoot(Vector3 around)
+    {
+        yield return new WaitForSecondsRealtime(.5f);
+        float end = Now + 5;
+        while (Now < end && !Player.Dead)
+        {
+            var loot = FindObjectsByType<M01Loot>(FindObjectsSortMode.None).Where(l => l && l.kind != M01LootKind.Offering && Vector3.Distance(l.transform.position, around) < 3.5f && Mathf.Abs(l.transform.position.y - Player.transform.position.y) < 1.2f).OrderBy(l => Vector3.Distance(l.transform.position, Player.transform.position)).FirstOrDefault();
+            if (!loot) break;
+            var d = loot.transform.position - Player.transform.position;
+            Keys(Mathf.Abs(d.x) < .15f ? Key.None : d.x > 0 ? Key.RightArrow : Key.LeftArrow, Mathf.Abs(d.z) < .15f ? Key.None : d.z > 0 ? Key.UpArrow : Key.DownArrow);
+            yield return null;
+        }
+        Keys();
     }
 
     IEnumerator PushCart(M01RailCart cart, bool right, float seconds = 16)
@@ -103,15 +148,19 @@ public sealed class N2PlayChecks : MonoBehaviour
         string previousSave = File.Exists(M01Save.Path) ? File.ReadAllText(M01Save.Path) : null;
 
         // Fixture declarado: N1 terminado según su propia prueba (N1PlayChecks).
-        var d = Data;
-        foreach (var e in new[] { "P01.LETTER", "P01.BELL", "P02.CAPTAIN", "M01.WORLD_STARTED", "M01.N01_ENTERED", "N1A.INTRO", "N1C.PHONE", "N1B.PICKAXE" }) if (!d.events.Contains(e)) d.events.Add(e);
-        d.pickaxeOwned = d.phoneOwned = true; d.investigated[0] = true; d.contributions[0] = 3; d.opened[0] = true; d.lastMapNode = 1;
+        var d = Data; bool chained = M01RouteRunner.Chained;
+        if (!chained)
+        {
+            foreach (var e in new[] { "P01.LETTER", "P01.BELL", "P02.CAPTAIN", "M01.WORLD_STARTED", "M01.N01_ENTERED", "N1A.INTRO", "N1C.PHONE", "N1B.PICKAXE" }) if (!d.events.Contains(e)) d.events.Add(e);
+            d.pickaxeOwned = d.phoneOwned = true; d.investigated[0] = true; d.contributions[0] = 3; d.opened[0] = true; d.lastMapNode = 1;
+        }
+        else report += "Encadenado: sin fixture; estado heredado de N1PlayChecks.\n";
         yield return new WaitForSecondsRealtime(.6f);
         var map = FindAnyObjectByType<M01RouteMap>();
         if (map && !map.IsOpen) map.Open();
         yield return new WaitForSecondsRealtime(.3f);
-        Check("Selector abierto con N1 enfocado y N2 disponible", map && map.IsOpen && map.Focused == 0 && M01RouteMap.Available(d, 1) && M01RouteMap.HasScene(1));
-        yield return Tap(Key.RightArrow);
+        Check("Selector abierto con N2 disponible", map && map.IsOpen && map.Focused == (chained ? 1 : 0) && M01RouteMap.Available(d, 1) && M01RouteMap.HasScene(1));
+        if (map.Focused == 0) yield return Tap(Key.RightArrow);
         Check("Foco pasa a N2", map.Focused == 1);
         yield return Capture("00_Selector_N2");
         yield return Tap(Key.E);
@@ -163,9 +212,10 @@ public sealed class N2PlayChecks : MonoBehaviour
         foreach (var id in new[] { "N02.RESISTANCE.0", "N02.RESISTANCE.1" }) { var e = Enemy(id); if (e) yield return Fight(e); }
         yield return Walk(-8.2f, -1); yield return Walk(-8.2f, 0.5f);
         yield return PushCart(Cart("CARRO_REJA"), true);
-        yield return new WaitForSecondsRealtime(1f);
         var gate = FindAnyObjectByType<M01Gate>();
-        Check("Carro sobre la placa abre la reja", d.events.Contains("N02.S02.REJA_ABIERTA") && gate && !gate.blocker.enabled);
+        // Espera en tiempo de juego: con el editor lento, 1 s real puede ser menos de lo que tarda la reja en abrirse.
+        for (float gateWait = Now + 3; Now < gateWait && !(d.events.Contains("N02.S02.REJA_ABIERTA") && gate && !gate.blocker.enabled);) yield return null;
+        Check("Carro sobre la placa abre la reja" + $" · carro en placa {(Cart("CARRO_REJA") ? Cart("CARRO_REJA").OnPlate : false)} · jugador {Player.transform.position}",d.events.Contains("N02.S02.REJA_ABIERTA") && gate && !gate.blocker.enabled);
         yield return Capture("05_Cruce_reja_abierta");
         yield return Walk(-4, -2.5f); yield return Walk(-4, -4.5f);
         yield return PushCart(Cart("CARRO_Q03_1"), true);
@@ -195,6 +245,8 @@ public sealed class N2PlayChecks : MonoBehaviour
         }
         Keys();
         Check("Hangzzer baja del farol y silba", sawDescent);
+        // La llamada puede ocurrir mientras el bucle está dentro de un combate y Hangzzer cae antes de la siguiente vuelta.
+        sawCall |= (hang && hang.Summoned > 0) || FindObjectsByType<AfterglowEnemy>().Any(e => e.name.StartsWith("N02.REFUERZO."));
         Check("Hangzzer llama refuerzos desde el túnel", sawCall);
         Check("Hangzzer derrotado (4 de vida) al golpearlo abajo", hangEnemy.Defeated);
         foreach (var e in FindObjectsByType<AfterglowEnemy>().Where(e => !e.Defeated)) yield return Fight(e, 10);

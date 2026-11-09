@@ -2,6 +2,7 @@
 
 Teclado simulado (Input System). Fixture: niveles anteriores completados por sus pruebas.
 
+Encadenado: sin fixture; estado heredado del nivel anterior.
 - PASS Selector abierto con N3 enfocado y escena disponible
 - PASS Llegada a N03S01
 - PASS Paso N03S01 (-4,5, -3,2) a altura 0,04
@@ -12,7 +13,7 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Ofrenda de la terraza de la bocamina
 - PASS Paso N03S01 (0, 4) a altura 0,69
 - PASS Llegada a N03S02
-- PASS Enemigo derrotado con el pico: N03.RESISTANCE.0 (vida del jugador 9/10)
+- PASS Enemigo derrotado con el pico: N03.RESISTANCE.0 (vida del jugador 6/10)
 - PASS Paso N03S02 (8, -5) a altura 0,04
 - PASS Paso N03S02 (0, 2) a altura 0,04
 - PASS Llegada a N03S02
@@ -34,7 +35,7 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Llegada a N03S04
 - PASS Paso N03S04 (-7, 4) a altura 0,04
 - PASS Llegada a N03S05
-- PASS Enemigo derrotado con el pico: N03.RESISTANCE.1 (vida del jugador 8/10)
+- PASS Enemigo derrotado con el pico: N03.RESISTANCE.1 (vida del jugador 5/10)
 - PASS Paso N03S05 (2, -3,2) a altura 0,04
 - PASS Q06 aceptado
 - PASS Paso N03S05 (-5, 0,4) a altura 0,04
@@ -98,18 +99,28 @@ Teclado simulado (Input System). Fixture: niveles anteriores completados por sus
 - PASS Paso N03S06 (0, 2,1) a altura 0,04
 - PASS Pasarela del pozo sin caer y sin activar los Gasplode
 - PASS Llegada a N03S07
-- PASS Enemigo derrotado con el pico: N03.RESISTANCE.2 (vida del jugador 7/10)
+- PASS Enemigo derrotado con el pico: N03.RESISTANCE.2 (vida del jugador 6/10)
 - PASS Paso N03S07 (6, 0,2) a altura 0,04
 - PASS Paso N03S07 (0, 2,4) a altura 0,04
 - PASS Paso N03S07 (0, 3,4) a altura 0,69
 - PASS Investigación de N3 registrada
 
-Ruta N3 automatizada hasta investigar: 98,1 s.
-- PASS Ofrendas legítimas para la cuota 7: 12
+Ruta N3 automatizada hasta investigar: 93,5 s.
+- PASS Ofrendas legítimas para la cuota 7: 17
 - PASS Llegada a N01S01
 - PASS El teléfono conserva el nivel de la expedición
 - PASS Paso N01S01 (4, -4,4) a altura 0,04
 - PASS Altar compartido: cuota 7 cubierta y nivel siguiente abierto
+- PASS Paso N01S01 (-10, -3,4) a altura 0,04
+- PASS Llegada a M01_PUEBLO
+- PASS Paso M01_PUEBLO (36, -2,5) a altura 0,04
+- PASS Paso M01_PUEBLO (9, -2,5) a altura 0,04
+- PASS Paso M01_PUEBLO (9, -0,3) a altura 0,04
+- PASS Frente a la tienda (servicio más cercano)
+- PASS Tienda del pueblo: núcleos 0 → 3, dinero 46 → 10
+- PASS Paso M01_PUEBLO (9, -2,5) a altura 0,04
+- PASS Paso M01_PUEBLO (38,6, -2,5) a altura 0,04
+- PASS Llegada a N01S01
 - PASS Paso N01S01 (-1, -6,6) a altura 0,04
 - PASS Llegada a M01_MAPA
 - PASS Selector: N4 disponible y enfocado
