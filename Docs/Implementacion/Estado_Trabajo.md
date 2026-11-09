@@ -1,6 +1,6 @@
 # Estado de trabajo — 2026-11-06
 
-Última sesión: ver «2026-11-09 · C56 recorrido completo» al final.
+Última sesión: ver «2026-11-09 · C44 altar de la arena» al final.
 
 Raíz activa: este proyecto Unity; documentación vigente en Docs e INDICE_DOCUMENTACION.md. N2–N6 pendientes de producción. Avance previo C00–C60 y PM00–PM20 conservado.
 
@@ -187,7 +187,7 @@ Total: 11,3 min de reloj de juego (unas 2 h reales en el Editor). Niveles con fa
 
 ### Sin verificar o pendiente
 
-- C44: entrega en el altar de la arena (5 ofrendas); el jefe se venció sin ella (efecto Neutral).
+- C44: resuelto más abajo (sección «C44 altar de la arena»).
 - Insuficiencia de minerales en N5, guardado y carga en mitad de N2–N6, y árbol de habilidades.
 - Build standalone: no se ha probado; C56 se verificó en el Editor.
 - En N5 el primer uso del Núcleo no aplicó (vida 5 → 5) y el segundo sí (5 → 10). Es fragilidad del recorrido, no se reprodujo con jugador real.
@@ -200,3 +200,42 @@ Total: 11,3 min de reloj de juego (unas 2 h reales en el Editor). Niveles con fa
 ### Siguiente tarea concreta
 
 C44: recorrido de N6 que entregue las 5 ofrendas de arena en el altar dentro de los 40 s y compruebe el efecto del Tío. Después, guardar y cargar en mitad de cada nivel N2–N6 (C57).
+
+
+## 2026-11-09 · C44 altar de la arena
+
+### Estado observado
+
+`N6PlayChecks.MainArena()` (Play Mode del Editor, teclado simulado) desde M01_MAPA con fixture de N1–N5. Informe en `Niveles/N6_Evidencias/Pruebas_Altar_Arena.md`: 27 PASS y 0 fallos, de la entrada a N6 a «Continuará» y el menú.
+
+| Comprobación | Resultado |
+| --- | --- |
+| Altar de la arena sin `M01Altar` (independiente) | PASS |
+| Con 0 ofrendas de arena no entrega ni consume | PASS |
+| 10 de arena recogidas; 3 de exploración siguen en 3 | PASS |
+| Entrega: 10 → 5, efecto Mejora, exploración intacta | PASS |
+| Con mejora activa rechaza sin consumir (5 → 5) | PASS |
+| Sin lanzamientos durante la mejora (6 s) y se reanudan después | PASS |
+| La mejora termina sola a los 14,5 s | PASS |
+| Sin entrega válida, perjuicio a los 39,5 s de la fase 2 | PASS |
+| Entregar 5 con perjuicio lo elimina (11 → 6, Neutral, multiplicadores a 1) | PASS |
+| Victoria, pieza, capitán, Platicio, vagoneta, «Continuará», menú | PASS |
+
+Una vuelta previa sin ofrendas de exploración también dio 0 fallos. Se repitió con 3 en el inventario para que «no las consume» quedara probado.
+
+### Ayudas de prueba
+
+- `drill.Halt()` durante la parte aislada de la fase 1 (piedras y lanzamientos activos); luego `Begin(1)` y pelea normal.
+- Fixture de 3 ofrendas de exploración (Coca, `PRUEBA.C44.*`), solo fuera del modo encadenado.
+- En la fase 2 el recorrido retiene la entrega y no ataca resistencias hasta ver el perjuicio.
+- Capturas de los dos altares con una cámara temporal en modo edición (`C44_Altar_N1.png`, `C44_Altar_arena_N6.png`): mismo pedestal con cristal.
+- Ningún cambio de runtime.
+
+### Observaciones
+
+- El contador de ofrendas de arena solo se ve en el aviso «Ofrenda de arena · N». El HUD sigue mostrando las ofrendas de exploración. Decidir si conviene un contador visible durante el jefe.
+- C45: falta medir el intervalo de 2–5 s, el máximo de 7 en el suelo y la caducidad de 5 s.
+
+### Siguiente tarea concreta
+
+C57: guardar y cargar en mitad de cada nivel N2–N6, y casos límite (muerte en escolta, fallos de vagoneta, reintento del jefe). Después C45 y árbol de habilidades.

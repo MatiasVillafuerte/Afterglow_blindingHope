@@ -65,3 +65,9 @@ Sesión de Claude. Se distingue la decisión del diseñador, el parámetro inici
   - táctica de N6 contra el reapuntado del taladro;
   - espera a que la pieza dorada aparezca tras la explosión.
 - **Observación para el diseñador.** La vida no se regenera entre niveles. En la vuelta 6 se llegó a N4 con 6/10 y a N5 con 5/10, y solo los Núcleos comprados la repusieron. Se suma a la propuesta pendiente sobre la exigencia de N4.
+
+## 2026-11-09 · C44 altar de la arena (agente)
+
+- Verificado con `N6PlayChecks.MainArena()`: 27 PASS, 0 fallos. Evidencia en `Niveles/N6_Evidencias/Pruebas_Altar_Arena.md` y capturas `C44_*`.
+- **Decisión de prueba.** Para aislar el altar, el taladro se detiene (`Halt`) durante la primera parte de la fase 1. El perjuicio se prueba en la pelea normal de la fase 2, reteniendo la entrega 40 s.
+- **Observación para el diseñador.** El contador de arena no está en el HUD, solo en avisos.
